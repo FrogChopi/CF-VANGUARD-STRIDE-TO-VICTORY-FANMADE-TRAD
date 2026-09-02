@@ -1,0 +1,691 @@
+{
+  "romfs": {
+    "ai": [
+      {
+        "filename": "000.rtz",
+        "offset": "0x151B6",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "001.rtz",
+        "offset": "0xE6B8",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "002.rtz",
+        "offset": "0xE7C6",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "003.rtz",
+        "offset": "0xE7A2",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "004.rtz",
+        "offset": "0xE65A",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "005.rtz",
+        "offset": "0xE54D",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "006.rtz",
+        "offset": "0xE549",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "007.rtz",
+        "offset": "0xE64B",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "008.rtz",
+        "offset": "0xE534",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "009.rtz",
+        "offset": "0xE530",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "010.rtz",
+        "offset": "0xE7BE",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "011.rtz",
+        "offset": "0xE532",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "012.rtz",
+        "offset": "0xE538",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "013.rtz",
+        "offset": "0xE61A",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "014.rtz",
+        "offset": "0xE6D1",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "015.rtz",
+        "offset": "0xE530",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "016.rtz",
+        "offset": "0xE534",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "017.rtz",
+        "offset": "0xE532",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "018.rtz",
+        "offset": "0xE532",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "019.rtz",
+        "offset": "0xE662",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "020.rtz",
+        "offset": "0xE703",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "021.rtz",
+        "offset": "0xE861",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "022.rtz",
+        "offset": "0xE664",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "023.rtz",
+        "offset": "0xE564",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "024.rtz",
+        "offset": "0xE6BE",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "025.rtz",
+        "offset": "0xE567",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "026.rtz",
+        "offset": "0x151D1",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "027.rtz",
+        "offset": "0xE811",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "028.rtz",
+        "offset": "0xE5B7",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "029.rtz",
+        "offset": "0xE517",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "030.rtz",
+        "offset": "0xE562",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "031.rtz",
+        "offset": "0xE806",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "032.rtz",
+        "offset": "0x151D1",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "033.rtz",
+        "offset": "0xE569",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "034.rtz",
+        "offset": "0xE635",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "035.rtz",
+        "offset": "0xE60F",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "036.rtz",
+        "offset": "0xE598",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "037.rtz",
+        "offset": "0xE564",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "038.rtz",
+        "offset": "0xE566",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "039.rtz",
+        "offset": "0xE6D1",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "040.rtz",
+        "offset": "0xE78C",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "041.rtz",
+        "offset": "0xF7D0",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "042.rtz",
+        "offset": "0x107D7",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "043.rtz",
+        "offset": "0x10763",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "044.rtz",
+        "offset": "0x117BA",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "045.rtz",
+        "offset": "0x100D1",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "046.rtz",
+        "offset": "0x11553",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "047.rtz",
+        "offset": "0xF68F",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "048.rtz",
+        "offset": "0xEF30",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "049.rtz",
+        "offset": "0x10334",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "050.rtz",
+        "offset": "0x1034F",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "051.rtz",
+        "offset": "0xF1D2",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "052.rtz",
+        "offset": "0xF090",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "053.rtz",
+        "offset": "0xF0DB",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "054.rtz",
+        "offset": "0x10C91",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "055.rtz",
+        "offset": "0x113CD",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "056.rtz",
+        "offset": "0x1012E",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "057.rtz",
+        "offset": "0xF293",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "058.rtz",
+        "offset": "0xFD2D",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "059.rtz",
+        "offset": "0xF679",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "060.rtz",
+        "offset": "0xFA70",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "061.rtz",
+        "offset": "0xFBB3",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "062.rtz",
+        "offset": "0xEF90",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "063.rtz",
+        "offset": "0x103A0",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "064.rtz",
+        "offset": "0xF84B",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "065.rtz",
+        "offset": "0x10C36",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "066.rtz",
+        "offset": "0x10E35",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "067.rtz",
+        "offset": "0xFF9C",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "068.rtz",
+        "offset": "0x10E64",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "069.rtz",
+        "offset": "0x11A67",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "070.rtz",
+        "offset": "0x10FCD",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "071.rtz",
+        "offset": "0x1050C",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "072.rtz",
+        "offset": "0x1039C",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "073.rtz",
+        "offset": "0xF435",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "074.rtz",
+        "offset": "0x107CE",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "075.rtz",
+        "offset": "0xFC74",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "076.rtz",
+        "offset": "0x10DE5",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "077.rtz",
+        "offset": "0x102DF",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "078.rtz",
+        "offset": "0x108AE",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "079.rtz",
+        "offset": "0x10638",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "080.rtz",
+        "offset": "0x10D0C",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "081.rtz",
+        "offset": "0xFB7A",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "082.rtz",
+        "offset": "0x1009B",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "083.rtz",
+        "offset": "0xF3B1",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "084.rtz",
+        "offset": "0xFF65",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "085.rtz",
+        "offset": "0x113C1",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "086.rtz",
+        "offset": "0x10882",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "087.rtz",
+        "offset": "0x100AC",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "088.rtz",
+        "offset": "0x10F09",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "089.rtz",
+        "offset": "0xF8D4",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "090.rtz",
+        "offset": "0x102BD",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "091.rtz",
+        "offset": "0xF84B",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "092.rtz",
+        "offset": "0x11821",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "093.rtz",
+        "offset": "0x108E7",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "094.rtz",
+        "offset": "0x1030C",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "095.rtz",
+        "offset": "0x10C57",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "096.rtz",
+        "offset": "0xFD1B",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "097.rtz",
+        "offset": "0x103A3",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "098.rtz",
+        "offset": "0x106D4",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "099.rtz",
+        "offset": "0xE662",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "100.rtz",
+        "offset": "0xF339",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "101.rtz",
+        "offset": "0x10959",
+        "desc": "NO_EDITED"
+      }
+    ],
+    "common": [
+      {
+        "filename": "choice.rtz",
+        "offset": "0x0BC6",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "line_mess.rtz",
+        "offset": "0x60D0",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "skip_yn.rtz",
+        "offset": "0x0827",
+        "desc": "NO_EDITED"
+      },
+      {
+        "filename": "yesno.rtz",
+        "offset": "0x9DA4",
+        "desc": "NO_EDITED"
+      }
+    ],
+    "cutin": [
+      {
+        "filename": "cutin.rtz",
+        "offset": "0x4F0C",
+        "desc": "NO_EDITED"
+      }
+    ],
+    "event": [
+      {
+        "filename": "evview.rtz",
+        "offset": "0x4D89",
+        "desc": "NO_EDITED"
+      }
+    ],
+    "fe": [
+      {
+        "filename": "fe0001.rtz",
+        "offset": "0x17A5",
+        "desc": "NOT_SURE"
+      },
+      {
+        "filename": "tuto_001.rtz",
+        "offset": "0x1C1F",
+        "desc": "OK"
+      },
+      {
+        "filename": "tuto_002.rtz",
+        "offset": "0x1AAF",
+        "desc": "OK"
+      },
+      {
+        "filename": "tuto_003.rtz",
+        "offset": "0x1907",
+        "desc": "OK"
+      },
+      {
+        "filename": "tuto_004.rtz",
+        "offset": "0x1791",
+        "desc": "ERROR : crash + loop"
+      },
+      {
+        "filename": "tuto_005.rtz",
+        "offset": "0x1924",
+        "desc": "ERROR : crash"
+      },
+      {
+        "filename": "tuto_006.rtz",
+        "offset": "0x1E20",
+        "desc": "ERROR : infinite loading"
+      },
+      {
+        "filename": "tuto_007.rtz",
+        "offset": "0x27DA",
+        "desc": "ERROR : crash"
+      },
+      {
+        "filename": "tuto_008.rtz",
+        "offset": "0x22F2",
+        "desc": "ERROR : crash"
+      },
+      {
+        "filename": "tuto_009.rtz",
+        "offset": "0x19DE",
+        "desc": "OK"
+      },
+      {
+        "filename": "tuto_010.rtz",
+        "offset": "0x1CE5",
+        "desc": "ERROR : crash"
+      },
+      {
+        "filename": "tuto_011.rtz",
+        "offset": "0x22D7",
+        "desc": "OK"
+      },
+      {
+        "filename": "tuto_012.rtz",
+        "offset": "0x209A",
+        "desc": "ERROR : crash + loop"
+      },
+      {
+        "filename": "tuto_013.rtz",
+        "offset": "0x2346",
+        "desc": "ERROR : visual bug + crash + loop"
+      },
+      {
+        "filename": "tuto_014.rtz",
+        "offset": "0x1B69",
+        "desc": "ERROR : crash + loop"
+      },
+      {
+        "filename": "tuto_015.rtz",
+        "offset": "0x1CC5",
+        "desc": "ERROR : crash + loop"
+      },
+      {
+        "filename": "tuto_016.rtz",
+        "offset": "0x2701",
+        "desc": "ERROR : crash"
+      },
+      {
+        "filename": "tuto_017.rtz",
+        "offset": "0x1958",
+        "desc": "ERROR : visual bug + crash + loop"
+      },
+      {
+        "filename": "tuto_019.rtz",
+        "offset": "0x1BFE",
+        "desc": "ERROR : crash + loop ( tuto 18 )"
+      },
+      {
+        "filename": "tuto_020.rtz",
+        "offset": "0x1FFA",
+        "desc": "ERROR : crash ( tuto 19 )"
+      }
+    ],
+    "fight": [
+      {
+        "filename": "_fight_yesno.rtz",
+        "offset": "0x0AFA",
+        "desc": "NOT_SURE"
+      },
+      {
+        "filename": "btn_help.rtz",
+        "offset": "0x0ECA",
+        "desc": "NOT_SURE"
+      },
+      {
+        "filename": "fight_result.rtz",
+        "offset": "0x9789",
+        "desc": "NOT_SURE"
+      },
+      {
+        "filename": "fight_signup.rtz",
+        "offset": "0x8690",
+        "desc": "NOT_SURE"
+      },
+      {
+        "filename": "fighter_info.rtz",
+        "offset": "0x191E",
+        "desc": "NOT_SURE"
+      },
+      {
+        "filename": "help_window.rtz",
+        "offset": "0x0932",
+        "desc": "NOT_SURE"
+      },
+      {
+        "filename": "sys_menu.rtz",
+        "offset": "0x0FEB",
+        "desc": "NOT_SURE"
+      }
+    ]
+  }
+}

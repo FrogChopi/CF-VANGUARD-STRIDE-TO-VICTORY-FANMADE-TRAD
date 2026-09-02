@@ -6,7 +6,7 @@ from pathlib import Path
 # --- Configurations à ajuster si besoin ---
 BASE_ADDR     = 0x0100000  # Adresse virtuelle de base de code.bin
 INPUT_BIN     = Path("full_padded.bin")
-POINTER_CSV   = Path("extracted_strings_translated.csv")
+POINTER_CSV   = Path("extracted_strings.csv")
 OUTPUT_BIN    = Path("full_patched.bin")
 
 # --- On augmente la limite de taille de champ CSV ---

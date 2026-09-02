@@ -2,7 +2,7 @@
 
 ## INTRO
 
-It's a fan made project, you can read the doc in [wiki section](https://github.com/FrogChopi/CF-VANGUARD-STRIDE-TO-VICTORY-FANMADE-TRAD/wiki)
+It's a fan made project, you can read the doc in >> [wiki section](https://github.com/FrogChopi/CF-VANGUARD-STRIDE-TO-VICTORY-FANMADE-TRAD/wiki) <<
 
 ## REQUIREMENTS
 - [python](https://www.python.org/downloads/)
