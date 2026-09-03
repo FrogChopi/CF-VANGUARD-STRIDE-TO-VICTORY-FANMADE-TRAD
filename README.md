@@ -12,7 +12,7 @@ This project targets **Cardfight!! Vanguard: Stride to Victory!!** first, but th
 
 ## PROGRESS
 
-![technical](https://img.shields.io/badge/technical-70%25-brightgreen)
+![technical](https://img.shields.io/badge/technical-100%25-brightgreen)
 ![translation](https://img.shields.io/badge/translation-30%25-orange)
 ![check](https://img.shields.io/badge/check-0%25-red)
 ![publishing](https://img.shields.io/badge/publishing-0%25-red)
