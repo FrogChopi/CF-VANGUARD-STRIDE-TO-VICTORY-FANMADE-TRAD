@@ -468,7 +468,7 @@ ai/003.bin;0xE7A2;39 17 8B F0;Starry Skies Liberator, Guinevere
 ai/003.bin;0xE7A2;4B 16 BE F0;Knight of Frevor, Hector
 ai/003.bin;0xE7A2;BF 43 2B F1;  アタッカー : %s
 ai/003.bin;0xE7A2;27 25 50 F1;Bear Down Samurai
-ai/003.bin;0xE7A2;B0 FF 0D F4;Mr.インビンシブル
+ai/003.bin;0xE7A2;B0 FF 0D F4;Mr. Invincible
 ai/003.bin;0xE7A2;FC B0 EB F6;Purification Regalia, Pure Angel
 ai/003.bin;0xE7A2;89 20 23 F8;下
 ai/003.bin;0xE7A2;DD 4C B3 F8;ターン開始 AI(%d)
@@ -2175,7 +2175,7 @@ ai/019.bin;0xE662;DC 4C 2C 6E;Flower Princess of Spring's Beginning, Primavera
 ai/019.bin;0xE662;11 E8 1D 70;Oracle Queen, Himiko
 ai/019.bin;0xE662;E4 FB 3C 72;Blue Storm Cadet, Anos
 ai/019.bin;0xE662;29 EF C2 73;  対象(%d) : %s
-ai/019.bin;0xE662;65 B1 B8 76;腹時計付きのギアラビット
+ai/019.bin;0xE662;65 B1 B8 76;Stomach Clock Gear Rabbit
 ai/019.bin;0xE662;7C 3A 8B 81;Liberator, Burning Blow
 ai/019.bin;0xE662;DA 63 6D 85;Dimensional Robo, Daibrave
 ai/019.bin;0xE662;46 DE 4B 88;Dark Metal Dragon
@@ -2252,7 +2252,7 @@ ai/020.bin;0xE703;49 58 50 21;Dimensional Robo, Daijet
 ai/020.bin;0xE703;8E BC BB 21;  シールドの目標値 : 
 ai/020.bin;0xE703;00 8C ED 21;Miru Biru
 ai/020.bin;0xE703;50 41 74 23;Hope Child, Turiel
-ai/020.bin;0xE703;DC 7B 31 24;天駆ける塔のアーチャー
+ai/020.bin;0xE703;DC 7B 31 24;Archer of Heaven's Tower
 ai/020.bin;0xE703;39 5F 97 27;Promising Knight, David
 ai/020.bin;0xE703;BE 51 F9 27;Ravenous Dragon, Battlerex
 ai/020.bin;0xE703;F7 2E E0 29;～%d
@@ -2381,7 +2381,7 @@ ai/021.bin;0xE861;F6 99 15 39;Maiden of Daybreak
 ai/021.bin;0xE861;B3 AD 45 3A;ブラスター
 ai/021.bin;0xE861;03 D4 54 45; ヒットされない
 ai/021.bin;0xE861;2D 3A A7 45;AI(%d) : ガードステップ情報
-ai/021.bin;0xE861;EE 9C 3B 4D;100％・オーランジュ
+ai/021.bin;0xE861;EE 9C 3B 4D;100% Orange
 ai/021.bin;0xE861;2C A5 7B 4D;枚選択する必要があるが、
 ai/021.bin;0xE861;9F A5 E0 4F;CEO Amaterasu
 ai/021.bin;0xE861;3A D0 5B 51;Exxtreme Battler, Victor
@@ -2527,7 +2527,7 @@ ai/022.bin;0xE664;0D 0A 22 82;Hydro Hammer Sailor
 ai/022.bin;0xE664;DA 63 6D 85;Dimensional Robo, Daibrave
 ai/022.bin;0xE664;46 DE 4B 88;Dark Metal Dragon
 ai/022.bin;0xE664;6A D5 6E 8A;Katanaraizer
-ai/022.bin;0xE664;7A 87 D8 8B;戦場の歌姫 カロリ―ナ
+ai/022.bin;0xE664;7A 87 D8 8B;Battle Siren, Carolina
 ai/022.bin;0xE664;A0 D8 63 8D;Great Cosmic Hero, Grandgallop
 ai/022.bin;0xE664;1F 10 24 8F;上
 ai/022.bin;0xE664;6C E6 93 8F;Pitch Black Sage, Charon
@@ -2604,7 +2604,7 @@ ai/023.bin;0xE564;F7 2E E0 29;～%d
 ai/023.bin;0xE564;A6 8F 2A 2A;Brawler, Fighting Dracokid
 ai/023.bin;0xE564;44 62 0C 2D;Soundless Archer, Conductance
 ai/023.bin;0xE564;14 30 63 2D;!!!! AI ERROR !!!!\n  
-ai/023.bin;0xE564;53 0E BC 31;事象の翼 ウイングマター
+ai/023.bin;0xE564;53 0E BC 31;Wings of Phenomenon, Wingmatter
 ai/023.bin;0xE564;EE 81 9E 32;Titan of the Capturing Arm
 ai/023.bin;0xE564;C5 4D EE 32;Blaster Dark "Diablo"
 ai/023.bin;0xE564;F1 28 16 33;枚しか選んでいない
@@ -2864,7 +2864,7 @@ ai/025.bin;0xE567;E4 FB 3C 72;Blue Storm Cadet, Anos
 ai/025.bin;0xE567;29 EF C2 73;  対象(%d) : %s
 ai/025.bin;0xE567;F1 6A D6 7C;Happy Bell, Nociel
 ai/025.bin;0xE567;7C 3A 8B 81;Liberator, Burning Blow
-ai/025.bin;0xE567;BC 3B 44 84;不死鳥 カラミティフレイム
+ai/025.bin;0xE567;BC 3B 44 84;The Phoenix, Calamity Flame
 ai/025.bin;0xE567;DA 63 6D 85;Dimensional Robo, Daibrave
 ai/025.bin;0xE567;46 DE 4B 88;Dark Metal Dragon
 ai/025.bin;0xE567;C7 91 03 89;Booting Celestial, Sandalphon
@@ -4033,7 +4033,7 @@ ai/035.bin;0xE60F;E4 FB 3C 72;Blue Storm Cadet, Anos
 ai/035.bin;0xE60F;29 EF C2 73;  対象(%d) : %s
 ai/035.bin;0xE60F;20 B8 71 78;Skull Juggler
 ai/035.bin;0xE60F;8F 46 68 79;Barking Cerberus
-ai/035.bin;0xE60F;0F FF 10 7F;スマイリング・プレゼンター
+ai/035.bin;0xE60F;0F FF 10 7F;Smiling Presenter
 ai/035.bin;0xE60F;7C 3A 8B 81;Liberator, Burning Blow
 ai/035.bin;0xE60F;DA 63 6D 85;Dimensional Robo, Daibrave
 ai/035.bin;0xE60F;46 DE 4B 88;Dark Metal Dragon
@@ -4695,7 +4695,7 @@ ai/041.bin;0xF7D0;DC 4C 2C 6E;Flower Princess of Spring's Beginning, Primavera
 ai/041.bin;0xF7D0;11 E8 1D 70;Oracle Queen, Himiko
 ai/041.bin;0xF7D0;E4 FB 3C 72;Blue Storm Cadet, Anos
 ai/041.bin;0xF7D0;29 EF C2 73;  対象(%d) : %s
-ai/041.bin;0xF7D0;65 B1 B8 76;腹時計付きのギアラビット
+ai/041.bin;0xF7D0;65 B1 B8 76;Stomach Clock Gear Rabbit
 ai/041.bin;0xF7D0;7C 3A 8B 81;Liberator, Burning Blow
 ai/041.bin;0xF7D0;DA 63 6D 85;Dimensional Robo, Daibrave
 ai/041.bin;0xF7D0;46 DE 4B 88;Dark Metal Dragon
@@ -5539,7 +5539,7 @@ ai/048.bin;0xEF30;39 17 8B F0;Starry Skies Liberator, Guinevere
 ai/048.bin;0xEF30;4B 16 BE F0;Knight of Frevor, Hector
 ai/048.bin;0xEF30;BF 43 2B F1;  アタッカー : %s
 ai/048.bin;0xEF30;27 25 50 F1;Bear Down Samurai
-ai/048.bin;0xEF30;B0 FF 0D F4;Mr.インビンシブル
+ai/048.bin;0xEF30;B0 FF 0D F4;Mr. Invincible
 ai/048.bin;0xEF30;FC B0 EB F6;Purification Regalia, Pure Angel
 ai/048.bin;0xEF30;89 20 23 F8;下
 ai/048.bin;0xEF30;DD 4C B3 F8;ターン開始 AI(%d)
@@ -6485,7 +6485,7 @@ ai/057.bin;0xF293;DE C1 45 56;解放者
 ai/057.bin;0xF293;F7 6D 78 57;Stamp Sea Otter
 ai/057.bin;0xF293;95 CB 30 5B;Conquering Supreme Dragon, Conquest Dragon
 ai/057.bin;0xF293;C5 AF 0D 60;Crimson Roar, Metatron
-ai/057.bin;0xF293;2C B5 66 61;疑心暗鬼のジン
+ai/057.bin;0xF293;2C B5 66 61;Djinn of Paranoia
 ai/057.bin;0xF293;47 87 68 63;AI(%d) : 思考時間 %.3f秒 (行動カテゴリ:%d)
 ai/057.bin;0xF293;55 C8 81 63;  完全ガード : %d/%d枚
 ai/057.bin;0xF293;42 D7 DA 63;  ガーディアン候補
@@ -7068,7 +7068,7 @@ ai/062.bin;0xEF90;D7 DA C1 D6;AI(%d) : 思考開始 (行動カテゴリ:%d)
 ai/062.bin;0xEF90;7C 46 0A D9;Stealth Dragon, Dreadmaster
 ai/062.bin;0xEF90;6B 1D DB DC;Machining Mosquito mkII
 ai/062.bin;0xEF90;69 E8 61 E1;オーバーロード
-ai/062.bin;0xEF90;EF 25 46 E3;解放者 ローフル・トランペッター
+ai/062.bin;0xEF90;EF 25 46 E3;Liberator, Lawful Trumpeter
 ai/062.bin;0xEF90;7D 1F 65 E6;Beast Deity, Night Jackal
 ai/062.bin;0xEF90;57 CD 2E E8;    
 ai/062.bin;0xEF90;CC 1A C6 E8;AI未設定 : attrib = %s
@@ -7345,7 +7345,7 @@ ai/065.bin;0x10C36;A6 11 33 52;Dark Dragon, Phantom Blaster "Diablo"
 ai/065.bin;0x10C36;2A 05 63 54;Cyber Tiger
 ai/065.bin;0x10C36;3C E0 6F 55;Dragonic Overlord (Break Ride)
 ai/065.bin;0x10C36;DE C1 45 56;解放者
-ai/065.bin;0x10C36;54 72 CC 56;青春の女神 へーベー
+ai/065.bin;0x10C36;54 72 CC 56;Goddess of Youth, Hebe
 ai/065.bin;0x10C36;F7 6D 78 57;Stamp Sea Otter
 ai/065.bin;0x10C36;39 97 A4 57;Goddess of Decline, Hel
 ai/065.bin;0x10C36;C5 AF 0D 60;Crimson Roar, Metatron
@@ -7940,7 +7940,7 @@ ai/070.bin;0x10FCD;ED F8 CC BD;Final Wrench
 ai/070.bin;0x10FCD;11 9F 48 BE;Shura Stealth Dragon, Daranicongo
 ai/070.bin;0x10FCD;CF AA 4F C1;Perdition Dragon, Dragonic Neoflame
 ai/070.bin;0x10FCD;7C 17 CE C1;Ranunculus Flower Maiden, Ahsha
-ai/070.bin;0x10FCD;41 0B 24 C2;忍獣 ホワイトへロン
+ai/070.bin;0x10FCD;41 0B 24 C2;Stealth Beast, White Heron
 ai/070.bin;0x10FCD;69 F6 9E C6;Ambush Demon Stealth Dragon, Homura Raider
 ai/070.bin;0x10FCD;15 6E A2 C8;Wisteria Knight
 ai/070.bin;0x10FCD;AB 51 A7 CB;AI(%d) : レシピ (フラグ:%08x)
@@ -8616,7 +8616,7 @@ ai/076.bin;0x10DE5;15 F8 C9 C2;Midnight Regalia, Nyx
 ai/076.bin;0x10DE5;15 6E A2 C8;Wisteria Knight
 ai/076.bin;0x10DE5;AB 51 A7 CB;AI(%d) : レシピ (フラグ:%08x)
 ai/076.bin;0x10DE5;91 C1 19 CC;Regalia of Prayers, Pray Angel
-ai/076.bin;0x10DE5;FE 5A 3B D5;宇宙の神器 ＣＥＯ ユグドラシル
+ai/076.bin;0x10DE5;FE 5A 3B D5;Cosmic Regalia, CEO Yggdrasil
 ai/076.bin;0x10DE5;D7 DA C1 D6;AI(%d) : 思考開始 (行動カテゴリ:%d)
 ai/076.bin;0x10DE5;7C 46 0A D9;Stealth Dragon, Dreadmaster
 ai/076.bin;0x10DE5;6B 1D DB DC;Machining Mosquito mkII
@@ -10708,7 +10708,7 @@ ai/095.bin;0x10C57;D7 DA C1 D6;AI(%d) : 思考開始 (行動カテゴリ:%d)
 ai/095.bin;0x10C57;7C 46 0A D9;Stealth Dragon, Dreadmaster
 ai/095.bin;0x10C57;6B 1D DB DC;Machining Mosquito mkII
 ai/095.bin;0x10C57;69 E8 61 E1;オーバーロード
-ai/095.bin;0x10C57;EF 25 46 E3;解放者 ローフル・トランペッター
+ai/095.bin;0x10C57;EF 25 46 E3;Liberator, Lawful Trumpeter
 ai/095.bin;0x10C57;7D 1F 65 E6;Beast Deity, Night Jackal
 ai/095.bin;0x10C57;57 CD 2E E8;    
 ai/095.bin;0x10C57;CC 1A C6 E8;AI未設定 : attrib = %s
@@ -11108,7 +11108,7 @@ ai/099.bin;0xE662;DC 4C 2C 6E;Flower Princess of Spring's Beginning, Primavera
 ai/099.bin;0xE662;11 E8 1D 70;Oracle Queen, Himiko
 ai/099.bin;0xE662;E4 FB 3C 72;Blue Storm Cadet, Anos
 ai/099.bin;0xE662;29 EF C2 73;  対象(%d) : %s
-ai/099.bin;0xE662;65 B1 B8 76;腹時計付きのギアラビット
+ai/099.bin;0xE662;65 B1 B8 76;Stomach Clock Gear Rabbit
 ai/099.bin;0xE662;7C 3A 8B 81;Liberator, Burning Blow
 ai/099.bin;0xE662;DA 63 6D 85;Dimensional Robo, Daibrave
 ai/099.bin;0xE662;46 DE 4B 88;Dark Metal Dragon
@@ -11218,7 +11218,7 @@ ai/100.bin;0xF339;DC 4C 2C 6E;Flower Princess of Spring's Beginning, Primavera
 ai/100.bin;0xF339;11 E8 1D 70;Oracle Queen, Himiko
 ai/100.bin;0xF339;E4 FB 3C 72;Blue Storm Cadet, Anos
 ai/100.bin;0xF339;29 EF C2 73;  対象(%d) : %s
-ai/100.bin;0xF339;65 B1 B8 76;腹時計付きのギアラビット
+ai/100.bin;0xF339;65 B1 B8 76;Stomach Clock Gear Rabbit
 ai/100.bin;0xF339;7C 3A 8B 81;Liberator, Burning Blow
 ai/100.bin;0xF339;DA 63 6D 85;Dimensional Robo, Daibrave
 ai/100.bin;0xF339;46 DE 4B 88;Dark Metal Dragon
@@ -11935,7 +11935,7 @@ fe/tuto_009.bin;0x19DE;39 9F 8C 58;クランは、{$336600}そのカードが<|�
 fe/tuto_009.bin;0x19DE;08 D9 B5 64;まずは、【@16】{$336600}クリティカルトリガー{$}。\n<|黄色|きいろ|>い<|星|ほし|>のような<|模様|もよう|>よ。
 fe/tuto_009.bin;0x19DE;10 F3 CF 6C;Maiden of Gladiolus
 fe/tuto_009.bin;0x19DE;B7 AA B2 6E;クリティカルトリガーが<|出|で|>ると、\n{$336600}クリティカルを＋１{$}できるんだ。
-fe/tuto_009.bin;0x19DE;65 B1 B8 76;腹時計付きのギアラビット
+fe/tuto_009.bin;0x19DE;65 B1 B8 76;Stomach Clock Gear Rabbit
 fe/tuto_009.bin;0x19DE;B8 24 37 78;トリガーは<|全部|ぜんぶ|>で{$336600}４<|種類|しゅるい|>あって{$}、\nそれぞれ<|特別|とくべつ|>な<|効果|こうか|>が<|発動|はつどう|>するの。
 fe/tuto_009.bin;0x19DE;C8 74 E2 7F;<|次|つぎ|>に@17{$336600}ドロートリガー{$}。\n<|赤|あか|>い{$336600}『引』{$}の<|文字|もじ|>が<|描|か|>いてあるわ。
 fe/tuto_009.bin;0x19DE;D0 D0 A9 83;ここに<|書|か|>いてある{$336600}『ギアクロニクル』{$}は\nこのカードの{$336600}クラン{$}よ。
@@ -12310,7 +12310,7 @@ fe/tuto_016.bin;0x2701;DD 23 C4 67;Knight of Festival
 fe/tuto_016.bin;0x2701;DA 7E A5 68;まずは{$336600}<|右側|みぎがわ|>のリアガード{$}で\n<|僕|ぼく|>のヴァンガードにアタックしよう。
 fe/tuto_016.bin;0x2701;30 E7 DD 70;<|僕|ぼく|>のリアガードサークルにはリアガードが\nいないから{$336600}スタンド{$}はできないね。
 fe/tuto_016.bin;0x2701;59 10 B7 72;それじゃあ、\n２<|枚目|まいめ|>のドライブチェックだ。
-fe/tuto_016.bin;0x2701;65 B1 B8 76;腹時計付きのギアラビット
+fe/tuto_016.bin;0x2701;65 B1 B8 76;Stomach Clock Gear Rabbit
 fe/tuto_016.bin;0x2701;79 B7 1D 81;{$336600}<|右側|みぎがわ|>のリアガード{$}のアタックは、\n{$336600}<|通|とお|>らなくなる{$}。
 fe/tuto_016.bin;0x2701;58 14 27 82;{$336600}ヴァンガードのパワーが<|足|た|>りない<|時|とき|>{$}は\n{$336600}ヴァンガードにプラス{$}するけど、
 fe/tuto_016.bin;0x2701;21 73 B9 8D;ヒールトリガーは、{$336600}ダメージを１<|枚回復|まいかいふく|>{$}して\n{$336600}パワーを＋５０００{$}できる。
