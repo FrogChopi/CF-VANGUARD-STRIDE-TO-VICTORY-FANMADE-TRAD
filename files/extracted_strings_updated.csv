@@ -597,7 +597,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD4C1B4,0xD4D020;0x0096232C;00 00 00 00;Amber Dragon, Dusk
 0xD6BF24,0xD6C640,0xD6C744;0x0096235C;00 00 00 00;Blaster Dark Revenger "Abyss"
 0xD6BEF0,0xD6C60C,0xD6C710;0x009623B0;00 00 00 00;Revenger, Phantom Blaster "Abyss"
-0xD4BF44,0xD4CF84;0x00962408;00 00;アンバー・ドラゴン “<|蝕|イクリプス|>”
+0xD4BF44,0xD4CF84;0x00962408;00 00;Amber Dragon, Eclipse
 0xD5FBF0,0xD610A8;0x00962438;00 00 00 00;Dragonic Overlord "The X"
 0xD6F6CC;0x00962484;00 00 00 00;Supreme Heavenly Emperor Dragon, Dragonic Overlord "the Ace"
 0xD59CE0,0xD5B198;0x009624F8;00 00;Broken Heart Jewel Knight, Ashlei "Яeverse"
@@ -627,7 +627,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD4C1B8,0xD4D024;0x00962BE4;00 00;Amber Dragon, Dusk
 0xD6BEF4,0xD6C610,0xD6C714;0x00962C04;00 00 00 00;Revenger, Phantom Blaster "Abyss"
 0xD6BF28,0xD6C644,0xD6C748;0x00962C38;00 00 00 00;Blaster Dark Revenger "Abyss"
-0xD4BF48,0xD4CF88;0x00962C68;00 00;アンバー・ドラゴン “イクリプス”
+0xD4BF48,0xD4CF88;0x00962C68;00 00;Amber Dragon, Eclipse
 0xD5FBF4,0xD610AC;0x00962C8C;00 00 00 00;Dragonic Overlord "The X"
 0xD6F6D0;0x00962CBC;00 00;Supreme Heavenly Emperor Dragon, Dragonic Overlord "the Ace"
 0xD59CE4,0xD5B19C;0x00962CFC;00 00;Broken Heart Jewel Knight, Ashlei "Яeverse"
@@ -1081,7 +1081,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD4F038;0x00975DC8;00 00 00 00;Undead Pirate of the Frigid Night
 0xD60D9C;0x00975E14;00 00 00 00;Drone Baron
 0xD5F230;0x00975E38;00 00;Ancient Dragon Flame Maiden
-0xD47F14;0x00975E78;00 00 00 00;<|超絃理論|ちょうげんりろん|>の<|愛|いと|>し<|子|ご|>
+0xD47F14;0x00975E78;00 00 00 00;Beloved Child of Superstring Theory
 0xD6481C;0x00975EC0;00 00 00 00;Spawn of the Spiral Nebula
 0xD53BC8;0x00975F08;00 00 00 00;Holy Mage of the Gale
 0xD4B314;0x00975F48;00 00 00 00;Godhawk, Ichibyoshi
@@ -3181,7 +3181,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD61894;0x009CC9D8;00 00 00 00;Battle Siren, Orthia
 0xD61898;0x009CCA0C;00 00 00 00;Battle Siren, Orthia
 0xD69108;0x009CCA2C;00 00;PR♥ISM-Smile, Scotia
-0xD6910C;0x009CCA68;00 00 00 00;プリズム‐スマイル スコーティア
+0xD6910C;0x009CCA68;00 00 00 00;PR♥ISM-Smile, Scotia
 0xD70404,0xD72E10;0x009CCA8C;00 00 00 00;Claudia
 0xD58314;0x009CCA9C;00 00;Silver Thorn Juggler, Nadia
 0xD58318;0x009CCADC;00 00 00 00;Silver Thorn Juggler, Nadia
@@ -3302,7 +3302,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD56AEC;0x009CFB74;00 00;Battle Siren, Euphenia
 0xD68E98,0xD68E9C;0x009CFB94;00 00;Shining Singer, Ionia
 0xD4CDE4,0xD4CDE8;0x009CFBB4;00 00 00 00;Grapple Mania
-0xD670BC,0xD670C0;0x009CFBC8;00 00 00 00;ターコイズブルー ティレニア
+0xD670BC,0xD670C0;0x009CFBC8;00 00 00 00;Turquoise Blue, Tyrrhenia
 0xD49364,0xD49368;0x009CFBE8;00 00 00 00;Sonic Noa
 0xD4FC00,0xD510B8;0x009CFBF8;00 00;White Hare in the Moon's Shadow, Pellinore
 0xD4FC04,0xD510BC;0x009CFC30;00 00;White Hare in the Moon's Shadow, Pellinore
@@ -3321,24 +3321,24 @@ pointer_offsets;pointer_value;separators;extract
 0xD46750;0x009CFDB4;00 00;Star-vader, Crumble Mare
 0xD46754;0x009CFDE4;00 00;Star-vader, Crumble Mare
 0xD6B01C,0xD6B050,0xD6BE54,0xD6BE88;0x009CFE04;00 00;PR♥ISM-Duo, Aria
-0xD6B020,0xD6B054,0xD6BE58,0xD6BE8C;0x009CFE44;00 00 00 00;プリズム‐デュオ アリア
+0xD6B020,0xD6B054,0xD6BE58,0xD6BE8C;0x009CFE44;00 00 00 00;PR♥ISM-Duo, Aria
 0xD71CFC;0x009CFE60;00 00;Electrohm, Elia
-0xD71D00;0x009CFE8C;00 00;エレクトローム エリア
+0xD71D00;0x009CFE8C;00 00;Electrohm, Elia
 0xD691D8,0xD691DC;0x009CFEA4;00 00 00 00;Mascot Lady, Oria
 0xD5A978;0x009CFEC0;00 00 00 00;Scarlet Lion Cub, Caria
 0xD5A97C;0x009CFEF8;00 00;Scarlet Lion Cub, Caria
 0xD6FB10;0x009CFF10;00 00;Holy Dragon, Sanctuary Guard Regalie
 0xD6FB14;0x009CFF50;00 00;Holy Dragon, Sanctuary Guard Regalie
 0xD68E30;0x009CFF80;00 00 00 00;PR♥ISM-Image, Clear
-0xD68E34;0x009CFFB8;00 00;プリズム‐イメージ クリア
+0xD68E34;0x009CFFB8;00 00;PR♥ISM-Image, Clear
 0xD68ECC;0x009CFFD4;00 00;PR♥ISM-Smile, Ligurian
-0xD68ED0;0x009D000C;00 00 00 00;プリズム‐スマイル リグリア
+0xD68ED0;0x009D000C;00 00 00 00;PR♥ISM-Smile, Ligurian
 0xD6FADC;0x009D002C;00 00 00 00;White Lily Musketeer Captain, Cecilia
 0xD5128C,0xD52744;0x009D0078;00 00;White Lily Musketeer, Cecilia
 0xD6FAE0;0x009D00B4;00 00;White Lily Musketeer Captain, Cecilia
 0xD51290,0xD52748;0x009D00DC;00 00 00 00;White Lily Musketeer, Cecilia
 0xD6FA40;0x009D00FC;00 00;Legendary PR♥ISM-Duo, Nectaria
-0xD6FA44;0x009D0158;00 00;デンセツノプリズム‐デュオ ネクタリア
+0xD6FA44;0x009D0158;00 00;Legendary PR♥ISM-Duo, Nectaria
 0xD5A088;0x009D0180;00 00;Deep Green Lord, Master Wisteria
 0xD5A08C;0x009D01C4;00 00 00 00;Deep Green Lord, Master Wisteria
 0xD642D4;0x009D01F0;00 00 00 00;Butterfly Liberator, Korderia
@@ -3348,9 +3348,9 @@ pointer_offsets;pointer_value;separators;extract
 0xD5C6B8;0x009D02D0;00 00 00 00;Blue Storm Battle Princess, Doria
 0xD5C6BC;0x009D02FC;00 00;Blue Storm Battle Princess, Doria
 0xD69344;0x009D0314;00 00;PR♥ISM-Miracle, Adria
-0xD69348;0x009D034C;00 00 00 00;プリズム‐ミラクル アドリア
+0xD69348;0x009D034C;00 00 00 00;PR♥ISM-Miracle, Adria
 0xD69310;0x009D036C;00 00;PR♥ISM-Miracle, Canary
-0xD69314;0x009D03A4;00 00 00 00;プリズム‐ミラクル カナリア
+0xD69314;0x009D03A4;00 00 00 00;PR♥ISM-Miracle, Canary
 0xD6A6C4,0xD6A6C8;0x009D03C4;00 00 00 00;Dragon Dancer, Maria
 0xD6D924,0xD6E27C;0x009D03E0;00 00;Ideal Walking Weather, Emilia
 0xD6D928,0xD6E280;0x009D040C;00 00 00 00;Ideal Walking Weather, Emilia
@@ -3367,7 +3367,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD4B244,0xD4B248;0x009D05D0;00 00 00 00;Savage Warrior
 0xD56914,0xD56918;0x009D05E8;00 00 00 00;Dragon Dancer, Julia
 0xD671F4;0x009D0608;00 00 00 00;Snow White of the Corals, Claire
-0xD671F8;0x009D0648;00 00;サンゴノスノーホワイト クレア
+0xD671F8;0x009D0648;00 00;Snow White of the Corals, Claire
 0xD50E18;0x009D0668;00 00 00 00;Battle Sister, Eclair
 0xD629D8,0xD63400;0x009D0684;00 00;Bluish Flame Liberator, Prominence Glare
 0xD629DC,0xD63404;0x009D06DC;00 00;Bluish Flame Liberator, Prominence Glare
@@ -3393,9 +3393,9 @@ pointer_offsets;pointer_value;separators;extract
 0xD5C650;0x009D0A2C;00 00 00 00;Battle Siren, Ketty
 0xD5C654;0x009D0A5C;00 00 00 00;Battle Siren, Ketty
 0xD5CF40;0x009D0A78;00 00 00 00;Phalaenopsis Musketeer, Kirstie
-0xD5CF44;0x009D0ABC;00 00;コチョウランノジュウシ キルスティ
-0xD5DEB0;0x009D0AE0;00 00;カーネーションの<|銃士|じゅうし|> ペルッティ
-0xD5DEB4;0x009D0B14;00 00 00 00;カーネーションノジュウシ ペルッティ
+0xD5CF44;0x009D0ABC;00 00;Phalaenopsis Musketeer, Kirstie
+0xD5DEB0;0x009D0AE0;00 00;Carnation Musketeer, Pertti
+0xD5DEB4;0x009D0B14;00 00 00 00;Carnation Musketeer, Pertti
 0xD65D08;0x009D0B3C;00 00;Mythic Beast, Hati
 0xD65D0C;0x009D0B64;00 00;Mythic Beast, Hati
 0xD491F8,0xD491FC,0xD6A148,0xD6A14C;0x009D0B7C;00 00;Hungry Dumpty
@@ -3434,7 +3434,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD542E4;0x009D0FFC;00 00;Broom Witch, Callaway
 0xD542E8;0x009D1034;00 00 00 00;Broom Witch, Callaway
 0xD5A464;0x009D1054;00 00 00 00;Deadly Eradicator, Ouei
-0xD5A468;0x009D1094;00 00;ヒッサツノイレイザー オウエイ
+0xD5A468;0x009D1094;00 00;Deadly Eradicator, Ouei
 0xD6D3A8,0xD6D3AC;0x009D10B4;00 00 00 00;Enigman Night Sky
 0xD5F12C;0x009D10D0;00 00;Perdition Cleric, Hakkai
 0xD5F130;0x009D10FC;00 00 00 00;Perdition Cleric, Hakkai
@@ -3472,7 +3472,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD5F6E0;0x009D158C;00 00;Mako Shark Soldier of the Blue Storm Fleet
 0xD5250C;0x009D15AC;00 00;Enemy Seeking Seagull Soldier
 0xD534E4;0x009D15C4;00 00;Light Signals Penguin Soldier
-0xD662F0;0x009D15E4;00 00 00 00;アッポー３シマイ
+0xD662F0;0x009D15E4;00 00 00 00;3 Apple Sisters
 0xD7321C;0x009D15F8;00 00 00 00;Onmyo Stealth Rogue, Seimei
 0xD73220;0x009D1634;00 00 00 00;Onmyo Stealth Rogue, Seimei
 0xD5D078;0x009D1654;00 00;Threatening Brawler, Kohmei
@@ -3501,7 +3501,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD66A70,0xD66A74,0xD68470,0xD68474;0x009D19D4;00 00;Wall Boy
 0xD5DDAC,0xD5DDB0;0x009D19E4;00 00 00 00;Oasis Boy
 0xD43628,0xD4362C,0xD4922C,0xD49230,0xD68268,0xD6826C,0xD6A17C,0xD6A180;0x009D19F8;00 00 00 00;Tough Boy
-0xD50A6C,0xD50A70;0x009D1A08;00 00 00 00;ポップコーン・ボーイ
+0xD50A6C,0xD50A70;0x009D1A08;00 00 00 00;Popcorn Boy
 0xD49538,0xD4953C;0x009D1A20;00 00 00 00;Wonder Boy
 0xD5D900,0xD5D904;0x009D1A34;00 00 00 00;Raizer Pilot, Huey
 0xD69FDC,0xD69FE0;0x009D1A54;00 00;Daredevil Samurai
@@ -3528,7 +3528,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD5260C;0x009D1D64;00 00;Exorcist Mage, Koh Koh
 0xD52610;0x009D1D90;00 00 00 00;Exorcist Mage, Koh Koh
 0xD53CCC;0x009D1DAC;00 00;Deity Sealing Kid, Soh Koh
-0xD53CD0;0x009D1DD8;00 00 00 00;ホウシンドウジ ソウコウ
+0xD53CD0;0x009D1DD8;00 00 00 00;Deity Sealing Kid, Soh Koh
 0xD44B7C;0x009D1DF4;00 00 00 00;Dust Storm Eradicator, Toko
 0xD44B80;0x009D1E30;00 00;Dust Storm Eradicator, Toko
 0xD70058;0x009D1E4C;00 00;Heavenly Wolf Martial Arts, Daikengo
@@ -3569,7 +3569,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD58FAC;0x009D2384;00 00 00 00;Stealth Dragon, Kokujyo
 0xD58FB0;0x009D23AC;00 00;Stealth Dragon, Kokujyo
 0xD43488,0xD4348C,0xD490C0,0xD490C4,0xD6ABD8,0xD6ABDC;0x009D23C4;00 00;Dragon Monk, Genjo
-0xD46F74;0x009D23E0;00 00;ショウヨウセイノトツゲキタイチョウ
+0xD46F74;0x009D23E0;00 00;Pixy Assault Captain
 0xD4F210;0x009D2404;00 00;Skeleton Assault Troops Captain
 0xD61FD4;0x009D2424;00 00 00 00;@42†Ｇ-ＢＴ０２<|風華天翔|ふうがてんしょう|>†@40†ギアクロニクル｡<|真鍮|しんちゅう|>と<|歯車|はぐるま|>の<|超文明|ちょうぶんめい|>｡†@41†アオガチョウ
 0xD652D0;0x009D24E0;00 00;@42†Ｇ-ＢＴ０４<|討神魂撃|とうじんこんげき|>†@40†<|私|わたし|>はトータルフットボール<|信者|しんじゃ|>でね｡†@41†アオガチョウ
@@ -3977,7 +3977,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD5608C;0x009E0294;00 00 00 00;Marking Celestial, Arabhaki
 0xD56090;0x009E02D4;00 00 00 00;Marking Celestial, Arabhaki
 0xD6009C;0x009E02FC;00 00;Imperial Shrine Guard, Hahiki
-0xD600A0;0x009E0324;00 00 00 00;ジングウエシ ハヒキ
+0xD600A0;0x009E0324;00 00 00 00;Imperial Shrine Guard, Hahiki
 0xD5907C;0x009E033C;00 00;Stealth Dragon, Kodachifubuki
 0xD59080;0x009E0364;00 00 00 00;Stealth Dragon, Kodachifubuki
 0xD59014;0x009E0380;00 00 00 00;Stealth Rogue of the Night, Sakurafubuki
@@ -3989,7 +3989,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD6F8D4;0x009E0470;00 00 00 00;Cosmetic Snowfall, Shirayuki
 0xD52AB8;0x009E04A0;00 00;Fantasy Petal Storm, Shirayuki
 0xD6F8D8;0x009E04D8;00 00;Cosmetic Snowfall, Shirayuki
-0xD52ABC;0x009E04F4;00 00;ムゲンノカザバナ シラユキ
+0xD52ABC;0x009E04F4;00 00;Cosmetic Snowfall, Shirayuki
 0xD5440C;0x009E0510;00 00 00 00;@42†ＢＴ１０<|騎士王凱旋|きしおうがいせん|>†@40†<|死線|デッドライン|>ギリギリの<|駆|か|>け<|引|ひ|>き｡それがゲー†ムさ!†@41†前田ヒロユキ
 0xD5238C;0x009E05C0;00 00 00 00;@42†ＢＴ０８<|蒼嵐艦隊|そうらんかんたい|>†@40†<|我|わ|>が<|策|さく|>､<|我|わ|>が<|計略|けいりゃく|>に､<|揺|ゆ|>らぎ<|無|な|>し!†@41†前田ヒロユキ
 0xD4CF74;0x009E0688;00 00;@42†ＢＴ０４<|虚影神蝕|きょえいしんしょく|>†@40†<|雑魚|ざこ|>どもがっ! <|貴様|きさま|>らに<|我|わ|>が<|敵|てき|>の<|資|し|>†<|格|かく|>なし!†@41†前田ヒロユキ
@@ -4043,17 +4043,17 @@ pointer_offsets;pointer_value;separators;extract
 0xD52F34;0x009E2638;00 00 00 00;Beast Deity, Yamatano Drake
 0xD473E8,0xD473EC;0x009E2658;00 00 00 00;Maiden of Daybreak
 0xD5538C,0xD55390;0x009E2678;00 00;Go for Broke
-0xD63C20;0x009E2690;00 00 00 00;<|曙光|しょこう|>の<|騎士|きし|> ゴルボドゥク
-0xD63C24;0x009E26CC;00 00 00 00;ショコウノキシ ゴルボドゥク
+0xD63C20;0x009E2690;00 00 00 00;Dawning Knight, Gorboduc
+0xD63C24;0x009E26CC;00 00 00 00;Dawning Knight, Gorboduc
 0xD52570,0xD52574;0x009E26EC;00 00 00 00;Dragon Monk, Kinkaku
 0xD525D8,0xD525DC;0x009E2708;00 00 00 00;Dragon Monk, Ginkaku
 0xD50148;0x009E2724;00 00 00 00;Evil Eye Basilisk
-0xD5014C;0x009E274C;00 00;キョウガンノバジリスク
+0xD5014C;0x009E274C;00 00;Evil Eye Basilisk
 0xD6DA5C,0xD6E3B4;0x009E2764;00 00 00 00;Superb New Student, Shizuku
 0xD67500,0xD74228,0xD962BC;0x009E2798;00 00;Bermuda Triangle Cadet, Shizuku
 0xD6DA60,0xD6E3B8;0x009E27C8;00 00 00 00;Superb New Student, Shizuku
 0xD67504,0xD7422C;0x009E27EC;00 00;Bermuda Triangle Cadet, Shizuku
-0xD4F1A8;0x009E2818;00 00;ノロワレタジュウノシリョウカイゾク
+0xD4F1A8;0x009E2818;00 00;Undead Pirate of the Cursed Rifle
 0xD4F03C;0x009E283C;00 00;Undead Pirate of the Frigid Night
 0xD5E42C,0xD5F8E4;0x009E285C;00 00;Star-vader, Dark Zodiac
 0xD5E430,0xD5F8E8;0x009E2890;00 00;Star-vader, Dark Zodiac
@@ -4098,7 +4098,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD61C40;0x009E3134;00 00 00 00;Two-sword Eradicator, Koenshak
 0xD60DA0;0x009E315C;00 00;Drone Baron
 0xD692A8;0x009E3170;00 00;Costume Change, Alk
-0xD692AC;0x009E31A8;00 00;キグルミシチヘンゲ アルク
+0xD692AC;0x009E31A8;00 00;Costume Change, Alk
 0xD72C04,0xD73458,0xD7418C,0xD9625C,0xD9626C;0x009E31C4;00 00 00 00;Costume Idol, Alk
 0xD72C08,0xD7345C,0xD74190;0x009E31EC;00 00 00 00;Costume Idol, Alk
 0xD58C6C,0xD58C70;0x009E3208;00 00 00 00;Paradise Elk
@@ -4141,9 +4141,9 @@ pointer_offsets;pointer_value;separators;extract
 0xD45D28;0x009E3774;00 00 00 00;Bravery Seeker, Marc
 0xD45D2C;0x009E37B0;00 00;Bravery Seeker, Marc
 0xD6B704,0xD6B738;0x009E37CC;00 00;PR♥ISM-Duo, Yarmouk
-0xD6B708,0xD6B73C;0x009E3810;00 00 00 00;プリズム‐デュオ ヤルムーク
+0xD6B708,0xD6B73C;0x009E3810;00 00 00 00;PR♥ISM-Duo, Yarmouk
 0xD4EFD0;0x009E3830;00 00;God-eating Zombie Shark
-0xD4EFD4;0x009E3858;00 00 00 00;カミクイノゾンビシャーク
+0xD4EFD4;0x009E3858;00 00 00 00;God-eating Zombie Shark
 0xD6F93C;0x009E3874;00 00 00 00;Hyper Metalborg, Heavyduke
 0xD6F940;0x009E38B0;00 00;Hyper Metalborg, Heavyduke
 0xD4C660;0x009E38D8;00 00 00 00;Demon World Castle, DonnerSchlag
@@ -4172,8 +4172,8 @@ pointer_offsets;pointer_value;separators;extract
 0xD62E50;0x009E3C50;00 00 00 00;Star-vader, Bravefang
 0xD62E54;0x009E3C84;00 00 00 00;Star-vader, Bravefang
 0xD4C9D4,0xD4C9D8;0x009E3CA8;00 00;Cosmo Fang
-0xD56608;0x009E3CB8;00 00 00 00;<|封竜|ふうりゅう|> シャーティング
-0xD5660C;0x009E3CE4;00 00;フウリュウ シャーティング
+0xD56608;0x009E3CB8;00 00 00 00;Seal Dragon, Shirting
+0xD5660C;0x009E3CE4;00 00;Seal Dragon, Shirting
 0xD706A8;0x009E3D00;00 00;Battle Sister, Pudding
 0xD5D14C;0x009E3D1C;00 00;Phoenixraizer Flame-wing
 0xD5CDD8;0x009E3D44;00 00 00 00;Phoenixraizer Drill-wing
@@ -4187,7 +4187,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD6B7D4,0xD6B808;0x009E3E2C;00 00;Duo Lovers Singer, Darling
 0xD6B7D8,0xD6B80C;0x009E3E78;00 00;Duo Lovers Singer, Darling
 0xD55EB8;0x009E3EA0;00 00 00 00;Ancient Dragon, Iguanogorg
-0xD55EBC;0x009E3ED0;00 00 00 00;コダイリュウ イグアノゴーグ
+0xD55EBC;0x009E3ED0;00 00 00 00;Part-time Researcher, Iguano
 0xD6FE1C;0x009E3EF0;00 00;Great Demon, Soulless Demagogue
 0xD6FE20;0x009E3F24;00 00;Great Demon, Soulless Demagogue
 0xD6A558,0xD6AC74;0x009E3F48;00 00;Transcendence Dragon, Dragonic Nouvelle Vague
@@ -4267,7 +4267,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD625C8;0x009E6278;00 00 00 00;Snowdrop Musketeer, Pilkko
 0xD625CC;0x009E62AC;00 00;Snowdrop Musketeer, Pilkko
 0xD45E60;0x009E62D0;00 00 00 00;Armed Brawler, Kohiko
-0xD45E64;0x009E6310;00 00;ゴウワンノブロウラー コウヒコ
+0xD45E64;0x009E6310;00 00;Armed Brawler, Kohiko
 0xD605B0;0x009E6330;00 00;Diviner, Shinatsuhiko
 0xD605B4;0x009E6354;00 00 00 00;Diviner, Shinatsuhiko
 0xD73764;0x009E636C;00 00;Stealth Beast, Tobihiko
@@ -4300,8 +4300,8 @@ pointer_offsets;pointer_value;separators;extract
 0xD53108;0x009E6FC4;00 00 00 00;Exorcist Demonic Dragon, Indigo
 0xD5D628;0x009E6FE4;00 00 00 00;Brawler, Igo
 0xD5D62C;0x009E7008;00 00 00 00;Brawler, Igo
-0xD47F18;0x009E701C;00 00;チョウゲンリロンノイトシゴ
-0xD64820;0x009E7038;00 00;カジョウセイウンノオトシゴ
+0xD47F18;0x009E701C;00 00;Beloved Child of Superstring Theory
+0xD64820;0x009E7038;00 00;Spawn of the Spiral Nebula
 0xD45FCC;0x009E7054;00 00 00 00;Baton Brawler, Sogo
 0xD45FD0;0x009E7090;00 00;Baton Brawler, Sogo
 0xD50524,0xD50528;0x009E70AC;00 00 00 00;Tick Tock Flamingo
@@ -4334,7 +4334,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD58B58;0x009E80D8;00 00 00 00;@42†ＢＴ１３<|絶禍繚乱|ぜっかりょうらん|>†@40†<|遥|はる|>かなる<|銀河|ぎんが|>の<|彼方|かなた|>､<|星屑|ほしくず|>を<|糧|かて|>とし､†<|真空|しんくう|>の<|褥|しとね|>に<|眠|ねむ|>る<|竜|りゅう|>がいる｡†@41†天神英貴
 0xD6F92C;0x009E81F4;00 00 00 00;@42†Ｇ-FC01ファイターズコレクション†2015†@40†<|永劫不敗|えいごうふはい|>の<|英雄|えいゆう|>は､ついに<|戦場|リング|>の<|神|かみ|>と†なる｡†@41†天神英貴
 0xD6B35C,0xD6B390;0x009E82BC;00 00;PR♥ISM-Duo, Tisza
-0xD6B360,0xD6B394;0x009E82FC;00 00 00 00;プリズム‐デュオ ティサ
+0xD6B360,0xD6B394;0x009E82FC;00 00 00 00;PR♥ISM-Duo, Tisza
 0xD5DFB4;0x009E8318;00 00;Gypsophila Musketeer, Raisa
 0xD5DFB8;0x009E8350;00 00 00 00;Gypsophila Musketeer, Raisa
 0xD5A3C8;0x009E8370;00 00 00 00;Truth Seeking Stealth Rogue, Amakusa
@@ -4353,7 +4353,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD56194;0x009E85B4;00 00;Hot Shot Celestial, Samyaza
 0xD61AD0,0xD61AD4;0x009E85E0;00 00;Snow Element, Blizza
 0xD690D4;0x009E85FC;00 00 00 00;PR♥ISM-Image, Rosa
-0xD690D8;0x009E8634;00 00;プリズム‐イメージ ローザ
+0xD690D8;0x009E8634;00 00;PR♥ISM-Image, Rosa
 0xD53BCC;0x009E8650;00 00;Holy Mage of the Gale
 0xD58A30;0x009E866C;00 00;Stealth Fiend, Daidarahoushi
 0xD58A34;0x009E8694;00 00 00 00;Stealth Fiend, Daidarahoushi
@@ -4363,7 +4363,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD5AC54;0x009E86FC;00 00 00 00;Flame Star Seal Dragon Knight
 0xD5AD24;0x009E8718;00 00 00 00;Explosive Claw Seal Dragon Knight
 0xD5AD8C;0x009E8734;00 00 00 00;Egg Prison Seal Dragon Knight
-0xD57410;0x009E8750;00 00 00 00;メイドウマツイノジュゴンキシ
+0xD57410;0x009E8750;00 00 00 00;Resonance Hammer Wielding Exorcist Knight
 0xD519E0;0x009E8770;00 00;Thunder Spear Wielding Exorcist Knight
 0xD57374;0x009E878C;00 00;Whirlwind Axe Wielding Exorcist Knight
 0xD525A8;0x009E87A8;00 00;Lightning Sword Wielding Exorcist Knight
@@ -4385,7 +4385,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD4AEA0;0x009E8E78;00 00;Hades Hypnotist
 0xD4A2A4;0x009E8E94;00 00;Skeleton Swordsman
 0xD5F164;0x009E8EA8;00 00;Ancient Dragon Twin Axe Warrior
-0xD56BBC;0x009E8EC4;00 00 00 00;リュウヒョウノテンシ
+0xD56BBC;0x009E8EC4;00 00 00 00;Ice Floe Angel
 0xD60AF8,0xD60AFC;0x009E8EDC;00 00 00 00;Extreme Leader Mu-sashi
 0xD44BB0;0x009E8EFC;00 00 00 00;Eradicator of Fire, Kohkaiji
 0xD44BB4;0x009E8F3C;00 00;Eradicator of Fire, Kohkaiji
@@ -4482,7 +4482,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD5BBC0;0x009E9D8C;00 00;Blue Storm Marine General, Gregorios
 0xD5BBC4;0x009E9DC0;00 00 00 00;Blue Storm Marine General, Gregorios
 0xD5BC28;0x009E9DE4;00 00;Blue Storm Cadet, Marios
-0xD5BC2C;0x009E9E18;00 00;ソウランコウホウセイ マリオス
+0xD5BC2C;0x009E9E18;00 00;Blue Storm Cadet, Marios
 0xD65654;0x009E9E38;00 00;New Face Mutant, Little Dorcas
 0xD65658;0x009E9E6C;00 00 00 00;New Face Mutant, Little Dorcas
 0xD55B10,0xD55B14;0x009E9E90;00 00 00 00;Tear Knight, Lucas
@@ -4503,7 +4503,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD607B8,0xD607BC;0x009E9FDC;00 00 00 00;Paisley Magus
 0xD64030;0x009E9FF4;00 00 00 00;Tempting Revenger, Finegas
 0xD64034;0x009EA034;00 00 00 00;Tempting Revenger, Finegas
-0xD56058,0xD5605C;0x009EA058;00 00;ドクトロイド・アーガス
+0xD56058,0xD5605C;0x009EA058;00 00;Doctroid Argus
 0xD59F50;0x009EA070;00 00 00 00;Shield Goddess, Aegis
 0xD59F54;0x009EA0A4;00 00;Shield Goddess, Aegis
 0xD618C8;0x009EA0BC;00 00 00 00;Immortality Professor, Phoeniciax
@@ -4528,9 +4528,9 @@ pointer_offsets;pointer_value;separators;extract
 0xD55BAC,0xD55BB0;0x009EA418;00 00 00 00;Reverse Aura Phoenix
 0xD5C88C,0xD5C890;0x009EA438;00 00 00 00;Machining Bombyx
 0xD617F8;0x009EA454;00 00;Marine General of the Wave-slicing Sword, Max
-0xD617FC;0x009EA494;00 00 00 00;ザンパトウノスイショウ マックス
+0xD617FC;0x009EA494;00 00 00 00;Marine General of the Wave-slicing Sword, Max
 0xD551B8;0x009EA4B8;00 00;Sacred Spear Eradicator, Pollux
-0xD551BC;0x009EA4F8;00 00 00 00;シンソウノイレイザー ポルックス
+0xD551BC;0x009EA4F8;00 00 00 00;Sacred Spear Eradicator, Pollux
 0xD55FBC;0x009EA51C;00 00;Starting Ripple, Alecs
 0xD55FC0;0x009EA554;00 00 00 00;Starting Ripple, Alecs
 0xD4B758;0x009EA574;00 00;Pack Dragon, Tinyrex
@@ -4562,7 +4562,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD6C848;0x009EA984;00 00 00 00;Midnight Regalia, Nyx
 0xD6C84C;0x009EA9C0;00 00;Midnight Regalia, Nyx
 0xD52264;0x009EA9DC;00 00 00 00;Dragon Bird, Firepteryx
-0xD52268;0x009EAA10;00 00;リュウチョウ ファイヤープテリクス
+0xD52268;0x009EAA10;00 00;Dragon Bird, Firepteryx
 0xD642A0;0x009EAA34;00 00;Knight of Morning Shadow, Kimarcus
 0xD642A4;0x009EAA6C;00 00;Knight of Morning Shadow, Kimarcus
 0xD535E4,0xD535E8;0x009EAA88;00 00;Oracle Guardian, Sphinx
@@ -4581,7 +4581,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD4ED2C,0xD4ED30;0x009EAC7C;00 00 00 00;Thousand Ray Pegasus
 0xD4EC5C,0xD4EC60;0x009EAC98;00 00;Million Ray Pegasus
 0xD561C4;0x009EACB0;00 00 00 00;Celestial, Landing Pegasus
-0xD561C8;0x009EACEC;00 00;セレスティアル ランディング・ペガサス
+0xD561C8;0x009EACEC;00 00;Celestial, Landing Pegasus
 0xD46FD8,0xD46FDC;0x009EAD14;00 00 00 00;Healing Pegasus
 0xD711D0,0xD711D4;0x009EAD2C;00 00;Darkside Pegasus
 0xD6FE84;0x009EAD44;00 00;Interdimensional Beast, Upheaval Pegasus
@@ -4613,8 +4613,8 @@ pointer_offsets;pointer_value;separators;extract
 0xC51FF0,0xC52078,0xC52100,0xD4AC60,0xD4BC6C,0xD4C1AC,0xD87C40,0xDA0348,0xDA0350,0xDA0358,0xDA4CE0,0xDA4CE8;0x009EB1B4;00 00 00 00;Swordsman of the Explosive Flames, Palamedes
 0xC526D8,0xC52760,0xC527E8,0xD4B860,0xD4C2E4,0xD87C88,0xD9B30C,0xD9D9DC,0xD9E7E8,0xDA0388,0xDA0390,0xDA0398,0xDA4D20,0xDA4D28;0x009EB1F0;00 00;Swordsman of the Blaze, Palamedes
 0xD4AC64,0xD4BC70;0x009EB20C;00 00 00 00;Swordsman of the Explosive Flames, Palamedes
-0xC52CB0,0xC52D38,0xD4C41C,0xD54B38,0xD81198,0xD87CD0,0xDA03B8,0xDA03C0,0xDA03C8,0xDA4D50;0x009EB22C;00 00;<|破岩|はがん|>の<|騎士|きし|> セグワリデス
-0xD54B3C;0x009EB264;00 00;ハガンノキシ セグワリデス
+0xC52CB0,0xC52D38,0xD4C41C,0xD54B38,0xD81198,0xD87CD0,0xDA03B8,0xDA03C0,0xDA03C8,0xDA4D50;0x009EB22C;00 00;Boulder Smashing Knight, Segwarides
+0xD54B3C;0x009EB264;00 00;Boulder Smashing Knight, Segwarides
 0xD74054;0x009EB280;00 00;Deity of Smithing, Hephaestus
 0xD74058;0x009EB2B4;00 00 00 00;Deity of Smithing, Hephaestus
 0xD4E644,0xD4E648,0xD4FA2C,0xD4FA30;0x009EB2D0;00 00;Death Seeker, Thanatos
@@ -4645,7 +4645,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD603A8;0x009EB710;00 00;Militaristic Knight, Marianus
 0xD603AC;0x009EB748;00 00;Militaristic Knight, Marianus
 0xD56398;0x009EB764;00 00;Breath of Demise, Vulcan
-0xD5639C;0x009EB7A0;00 00;シュウエンノトイキ ウルカヌス
+0xD5639C;0x009EB7A0;00 00;Breath of Demise, Vulcan
 0xD6F5C8;0x009EB7C0;00 00 00 00;Combined Strength Seeker, Locrinus
 0xD6F5CC;0x009EB800;00 00;Combined Strength Seeker, Locrinus
 0xD64308;0x009EB820;00 00;After-glow Liberator, Belinus
@@ -4675,7 +4675,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD4B040,0xD71FD8;0x009EBBB0;00 00 00 00;Alluring Succubus
 0xD4FB9C,0xD51054;0x009EBBC8;00 00;Dark Lord of Abyss
 0xD55B78;0x009EBBE4;00 00 00 00;Mobile Hospital, Assault Hospice
-0xD55B7C;0x009EBC1C;00 00;キドウビョウトウ アサルトホスピス
+0xD55B7C;0x009EBC1C;00 00;Mobile Hospital, Assault Hospice
 0xD54520;0x009EBC40;00 00 00 00;Fast Chase Liberator, Josephus
 0xD54524;0x009EBC80;00 00;Fast Chase Liberator, Josephus
 0xD48CE4;0x009EBCA0;00 00 00 00;Assault Dragon, Blightops
@@ -4736,7 +4736,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD6CE60;0x009EC54C;00 00;Mirror Regalia, Achlis
 0xD6CE64;0x009EC580;00 00 00 00;Mirror Regalia, Achlis
 0xD6B9DC,0xD6BA10;0x009EC59C;00 00;Duo Lamplight Melody, Tigris
-0xD6B9E0,0xD6BA14;0x009EC5E0;00 00 00 00;デュオ トモシビノメロディ チグリス
+0xD6B9E0,0xD6BA14;0x009EC5E0;00 00 00 00;Duo Lamplight Melody, Tigris
 0xD5B0FC,0xD5B100;0x009EC608;00 00 00 00;Maiden of Physalis
 0xD52368;0x009EC628;00 00;Distant Sea Advisor, Vassilis
 0xD5236C;0x009EC664;00 00;Distant Sea Advisor, Vassilis
@@ -4821,8 +4821,8 @@ pointer_offsets;pointer_value;separators;extract
 0xD5C274,0xD5C278;0x009ED278;00 00 00 00;Imaginary Orthos
 0xD5C4E4;0x009ED294;00 00 00 00;Blue Storm Marine General, Lysandros
 0xD5C4E8;0x009ED2CC;00 00;Blue Storm Marine General, Lysandros
-0xD58CD4;0x009ED2F0;00 00 00 00;<|腐海|ふかい|>の<|死霊術士|しりょうじゅつし|> バルバロス
-0xD58CD8;0x009ED338;00 00 00 00;フカイノシリョウジュツシ バルバロス
+0xD58CD4;0x009ED2F0;00 00 00 00;Rotten Sea Necromancer, Barbaros
+0xD58CD8;0x009ED338;00 00 00 00;Rotten Sea Necromancer, Barbaros
 0xD5D558;0x009ED360;00 00;Seeker, Bouquet Paros
 0xD5D55C;0x009ED388;00 00;Seeker, Bouquet Paros
 0xD5C54C;0x009ED3A0;00 00;Blue Storm Marine General, Spyros
@@ -4841,7 +4841,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD7210C;0x009ED560;00 00;Tear Drop Marine General, Carlos
 0xD72110;0x009ED59C;00 00;Tear Drop Marine General, Carlos
 0xD55F88;0x009ED5BC;00 00;Rising Ripple, Pavroth
-0xD55F8C;0x009ED5F0;00 00 00 00;タカマルハモン パヴロス
+0xD55F8C;0x009ED5F0;00 00 00 00;Rising Ripple, Pavroth
 0xD63A18;0x009ED60C;00 00;Mixed Deletor, Keios
 0xD63A1C;0x009ED648;00 00 00 00;Mixed Deletor, Keios
 0xD44530,0xD44534;0x009ED66C;00 00;Battleship Intelligence
@@ -4853,10 +4853,10 @@ pointer_offsets;pointer_value;separators;extract
 0xD5A944;0x009ED764;00 00;Knife Throwing Knight, Maleagant
 0xD5A948;0x009ED7A0;00 00;Knife Throwing Knight, Maleagant
 0xD73590;0x009ED7C0;00 00;Eternal Memory, Lorens
-0xD73594;0x009ED7F4;00 00;エターナルメモリー ローレンス
+0xD73594;0x009ED7F4;00 00;Eternal Memory, Lorens
 0xD6A690,0xD6A694,0xD6AD10,0xD6AD14;0x009ED814;00 00 00 00;Dragonic Gaias
 0xD6D034,0xD6D750;0x009ED830;00 00 00 00;99th-gen Dimensional Robo Commander, Great Daiearth
-0xD6D038,0xD6D754;0x009ED894;00 00 00 00;ダイ99ダイジゲンロボシレイカン グレートダイアース
+0xD6D038,0xD6D754;0x009ED894;00 00 00 00;99th-gen Dimensional Robo Commander, Great Daiearth
 0xD5B7E4,0xD5CB30;0x009ED8CC;00 00;Unrivaled Blade Rogue, Cyclomatooth
 0xD5B7E8,0xD5CB34;0x009ED900;00 00 00 00;Unrivaled Blade Rogue, Cyclomatooth
 0xD653E4;0x009ED924;00 00;Overbearing Knight, Gilvaese
@@ -4873,7 +4873,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD539C0,0xD539C4;0x009EDA68;00 00;Fever Therapy Nurse
 0xD74020,0xD74024;0x009EDA84;00 00 00 00;Medical Bomber Nurse
 0xD6B28C,0xD6B2C0;0x009EDAA0;00 00;Duo Petit Etoile, Peace
-0xD6B290,0xD6B2C4;0x009EDAEC;00 00;デュオ プティ・エトワール ピース
+0xD6B290,0xD6B2C4;0x009EDAEC;00 00;Duo Petit Etoile, Peace
 0xD61EE0;0x009EDB10;00 00;Distance-running Gear Horse
 0xD61EE4;0x009EDB44;00 00 00 00;Distance-running Gear Horse
 0xD70D8C,0xD70D90;0x009EDB60;00 00;King Seahorse
@@ -4981,7 +4981,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD63368;0x009F17E0;00 00;Marching Deletor, Maze
 0xD6773C,0xD67740;0x009F1800;00 00;Jelly Beans
 0xD5A6A0;0x009F1814;00 00;Desire Jewel Knight, Heloise
-0xD5A6A4;0x009F1854;00 00;デザイアー・ジュエルナイト ヘロイーズ
+0xD5A6A4;0x009F1854;00 00;Desire Jewel Knight, Heloise
 0xD59D48,0xD5B200;0x009F187C;00 00 00 00;Salvation Lion, Grand Ezel Scissors
 0xD59D4C,0xD5B204;0x009F18C8;00 00 00 00;Salvation Lion, Grand Ezel Scissors
 0xD60924,0xD60928;0x009F18F8;00 00;Dragon Knight, Tanaz
@@ -5180,7 +5180,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD597CC;0x009F91B8;00 00;Battle Siren, Calista
 0xD597D0;0x009F91E8;00 00;Battle Siren, Calista
 0xD6DF3C,0xD6DF70;0x009F9204;00 00 00 00;PR♥ISM-Duo, Loretta
-0xD6DF40,0xD6DF74;0x009F9248;00 00;プリズム‐デュオ ロレッタ
+0xD6DF40,0xD6DF74;0x009F9248;00 00;PR♥ISM-Duo, Loretta
 0xD6E144;0x009F9264;00 00 00 00;Lover of Hearts, Penelotta
 0xD6E148;0x009F9294;00 00;Lover of Hearts, Penelotta
 0xD5A498;0x009F92B4;00 00 00 00;Spirit Beads Eradicator, Nata
@@ -5347,12 +5347,12 @@ pointer_offsets;pointer_value;separators;extract
 0xD63764;0x009FEBB8;00 00 00 00;@42†Ｇ-ＢＴ０３<|覇道竜星|はどうりゅうせい|>†@40†<|赤紫|　あかむらさき|>の<|刀身|とうしん|>｡<|鮮血|せんけつ|>の<|歴史|れきし|>がそこにある｡†@41†雅
 0xD51040;0x009FEC78;00 00;@42†ＢＴ０７<|獣王爆進|じゅうおうばくしん|>†@40†<|最高|さいこう|>のビーストテイマーは､<|竜|りゅう|>すら<|子|こ|>†<|犬|いぬ|>のように<|使役|しえき|>する｡†@41†雅
 0xD53854;0x009FED48;00 00;Crimson Drive, Aphrodite
-0xD53858;0x009FED80;00 00;クリムゾン・ドライブ アフロディテ
+0xD53858;0x009FED80;00 00;Crimson Drive, Aphrodite
 0xD65728;0x009FEDA4;00 00;Sanctuary Archer
 0xD691A4,0xD6954C;0x009FEDB4;00 00 00 00;PR♥ISM-Promise, Leyte
-0xD691A8,0xD69550;0x009FEDEC;00 00;プリズム‐プロミス レイテ
+0xD691A8,0xD69550;0x009FEDEC;00 00;PR♥ISM-Promise, Leyte
 0xD6DCCC;0x009FEE08;00 00 00 00;PR♥ISM-Promise, Princess Leyte
-0xD6DCD0;0x009FEE4C;00 00;プリズム‐プロミス プリンセス・レイテ
+0xD6DCD0;0x009FEE4C;00 00;PR♥ISM-Promise, Princess Leyte
 0xD4EDCC;0x009FEE74;00 00;Carrier of the Life Water
 0xD441F0;0x009FEE8C;00 00 00 00;Zephyr Kid, Hayate
 0xD44C80;0x009FEEB8;00 00;Zephyr Eradicator, Hayate
@@ -5361,7 +5361,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD73A3C,0xD73A40;0x009FEF2C;00 00 00 00;Steam Fighter, Mesh-he
 0xD48838,0xD6E7C4;0x009FEF4C;00 00;Flash Shield, Iseult
 0xD54214;0x009FEF80;00 00;Flashing Jewel Knight, Iseult
-0xD4883C,0xD6E7C8;0x009FEFC0;00 00 00 00;センコウノタテ イゾルデ
+0xD4883C,0xD6E7C8;0x009FEFC0;00 00 00 00;Flash Shield, Iseult
 0xD54218;0x009FEFDC;00 00;Flashing Jewel Knight, Iseult
 0xD6C7E0,0xD6CEFC;0x009FF004;00 00;Regalia of Wisdom and Courage, Brynhildr
 0xD6C7E4,0xD6CF00;0x009FF040;00 00;Regalia of Wisdom and Courage, Brynhildr
@@ -5398,7 +5398,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD70EC4;0x009FF86C;00 00;Eagle Knight of the Skies
 0xD70EC8;0x009FF894;00 00 00 00;Eagle Knight of the Skies
 0xD67C1C;0x009FF8B0;00 00;Falcon Knight of the Azure
-0xD67C20;0x009FF8DC;00 00 00 00;ソウキュウノファルコンナイト
+0xD67C20;0x009FF8DC;00 00 00 00;Falcon Knight of the Azure
 0xD5EA10;0x009FF8FC;00 00 00 00;Star-vader, Robin Knight
 0xD5EA14;0x009FF92C;00 00 00 00;Star-vader, Robin Knight
 0xD72450;0x009FF94C;00 00;Thousand Name Wyvern Knight
@@ -5465,7 +5465,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD50B3C,0xD50B40;0x00A00834;00 00;Cyber Beast
 0xD6D2A4;0x00A00848;00 00;Dimensional Robo, Daijet
 0xD6D2A8;0x00A00870;00 00 00 00;Dimensional Robo, Daijet
-0xD660B0,0xD660B4;0x00A0088C;00 00;マシニング・イエロージャケット
+0xD660B0,0xD660B4;0x00A0088C;00 00;Machining Yellowjacket
 0xD69654,0xD69D3C;0x00A008AC;00 00 00 00;Battle Sister, Cocotte
 0xD478FC;0x00A008C8;00 00 00 00;Pursuing Deletor, Egotte
 0xD47900;0x00A00908;00 00 00 00;Pursuing Deletor, Egotte
@@ -5483,10 +5483,10 @@ pointer_offsets;pointer_value;separators;extract
 0xD66CE0,0xD66CE4;0x00A00ABC;00 00;Machining Hornet
 0xD4D80C,0xD4D810;0x00A00AD4;00 00 00 00;Apocalypse Bat
 0xD46BC8;0x00A00AEC;00 00;Stomach Clock Gear Rabbit
-0xD46BCC;0x00A00B1C;00 00 00 00;ハラドケイツキノギアラビット
+0xD46BCC;0x00A00B1C;00 00 00 00;Stomach Clock Gear Rabbit
 0xD4AD98;0x00A00B3C;00 00;March Rabbit of Nightmareland
 0xD4AD9C;0x00A00B74;00 00 00 00;March Rabbit of Nightmareland
-0xD643D8,0xD643DC;0x00A00B94;00 00 00 00;ピーピング・ラビット
+0xD643D8,0xD643DC;0x00A00B94;00 00 00 00;Peeping Rabbit
 0xD62490,0xD62494;0x00A00BAC;00 00;Broadcast Rabbit
 0xD562FC,0xD56300;0x00A00BC8;00 00;Vivid Rabbit
 0xD59A08,0xD59A0C;0x00A00BDC;00 00;Telescope Rabbit
@@ -5505,7 +5505,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD43968,0xD4396C,0xD68A20,0xD68A24;0x00A00D88;00 00 00 00;Dark Cat
 0xD7251C,0xD72520;0x00A00D9C;00 00 00 00;Taping Cat
 0xD6FD80;0x00A00DB4;00 00 00 00;Dark Superhuman, Pretty Cat
-0xD6FD84;0x00A00DF0;00 00;アンコクチョウジン プリティーキャット
+0xD6FD84;0x00A00DF0;00 00;Dark Superhuman, Pretty Cat
 0xD4D770;0x00A00E18;00 00 00 00;Stealth Beast, Million Rat
 0xD4D774;0x00A00E44;00 00;Stealth Beast, Million Rat
 0xD4A2D4,0xD4A2D8,0xDA014C,0xDA0184;0x00A00E60;00 00;Samurai Spirit
@@ -5524,13 +5524,13 @@ pointer_offsets;pointer_value;separators;extract
 0xD47934;0x00A0102C;00 00 00 00;Rotting Deletor, Izret
 0xD5BFD0,0xD5BFD4;0x00A01054;00 00 00 00;Dragon Knight, Dalette
 0xD724B4;0x00A01070;00 00;Dimensional Robo, Daibarrett
-0xD724B8;0x00A01098;00 00 00 00;ジゲンロボ ダイバレット
+0xD724B8;0x00A01098;00 00 00 00;Dimensional Robo, Daibarrett
 0xD502B4;0x00A010B4;00 00 00 00;Photon Archer, Griflet
 0xD502B8;0x00A010F4;00 00 00 00;Photon Archer, Griflet
 0xD6881C,0xD699FC,0xD71680;0x00A01118;00 00;Battle Sister, Omelet
 0xD6EF7C,0xD6EF80;0x00A01134;00 00 00 00;Pretty Celeb, Charlotte
-0xD69038;0x00A01154;00 00;<|扇|おうぎ|>の<|舞姫|まいひめ|> ミナト
-0xD6903C;0x00A01188;00 00 00 00;オウギノマイヒメ ミナト
+0xD69038;0x00A01154;00 00;Dancing Fan Princess, Minato
+0xD6903C;0x00A01188;00 00 00 00;Dancing Fan Princess, Minato
 0xD4FC68,0xD51120;0x00A011A4;00 00;School Dominator, Apt
 0xD4FC6C,0xD51124;0x00A011E8;00 00 00 00;School Dominator, Apt
 0xD6E544;0x00A01208;00 00 00 00;@42†Ｇ-ＣＭＢ０１<|先導者|せんどうしゃ|>と<|根絶者|デリーター|>†@40†<|奴|やつ|>らは､<|過去|かこ|>すら<|根絶|こんぜつ|>する｡†@43†伊藤彰 †@41†ヨシモト
@@ -5544,9 +5544,9 @@ pointer_offsets;pointer_value;separators;extract
 0xD73CE4;0x00A015EC;00 00;Knight of Solemnity, Balberith
 0xD4D8A8,0xD4D8AC;0x00A01608;00 00;Magical Police Quilt
 0xD68DFC,0xD69518;0x00A01620;00 00 00 00;PR♥ISM-Promise, Celtic
-0xD68E00,0xD6951C;0x00A01658;00 00;プリズム‐プロミス ケルト
+0xD68E00,0xD6951C;0x00A01658;00 00;PR♥ISM-Promise, Celtic
 0xD6DBFC;0x00A01674;00 00 00 00;PR♥ISM-Promise, Princess Celtic
-0xD6DC00;0x00A016B8;00 00;プリズム‐プロミス プリンセス・ケルト
+0xD6DC00;0x00A016B8;00 00;PR♥ISM-Promise, Princess Celtic
 0xD5C518;0x00A016E0;00 00;Blue Storm Soldier, Tempest Assault
 0xD5C51C;0x00A01714;00 00;Blue Storm Soldier, Tempest Assault
 0xD47554,0xD47558;0x00A01738;00 00;Magnum Assault
@@ -5569,20 +5569,20 @@ pointer_offsets;pointer_value;separators;extract
 0xD70848;0x00A01968;00 00 00 00;Amon's Leader, Astaroth
 0xD47B38,0xD6ED0C;0x00A0198C;00 00 00 00;Taunting Deletor, Gotho
 0xD47B3C,0xD6ED10;0x00A019C8;00 00;Taunting Deletor, Gotho
-0xD581DC,0xD581E0;0x00A019EC;00 00 00 00;エレガント・エレファント
+0xD581DC,0xD581E0;0x00A019EC;00 00 00 00;Elegant Elephant
 0xD5142C;0x00A01A08;00 00 00 00;Lily of the Valley Musketeer, Kaivant
 0xD51430;0x00A01A48;00 00 00 00;Lily of the Valley Musketeer, Kaivant
 0xD4A0CC,0xD4A0D0;0x00A01A6C;00 00 00 00;Geograph Giant
 0xD66D14,0xD66D18;0x00A01A88;00 00;Machining Worker Ant
 0xD637A8,0xD64C60;0x00A01AA4;00 00 00 00;Sunrise Ray Knight, Gurguit
 0xD637AC,0xD64C64;0x00A01AE4;00 00 00 00;Sunrise Ray Knight, Gurguit
-0xD6A420,0xD6A424;0x00A01B08;00 00;シュタルカー・ヴィント
+0xD6A420,0xD6A424;0x00A01B08;00 00;Starker Wind
 0xD578EC;0x00A01B20;00 00 00 00;Overcast Liberator, Geraint
 0xD578F0;0x00A01B64;00 00;Overcast Liberator, Geraint
 0xD52160;0x00A01B88;00 00 00 00;Military Dragon, Raptor Sergeant
 0xD52164;0x00A01BBC;00 00;Military Dragon, Raptor Sergeant
 0xD569B0;0x00A01BE0;00 00;Flag of Raijin, Corposant
-0xD569B4;0x00A01C1C;00 00;ライジンノミハタ コルポサント
+0xD569B4;0x00A01C1C;00 00;Flag of Raijin, Corposant
 0xD54144,0xD555FC;0x00A01C3C;00 00 00 00;Eradicator, Dragonic Descendant (Trigger)
 0xD54148,0xD55600;0x00A01C78;00 00 00 00;Eradicator, Dragonic Descendant (Trigger)
 0xD6F804;0x00A01CA4;00 00;True Revenger, Dragruler Revenant
@@ -5636,7 +5636,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD6D5E8;0x00A023D4;00 00 00 00;Dimensional Robo, Daishoot
 0xD5E390,0xD5F848,0xD5FA84;0x00A023F0;00 00 00 00;Perdition Dragon, Vortex Dragonewt
 0xD5E394,0xD5F84C,0xD5FA88;0x00A02430;00 00 00 00;Perdition Dragon, Vortex Dragonewt
-0xD67088,0xD6708C;0x00A02460;00 00;マーメイドアイドル フリュート
+0xD67088,0xD6708C;0x00A02460;00 00;Mermaid Idol, Flute
 0xD49A80,0xD4AAC0;0x00A02480;00 00;General Seifried
 0xD49A84,0xD4AAC4;0x00A024A8;00 00 00 00;General Seifried
 0xD6FD4C,0xD6FD50;0x00A024C4;00 00;Meteokaiser, Tribrut
@@ -5645,7 +5645,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD658C4;0x00A02538;00 00 00 00;Black Pain, Marut
 0xD658C8;0x00A0256C;00 00 00 00;Black Pain, Marut
 0xD45438,0xD71920;0x00A0258C;00 00;Electro-star Combination, Cosmogreat
-0xD4543C,0xD71924;0x00A025C0;00 00 00 00;デンセイガッタイ コスモグレート
+0xD4543C,0xD71924;0x00A025C0;00 00 00 00;Electro-star Combination, Cosmogreat
 0xD4F720,0xD4F724;0x00A025E4;00 00 00 00;Moai the Great
 0xD62A0C,0xD63434,0xD635D4;0x00A025FC;00 00 00 00;Perdition Emperor Dragon, Dragonic Overlord the Great
 0xD62A10,0xD63438,0xD635D8;0x00A02650;00 00;Perdition Emperor Dragon, Dragonic Overlord the Great
@@ -5785,7 +5785,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD52D90;0x00A03BA8;00 00 00 00;Stealth Dragon, Magatsu Wind
 0xD52D94;0x00A03BD4;00 00;Stealth Dragon, Magatsu Wind
 0xD61F14;0x00A03BF0;00 00 00 00;Iron-fanged Gear Hound
-0xD61F18;0x00A03C28;00 00 00 00;クロガネノキバノギアハウンド
+0xD61F18;0x00A03C28;00 00 00 00;Iron-fanged Gear Hound
 0xD5323C;0x00A03C48;00 00 00 00;Stealth Beast, Spell Hound
 0xD53240;0x00A03C74;00 00;Stealth Beast, Spell Hound
 0xD50EB0,0xD50EB4;0x00A03C90;00 00 00 00;Speeder Hound
@@ -5806,8 +5806,8 @@ pointer_offsets;pointer_value;separators;extract
 0xD62CE8;0x00A03ED8;00 00;Flaming Passion Liberator, Guido
 0xD6FE50;0x00A03EFC;00 00 00 00;Miracle of Luna Square, Clifford
 0xD6FE54;0x00A03F30;00 00;Miracle of Luna Square, Clifford
-0xD55DB4;0x00A03F54;00 00 00 00;<|封竜|ふうりゅう|> ジャカード
-0xD55DB8;0x00A03F7C;00 00;フウリュウ ジャカード
+0xD55DB4;0x00A03F54;00 00 00 00;Seal Dragon, Jacquard
+0xD55DB8;0x00A03F7C;00 00;Seal Dragon, Jacquard
 0xD6D16C;0x00A03F94;00 00 00 00;Cosmic Hero, Grandguard
 0xD6D170;0x00A03FC8;00 00;Cosmic Hero, Grandguard
 0xD499E4,0xD4AA24,0xD5593C;0x00A03FE8;00 00 00 00;Seal Dragon, Blockade
@@ -5953,7 +5953,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD609C0;0x00A05CC8;00 00 00 00;Perdition Dancer, Anna
 0xD609C4;0x00A05D0C;00 00;Perdition Dancer, Anna
 0xD65244;0x00A05D28;00 00 00 00;Flower Chamber Maiden, Salianna
-0xD65248;0x00A05D64;00 00 00 00;ハナブサノオトメ サリアンナ
+0xD65248;0x00A05D64;00 00 00 00;Flower Chamber Maiden, Salianna
 0xD625FC,0xD62600;0x00A05D84;00 00;Maiden of Canna
 0xD5DF80;0x00A05D9C;00 00;Anemone Musketeer, Susanna
 0xD5DF84;0x00A05DC8;00 00 00 00;Anemone Musketeer, Susanna
@@ -5980,7 +5980,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD47790;0x00A060E4;00 00 00 00;Battle Siren, Carolina
 0xD47794;0x00A06118;00 00 00 00;Battle Siren, Carolina
 0xD5A2F8;0x00A06138;00 00 00 00;Flame Dance, Agni
-0xD5A2FC;0x00A06164;00 00;エンジントウブ アグニ
+0xD5A2FC;0x00A06164;00 00;Flame Dance, Agni
 0xD43934,0xD43938,0xD490F4,0xD490F8,0xD689EC,0xD689F0,0xD69990,0xD69994;0x00A0617C;00 00;Oracle Guardian, Gemini
 0xD73DB0,0xD73DB4;0x00A0619C;00 00 00 00;Visionary Gemini
 0xD61A68,0xD743C8,0xD9634C;0x00A061B8;00 00;Valkyrie of Reclamation, Padmini
@@ -6125,7 +6125,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD607EC,0xD607F0;0x00A0B198;00 00;Nebula Witch, Nono
 0xD718B8;0x00A0B1B0;00 00 00 00;Assault Dragon, Circular Spino
 0xD718BC;0x00A0B1E8;00 00 00 00;Assault Dragon, Circular Spino
-0xD73EB8;0x00A0B210;00 00;キンショヲヨミトクモノ
+0xD73EB8;0x00A0B210;00 00;Decipherer of Prohibited Books
 0xD57B94;0x00A0B228;00 00;Singularity Sniper
 0xD574E0,0xD7234C;0x00A0B240;00 00 00 00;Opener of Dark Gates
 0xD46E5C;0x00A0B258;00 00 00 00;@42†Ｇ-ＴＤ０２<|明星|みょうじょう|>の<|聖剣士|せいけんし|>†@40†<|観念|かんねん|>しなさい! もう<|逃|に|>がさないわ!†@41†トリダモノ
@@ -6184,7 +6184,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD4D430,0xD6C0F8;0x00A0D338;00 00 00 00;Moonlight Witch, Vaha
 0xD4D434,0xD6C0FC;0x00A0D370;00 00 00 00;Moonlight Witch, Vaha
 0xD6057C;0x00A0D38C;00 00;Imperial Shrine Guard, Asuha
-0xD60580;0x00A0D3B4;00 00 00 00;ジングウエシ アスハ
+0xD60580;0x00A0D3B4;00 00 00 00;Imperial Shrine Guard, Asuha
 0xD6DC64,0xD6DC98;0x00A0D3CC;00 00 00 00;Duo Gorgeous Lady, Kazuha
 0xD6DC68,0xD6DC9C;0x00A0D418;00 00;Duo Gorgeous Lady, Kazuha
 0xD45778,0xD5A228;0x00A0D43C;00 00;Battle Maiden, Mizuha
@@ -6209,7 +6209,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD6ED44;0x00A0D738;00 00 00 00;Biting Deletor, Geeva
 0xD6C264;0x00A0D75C;00 00 00 00;Comet Witch, Serva
 0xD6C268;0x00A0D794;00 00 00 00;Comet Witch, Serva
-0xD55CB0,0xD55CB4;0x00A0D7B0;00 00;マイスガード ラ・スパーバ
+0xD55CB0,0xD55CB4;0x00A0D7B0;00 00;Myth Guard, La Superba
 0xD5AA7C;0x00A0D7CC;00 00 00 00;Witch of Grapes, Grappa
 0xD5AA80;0x00A0D804;00 00 00 00;Witch of Grapes, Grappa
 0xD649AC;0x00A0D820;00 00 00 00;@42†Ｇ-ＢＴ０３<|覇道竜星|はどうりゅうせい|>†@40†<|今|いま|>､<|呪|のろ|>われた<|魔眼|まがん|>の<|封印|ふういん|>を<|解|と|>く!†@41†やまだ六角
@@ -6237,7 +6237,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD5BD30;0x00A0DDA8;00 00 00 00;Demon World Castle, Sturmangriff
 0xD6551C,0xD65520;0x00A0DDD0;00 00;Steam Fighter, Balih
 0xD60ED4;0x00A0DDEC;00 00 00 00;Summit Crest Gear Wolf
-0xD60ED8;0x00A0DE20;00 00 00 00;イタダキニタツギアウルフ
+0xD60ED8;0x00A0DE20;00 00 00 00;Summit Crest Gear Wolf
 0xD6D64C;0x00A0DE3C;00 00 00 00;Dimensional Robo, Daiwolf
 0xD6D650;0x00A0DE64;00 00;Dimensional Robo, Daiwolf
 0xD4CD14,0xD4CD18,0xD68304,0xD68308;0x00A0DE7C;00 00;Dancing Wolf
@@ -6251,7 +6251,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD51F58,0xD51F5C;0x00A0DF74;00 00;Fruits Basket Elf
 0xD47248,0xD4724C;0x00A0DF90;00 00;Gardener Elf
 0xD4EA88;0x00A0DFA4;00 00 00 00;Crimson Lion Cub, Kyrph
-0xD4EA8C;0x00A0DFDC;00 00 00 00;クレナイノコジシ キルフ
+0xD4EA8C;0x00A0DFDC;00 00 00 00;Crimson Lion Cub, Kyrph
 0xD63FFC;0x00A0DFF8;00 00 00 00;Knight of Diligence, Mazorlf
 0xD64000;0x00A0E030;00 00 00 00;Knight of Diligence, Mazorlf
 0xD42FA8,0xD48E50;0x00A0E04C;00 00;Covenant Knight, Randolf
@@ -6361,10 +6361,10 @@ pointer_offsets;pointer_value;separators;extract
 0xD66180,0xD66184;0x00A10FD4;00 00 00 00;Machining Scarab
 0xD44224;0x00A10FEC;00 00;Demonic Dragon Nymph, Seiobo
 0xD44CB4;0x00A1101C;00 00 00 00;Worm Toxin Eradicator, Seiobo
-0xD44228;0x00A1105C;00 00 00 00;マリュウセンニョ セイオウボ
+0xD44228;0x00A1105C;00 00 00 00;Demonic Dragon Nymph, Seiobo
 0xD44CB8;0x00A1107C;00 00;Worm Toxin Eradicator, Seiobo
-0xD6F700;0x00A1109C;00 00 00 00;<|真|トゥルー|>・<|喧嘩屋|ブロウラー|> ビックバンナックル・ターボ
-0xD6F704;0x00A110EC;00 00 00 00;トゥルー・ブロウラー ビックバンナックル・ターボ
+0xD6F700;0x00A1109C;00 00 00 00;True Brawler, Big Bang Knuckle Turbo
+0xD6F704;0x00A110EC;00 00 00 00;True Brawler, Big Bang Knuckle Turbo
 0xD50350,0xD50354;0x00A11120;00 00 00 00;Calculator Hippo
 0xD4EC90;0x00A1113C;00 00;Iron Heart, Mastema
 0xD4EC94;0x00A1116C;00 00;Iron Heart, Mastema
@@ -6406,7 +6406,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD65D3C;0x00A116C0;00 00 00 00;Witch of Melons, Thyme
 0xD65D40;0x00A116E8;00 00;Witch of Melons, Thyme
 0xD546F4;0x00A11700;00 00;Martial Arts General, Daim
-0xD546F8;0x00A1172C;00 00 00 00;ブジンショウグン ダイム
+0xD546F8;0x00A1172C;00 00 00 00;Martial Arts General, Daim
 0xD70B88;0x00A11748;00 00 00 00;Glyme
 0xD4E818;0x00A11754;00 00;The Phoenix, Calamity Flame
 0xD4E81C;0x00A11784;00 00;The Phoenix, Calamity Flame
@@ -6471,7 +6471,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD44CEC,0xD6C6E0;0x00A123A8;00 00 00 00;Illusionary Revenger, Mordred Phantom
 0xD5B470,0xD5C928;0x00A123DC;00 00 00 00;Revenger, Dragruler Phantom
 0xD5B474,0xD5C92C;0x00A12418;00 00 00 00;Revenger, Dragruler Phantom
-0xD5545C,0xD55460;0x00A12444;00 00;ダッドリー・ファントム
+0xD5545C,0xD55460;0x00A12444;00 00;Dudley Phantom
 0xD49C20,0xD49C24,0xD686AC,0xD686B0;0x00A1245C;00 00 00 00;Silent Tom
 0xD58C04,0xD72584;0x00A12470;00 00;Dimensional Robo, Daimagnum
 0xD58C08,0xD72588;0x00A12498;00 00 00 00;Dimensional Robo, Daimagnum
@@ -6485,7 +6485,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD48A0C,0xD48A10;0x00A125A8;00 00;Juggernaut Maximum
 0xD5A360,0xD5A364;0x00A125C4;00 00 00 00;Dragon Knight, Akram
 0xD47CA4;0x00A125E0;00 00 00 00;Gyre Flower, Dark Chakram
-0xD47CA8;0x00A12610;00 00 00 00;リンテンゲ ダークチャクラム
+0xD47CA8;0x00A12610;00 00 00 00;Gyre Flower, Dark Chakram
 0xD66FB8,0xD66FBC;0x00A12630;00 00 00 00;Super Idol, Ceram
 0xD657F4;0x00A1264C;00 00;Straight Jewel Knight, Bartram
 0xD657F8;0x00A1268C;00 00;Straight Jewel Knight, Bartram
@@ -6551,9 +6551,9 @@ pointer_offsets;pointer_value;separators;extract
 0xD6F768;0x00A13054;00 00 00 00;Blue Storm Marshal Dragon, Admiral Maelstrom
 0xD6F76C;0x00A13098;00 00;Blue Storm Marshal Dragon, Admiral Maelstrom
 0xD5294C,0xD53E04;0x00A130C8;00 00 00 00;Blue Storm Supreme Dragon, Glory Maelstrom
-0xD52950,0xD53E08;0x00A1310C;00 00;ソウランハリュウ グローリー・メイルストローム
-0xD59FEC;0x00A1313C;00 00 00 00;<|銀襴吹雪|ぎんらんふぶき|> ササメ
-0xD59FF0;0x00A13168;00 00;ギンランフブキ ササメ
+0xD52950,0xD53E08;0x00A1310C;00 00;Blue Storm Supreme Dragon, Glory Maelstrom
+0xD59FEC;0x00A1313C;00 00 00 00;Silver Snow, Sasame
+0xD59FF0;0x00A13168;00 00;Silver Snow, Sasame
 0xD536B4;0x00A13180;00 00;Solar Maiden, Uzume
 0xD536B8;0x00A131B4;00 00;Solar Maiden, Uzume
 0xD500B0;0x00A131CC;00 00 00 00;Dancing Princess of the Night Sky
@@ -6645,7 +6645,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD60444,0xD60448;0x00A13F88;00 00;Knight of Shield Bash
 0xD604E0,0xD604E4;0x00A13FA8;00 00 00 00;Knight of Flash
 0xD69414;0x00A13FC4;00 00;PR♥ISM-Miracle, Irish
-0xD69418;0x00A14000;00 00 00 00;プリズム‐ミラクル アイリッシュ
+0xD69418;0x00A14000;00 00 00 00;PR♥ISM-Miracle, Irish
 0xD52FCC;0x00A14024;00 00 00 00;Beast Deity, Blank Marsh
 0xD52FD0;0x00A14054;00 00;Beast Deity, Blank Marsh
 0xD582E0;0x00A14074;00 00;Silver Thorn Beast Tamer, Serge
@@ -6666,7 +6666,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD6054C;0x00A142B4;00 00 00 00;Battle Sister, Mille-feuille
 0xD6F0B4;0x00A142D4;00 00;Sprout Jewel Knight, Camille
 0xD6F0B8;0x00A14314;00 00 00 00;Sprout Jewel Knight, Camille
-0xD509A0;0x00A1433C;00 00 00 00;ハザマヲコエルショウジョ
+0xD509A0;0x00A1433C;00 00 00 00;Girl Who Crossed the Gap
 0xD57100;0x00A14358;00 00;Iron Fan Eradicator, Nirrti
 0xD57104;0x00A14398;00 00 00 00;Iron Fan Eradicator, Nirrti
 0xD57944;0x00A143BC;00 00 00 00;@42†ＢＴ１２<|黒輪縛鎖|こくりんばくさ|>†@40†<|力|ちから|>の<|限|かぎ|>り｡<|全力|ぜんりょく|>を<|振|ふ|>り<|絞|しぼ|>って｡†@41†スケキヨ
@@ -6766,7 +6766,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD5ADF0;0x00A17AB0;00 00 00 00;Flame of Rest, Geara
 0xD5ADF4;0x00A17AE4;00 00;Flame of Rest, Geara
 0xD58F78;0x00A17AFC;00 00;Stealth Rogue of a Thousand Blades, Oborozakura
-0xD58F7C;0x00A17B40;00 00;センボンタチノニンキ オボロザクラ
+0xD58F7C;0x00A17B40;00 00;Stealth Rogue of a Thousand Blades, Oborozakura
 0xD6C570;0x00A17B64;00 00;Witch of Black Cats, Milcra
 0xD6C574;0x00A17B9C;00 00;Witch of Black Cats, Milcra
 0xD47110;0x00A17BB8;00 00 00 00;Blossoming Maiden, Cela
@@ -6795,7 +6795,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD4765C;0x00A17F00;00 00 00 00;Battle Siren, Phaidra
 0xD5C20C,0xD5C210;0x00A17F20;00 00;Negligible Hydra
 0xD5B84C;0x00A17F38;00 00 00 00;Sharp Fang Witch, Fodla
-0xD5B850;0x00A17F70;00 00 00 00;エイガノマジョ フォドラ
+0xD5B850;0x00A17F70;00 00 00 00;Sharp Fang Witch, Fodla
 0xD58B34;0x00A17F8C;00 00;Space Leviathan, Dogrumadra
 0xD58B38;0x00A17FC0;00 00 00 00;Space Leviathan, Dogrumadra
 0xD61BA0;0x00A17FE4;00 00;Turbulence Deity Howl, Rudra
@@ -6983,7 +6983,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD65CD8;0x00A19D80;00 00;Regalia of Reflection, Mirror Angel
 0xD54C70,0xD54C74;0x00A19DA4;00 00;Scheduler Angel
 0xD4B92C,0xD4B930;0x00A19DC0;00 00 00 00;Secretary Angel
-0xD55288,0xD5528C;0x00A19DDC;00 00 00 00;マシンナリー・エンジェル
+0xD55288,0xD5528C;0x00A19DDC;00 00 00 00;Machinery Angel
 0xD5EDB8;0x00A19DF8;00 00 00 00;Liberator, Blessing Arrow Angel
 0xD5EDBC;0x00A19E38;00 00 00 00;Liberator, Blessing Arrow Angel
 0xD6C8E4;0x00A19E68;00 00 00 00;Cold Blast Regalia, Svalinn
@@ -7035,7 +7035,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD58EDC;0x00A1A6BC;00 00;Anesthesia Celestial, Rumael
 0xD58EE0;0x00A1A6FC;00 00;Anesthesia Celestial, Rumael
 0xD561F8;0x00A1A724;00 00;Encourage Celestial, Tamiel
-0xD561FC;0x00A1A764;00 00;エンカレッジ・セレスティアル タミエル
+0xD561FC;0x00A1A764;00 00;Encourage Celestial, Tamiel
 0xD71884;0x00A1A78C;00 00;Medical Gunner, Hermieres
 0xD71888;0x00A1A7C0;00 00;Medical Gunner, Hermieres
 0xD55768,0xD56C20;0x00A1A7E0;00 00;Prophecy Celestial, Ramiel
@@ -7181,7 +7181,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD64FA0,0xD66458;0x00A1BC14;00 00;Force Spear Mutant Deity, Stun Beetle
 0xD64FA4,0xD6645C;0x00A1BC48;00 00 00 00;Force Spear Mutant Deity, Stun Beetle
 0xD6766C,0xD67D54;0x00A1BC6C;00 00;Martial Arts Mutant, Master Beetle
-0xD67670,0xD67D58;0x00A1BCA0;00 00 00 00;ブジンカイジン マスタービートル
+0xD67670,0xD67D58;0x00A1BCA0;00 00 00 00;Martial Arts Mutant, Master Beetle
 0xD4CA3C,0xD4CA40;0x00A1BCC4;00 00 00 00;Ironcutter Beetle
 0xD66D48,0xD66D4C;0x00A1BCE0;00 00;Shelter Beetle
 0xD71F04,0xD71F08;0x00A1BCF4;00 00 00 00;Machining Armor Beetle
@@ -7200,9 +7200,9 @@ pointer_offsets;pointer_value;separators;extract
 0xD68FC0;0x00A1C430;00 00;@42†ＥＢ０６<|綺羅|きら|>の<|歌姫|うたひめ|>†@40†<|研|と|>ぎ<|澄|す|>まされたダンスが､ステージを†<|輝|かがや|>かせる｡†@41†千葉サドル
 0xD67454;0x00A1C4E0;00 00;@42†ＥＢ０２<|歌姫|うたひめ|>の<|饗宴|きょうえん|>†@40†さぁ､<|立|た|>ち<|上|あ|>がって♪†@41†千葉サドル
 0xD68D60,0xD6947C;0x00A1C56C;00 00 00 00;PR♥ISM-Promise, Labrador
-0xD68D64,0xD69480;0x00A1C5A8;00 00;プリズム‐プロミス ラブラドル
+0xD68D64,0xD69480;0x00A1C5A8;00 00;PR♥ISM-Promise, Labrador
 0xD6D854,0xD6E1AC;0x00A1C5C8;00 00 00 00;PR♥ISM-Promise, Princess Labrador
-0xD6D858,0xD6E1B0;0x00A1C610;00 00;プリズム‐プロミス プリンセス・ラブラドル
+0xD6D858,0xD6E1B0;0x00A1C610;00 00;PR♥ISM-Promise, Princess Labrador
 0xD5E4FC;0x00A1C63C;00 00;Light Formation Liberator, Erdre
 0xD5E500;0x00A1C67C;00 00 00 00;Light Formation Liberator, Erdre
 0xD46374;0x00A1C6A0;00 00;Deathly Silence Liberator, Curdle
@@ -7219,7 +7219,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD6C814;0x00A1C888;00 00 00 00;Witch of Eagles, Fennel
 0xD6C818;0x00A1C8C4;00 00 00 00;Witch of Eagles, Fennel
 0xD56434;0x00A1C8E4;00 00 00 00;Seal Dragon, Flannel
-0xD56438;0x00A1C90C;00 00;フウリュウ フランネル
+0xD56438;0x00A1C90C;00 00;Seal Dragon, Flannel
 0xD514FC,0xD528B0;0x00A1C924;00 00 00 00;Military Dragon, Raptor Colonel
 0xD51500,0xD528B4;0x00A1C954;00 00;Military Dragon, Raptor Colonel
 0xD5F05C;0x00A1C974;00 00;Perdition Dragon Knight, Sahar
@@ -7286,7 +7286,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD70BBC;0x00A1ECB4;00 00 00 00;Miru Biru
 0xD671C0,0xD671C4;0x00A1ECC0;00 00;Intelli-idol, Melville
 0xD62C48;0x00A1ECDC;00 00;Refusing Deletor, Evil
-0xD62C4C;0x00A1ED18;00 00;レフュージング・デリーター ヱビル
+0xD62C4C;0x00A1ED18;00 00;Refusing Deletor, Evil
 0xD68B28;0x00A1ED3C;00 00 00 00;Battle Sister, Waffle
 0xD4355C,0xD48BB0,0xD68134;0x00A1ED58;00 00 00 00;Mr. Invincible
 0xD43558,0xD48BAC,0xD68130;0x00A1ED70;00 00 00 00;Mr. Invincible
@@ -7301,7 +7301,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD5EFC0;0x00A1EEA0;00 00 00 00;Seal Dragon Sprite, Mulciber
 0xD5EFC4;0x00A1EEE0;00 00 00 00;Seal Dragon Sprite, Mulciber
 0xD4A030,0xD67534;0x00A1EF04;00 00;Bermuda Triangle Cadet, Caravel
-0xD4A034,0xD67538;0x00A1EF38;00 00;バミューダトライアングルコウホセイ キャラベル
+0xD4A034,0xD67538;0x00A1EF38;00 00;Bermuda Triangle Cadet, Caravel
 0xD63BB8;0x00A1EF68;00 00;Fast Chase Golden Knight, Cambell
 0xD63BBC;0x00A1EFA8;00 00;Fast Chase Golden Knight, Cambell
 0xD43E48,0xD43E4C;0x00A1EFC8;00 00 00 00;Fortune Bell
@@ -7322,7 +7322,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD53344;0x00A1F58C;00 00;Stealth Rogue of Body Replacement, Kokuenmaru
 0xD590E4;0x00A1F5AC;00 00;Banquet Stealth Rogue, Shutenmaru
 0xD590E8;0x00A1F5E4;00 00 00 00;Banquet Stealth Rogue, Shutenmaru
-0xD523D4;0x00A1F604;00 00 00 00;ユソウゲイカン カイリンマル
+0xD523D4;0x00A1F604;00 00 00 00;Whale Supply Fleet, Kairin Maru
 0xD6C298;0x00A1F624;00 00 00 00;Witch of Godly-speed, Emel
 0xD6C29C;0x00A1F65C;00 00 00 00;Witch of Godly-speed, Emel
 0xD4FC9C,0xD4FCA0;0x00A1F678;00 00 00 00;Lamp Camel
@@ -7385,21 +7385,21 @@ pointer_offsets;pointer_value;separators;extract
 0xD57E68;0x00A1FF54;00 00 00 00;Amon's Follower, Hell's Deal
 0xD57E6C;0x00A1FF88;00 00;Amon's Follower, Hell's Deal
 0xD54B04;0x00A1FFAC;00 00 00 00;Knight of Far Arrows, Saphir
-0xD54B08;0x00A1FFE4;00 00 00 00;トオヤノキシ サフィール
+0xD54B08;0x00A1FFE4;00 00 00 00;Knight of Far Arrows, Saphir
 0xD650D8,0xD664F4;0x00A20000;00 00;Black Record, Israfil
 0xD650DC,0xD664F8;0x00A20038;00 00;Black Record, Israfil
 0xD65994;0x00A2005C;00 00;Black Candle, Azrail
-0xD65998;0x00A20094;00 00;ブラック・キャンドル アズライール
+0xD65998;0x00A20094;00 00;Black Candle, Azrail
 0xD6F11C;0x00A200B8;00 00 00 00;Halberd Revenger, Peredur
 0xD6F120;0x00A200FC;00 00;Halberd Revenger, Peredur
 0xD68D94,0xD694B0;0x00A20120;00 00;PR♥ISM-Image, Vert
-0xD68D98,0xD694B4;0x00A20158;00 00 00 00;プリズム‐イメージ ヴェール
+0xD68D98,0xD694B4;0x00A20158;00 00 00 00;PR♥ISM-Image, Vert
 0xD67124;0x00A20178;00 00 00 00;Bermuda Triangle Cadet, Riviere
 0xD67128;0x00A201B0;00 00 00 00;Bermuda Triangle Cadet, Riviere
 0x8D757C,0xD672F8,0xD672FC,0xDA1DAC,0xDA1DCC,0xDA1DDC;0x00A201E4;00 00 00 00;Mermaid Idol, Riviere
 0x8D7580,0xD67054,0xD67058,0xDA1DB4,0xDA1DE4,0xDA1DFC,0xDA2A1C;0x00A20208;00 00;Super Idol, Riviere
 0xD68F34;0x00A20228;00 00;PR♥ISM-Romance, Lumiere
-0xD68F38;0x00A20264;00 00 00 00;プリズム‐ロマンス リュミエール
+0xD68F38;0x00A20264;00 00 00 00;PR♥ISM-Romance, Lumiere
 0xD55A40;0x00A20288;00 00 00 00;Ancient Dragon, Paraswall
 0xD55A44;0x00A202B8;00 00 00 00;Ancient Dragon, Paraswall
 0xD494D0,0xD494D4;0x00A202D8;00 00 00 00;Rock the Wall
@@ -7438,7 +7438,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD5C314;0x00A20844;00 00;Star-vader, Sparkdoll
 0xD55490;0x00A20864;00 00 00 00;Reign of Terror, Thermidor
 0xD55494;0x00A20898;00 00;Reign of Terror, Thermidor
-0xD60BFC,0xD60C00;0x00A208B8;00 00;メチャバトラー ケンドール
+0xD60BFC,0xD60C00;0x00A208B8;00 00;Extreme Battler, Kendhol
 0xD606E8,0xD606EC;0x00A208D4;00 00 00 00;Able Neil
 0xD6E4B8,0xD6EDA8;0x00A208E8;00 00 00 00;King's Adjutant Knight, Galehaut
 0xD6E4BC,0xD6EDAC;0x00A20920;00 00 00 00;King's Adjutant Knight, Galehaut
@@ -7461,11 +7461,11 @@ pointer_offsets;pointer_value;separators;extract
 0xD46410;0x00A20BE0;00 00 00 00;Genius Liberator, Waltimell
 0xD46414;0x00A20C2C;00 00;Genius Liberator, Waltimell
 0xD693AC;0x00A20C58;00 00 00 00;PR♥ISM-Miracle, Timor
-0xD693B0;0x00A20C94;00 00;プリズム‐ミラクル ティモール
+0xD693B0;0x00A20C94;00 00;PR♥ISM-Miracle, Timor
 0xD43CDC;0x00A20CB4;00 00 00 00;Precipice Whirlwind, Sagramore
 0xD43B70;0x00A20CF4;00 00;Battlefield Storm, Sagramore
 0xD43DAC;0x00A20D30;00 00;Grassland Breeze, Sagramore
-0xD43CE0;0x00A20D78;00 00 00 00;ダンガイノセンプウ サグラモール
+0xD43CE0;0x00A20D78;00 00 00 00;Precipice Whirlwind, Sagramore
 0xD43B74;0x00A20D9C;00 00 00 00;Battlefield Storm, Sagramore
 0xD43DB0;0x00A20DC0;00 00 00 00;Grassland Breeze, Sagramore
 0xD43B08;0x00A20DE4;00 00 00 00;Great Silver Wolf, Garmore
@@ -7473,15 +7473,15 @@ pointer_offsets;pointer_value;separators;extract
 0xD4C21C,0xD4D088;0x00A20E48;00 00 00 00;Fang of Light, Garmore
 0xD56EC4,0xD5837C;0x00A20E7C;00 00;Wolf Fang Liberator, Garmore
 0xD43B0C;0x00A20EBC;00 00;Great Silver Wolf, Garmore
-0xD4C630;0x00A20EDC;00 00;ジュウキシ ガルモール
+0xD4C630;0x00A20EDC;00 00;Beast Knight, Garmore
 0xD4C220,0xD4D08C;0x00A20EF4;00 00 00 00;Fang of Light, Garmore
 0xD56EC8,0xD58380;0x00A20F10;00 00 00 00;Wolf Fang Liberator, Garmore
-0xD53B60,0xD53B64;0x00A20F34;00 00 00 00;ガーデニング・モール
+0xD53B60,0xD53B64;0x00A20F34;00 00 00 00;Gardening Mole
 0xD57BC4,0xD57BC8;0x00A20F4C;00 00;Le Maul
 0xD72174;0x00A20F58;00 00 00 00;Sword of Hope, Richard
 0xD72178;0x00A20F90;00 00;Sword of Hope, Richard
 0xD68F9C;0x00A20FAC;00 00;PR♥ISM-Romance, Mercure
-0xD68FA0;0x00A20FE8;00 00 00 00;プリズム‐ロマンス メルキュール
+0xD68FA0;0x00A20FE8;00 00 00 00;PR♥ISM-Romance, Mercure
 0xD71A58;0x00A2100C;00 00;Knight of Afterglow, Gerard
 0xD71A5C;0x00A21044;00 00;Knight of Afterglow, Gerard
 0xD6E728;0x00A21060;00 00 00 00;Swordsman of Light, Blaster Axe Grawl
@@ -7498,7 +7498,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD646E4;0x00A21258;00 00;Stealth Dragon, Hiden Scroll
 0xD646E8;0x00A21284;00 00 00 00;Stealth Dragon, Hiden Scroll
 0xD6906C;0x00A212A4;00 00 00 00;PR♥ISM-Romance, Etoile
-0xD69070;0x00A212E0;00 00;プリズム‐ロマンス エトワール
+0xD69070;0x00A212E0;00 00;PR♥ISM-Romance, Etoile
 0xD5E668,0xD5F9E8;0x00A21300;00 00 00 00;Young Pirate Noble, Pinot Noir
 0xD5E66C,0xD5F9EC;0x00A21338;00 00 00 00;Young Pirate Noble, Pinot Noir
 0xD690A0,0xD690A4;0x00A2135C;00 00;Intelli-beauty, Loire
@@ -7522,20 +7522,20 @@ pointer_offsets;pointer_value;separators;extract
 0xD56774;0x00A216A0;00 00 00 00;Ancient Dragon, Gattlingaro
 0xD56778;0x00A216D0;00 00 00 00;Ancient Dragon, Gattlingaro
 0xD4B550;0x00A216F0;00 00;Hungry Clown
-0xD4B620;0x00A2170C;00 00 00 00;お<|菓子|かし|>なピエロ
+0xD4B620;0x00A2170C;00 00 00 00;Candy Clown
 0xD4B554;0x00A2172C;00 00;Hungry Clown
-0xD4B624;0x00A2173C;00 00;オカシナピエロ
+0xD4B624;0x00A2173C;00 00;Candy Clown
 0xD6EA00;0x00A2174C;00 00 00 00;Blowing Jewel Knight, Altgaro
 0xD6EA04;0x00A21790;00 00 00 00;Blowing Jewel Knight, Altgaro
 0xD70FC8;0x00A217BC;00 00 00 00;Cannon Fire Dragon, Sledge Ankylo
 0xD70FCC;0x00A217F0;00 00 00 00;Cannon Fire Dragon, Sledge Ankylo
 0xD55E84;0x00A21814;00 00 00 00;Ancient Dragon, Beamankylo
-0xD55E88;0x00A21844;00 00 00 00;コダイリュウ ビームアンキロ
+0xD55E88;0x00A21844;00 00 00 00;Ancient Dragon, Beamankylo
 0xD70BF0;0x00A21864;00 00 00 00;Giro
 0xD71B90;0x00A2186C;00 00 00 00;Stealth Fiend, Gashadokuro
 0xD71B94;0x00A21894;00 00;Stealth Fiend, Gashadokuro
 0xD69274;0x00A218AC;00 00;PR♥ISM-Smile, Coro
-0xD69278;0x00A218E0;00 00 00 00;プリズム‐スマイル コロ
+0xD69278;0x00A218E0;00 00 00 00;PR♥ISM-Smile, Coro
 0xD50420,0xD50424;0x00A218FC;00 00 00 00;Globe Armadillo
 0xD586BC,0xD59B74;0x00A21914;00 00;Original Saver, Zero
 0xD586C0,0xD59B78;0x00A21940;00 00 00 00;Original Saver, Zero
@@ -7658,12 +7658,12 @@ pointer_offsets;pointer_value;separators;extract
 0xD46ED4,0xD46ED8;0x00A255BC;00 00 00 00;Rainbow Guardian
 0xD4E470,0xD4F928;0x00A255D8;00 00;Player of the Holy Bow, Viviane
 0xD4E474,0xD4F92C;0x00A25618;00 00;Player of the Holy Bow, Viviane
-0xD6EB38;0x00A2563C;00 00;<|閃光|せんこう|>の<|奏者|そうしゃ|> ニヴィアン
-0xD6EB3C;0x00A25678;00 00;センコウノソウシャ ニヴィアン
-0xD53680,0xD53684;0x00A25698;00 00;マシンガントーク・ライアン
+0xD6EB38;0x00A2563C;00 00;Flash Player, Niviane
+0xD6EB3C;0x00A25678;00 00;Flash Player, Niviane
+0xD53680,0xD53684;0x00A25698;00 00;Machine-gun Talk, Ryan
 0xD65960,0xD65964;0x00A256B4;00 00 00 00;Nurse-cap Dalmatian
 0xD48EB8,0xD5EBE4;0x00A256D4;00 00 00 00;Lake Maiden, Lien
-0xD48EBC,0xD5EBE8;0x00A25708;00 00;ミズウミノミコ リアン
+0xD48EBC,0xD5EBE8;0x00A25708;00 00;Maiden of Divine Spring, Lien
 0xD57168,0xD584E8;0x00A25720;00 00 00 00;King of Masks, Dantarian
 0xD5716C,0xD584EC;0x00A25758;00 00;King of Masks, Dantarian
 0xD73FB8,0xD73FBC,0xD9631C;0x00A25774;00 00;Flying Librarian
@@ -7700,7 +7700,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD5E9DC;0x00A25C6C;00 00 00 00;Star-vader, Volt Line
 0xD5E9E0;0x00A25C9C;00 00 00 00;Star-vader, Volt Line
 0xD43114,0xD485FC,0xD48F88,0xD7022C;0x00A25CBC;00 00 00 00;Yggdrasil Maiden, Elaine
-0xD43118,0xD48600,0xD48F8C,0xD70230;0x00A25CF8;00 00;セカイジュノミコ エレイン
+0xD43118,0xD48600,0xD48F8C,0xD70230;0x00A25CF8;00 00;Yggdrasil Maiden, Elaine
 0xD63CF0;0x00A25D14;00 00;Ambush Demon Stealth Fiend, Ushimitsu Train
 0xD63CF4;0x00A25D48;00 00 00 00;Ambush Demon Stealth Fiend, Ushimitsu Train
 0xD4D2F8,0xD4D2FC;0x00A25D6C;00 00 00 00;Maiden of Blossom Rain
@@ -7726,9 +7726,9 @@ pointer_offsets;pointer_value;separators;extract
 0xD4DEF4,0xD4DEF8;0x00A26098;00 00;Doom Bringer Griffin
 0xD5C038,0xD5C03C;0x00A260B8;00 00 00 00;Eternal Bringer Griffin
 0xD55FF0;0x00A260DC;00 00 00 00;Booting Celestial, Sandalphon
-0xD55FF4;0x00A26124;00 00 00 00;ブーティング・セレスティアル サンダルフォン
+0xD55FF4;0x00A26124;00 00 00 00;Booting Celestial, Sandalphon
 0xD6B4FC,0xD6B530;0x00A26154;00 00;PR♥ISM-Duo, Avon
-0xD6B500,0xD6B534;0x00A26198;00 00 00 00;プリズム‐デュオ エイヴォン
+0xD6B500,0xD6B534;0x00A26198;00 00 00 00;PR♥ISM-Duo, Avon
 0xD558D4,0xD56D8C;0x00A261B8;00 00 00 00;Last Card, Revonn
 0xD558D8,0xD56D90;0x00A261E8;00 00;Last Card, Revonn
 0xD43E14;0x00A26200;00 00;Weapons Dealer, Gwydion
@@ -7776,7 +7776,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD5DA38;0x00A26880;00 00 00 00;Metalborg, Scissorion
 0xD5DA3C;0x00A268AC;00 00 00 00;Metalborg, Scissorion
 0xD54BA0;0x00A268C8;00 00;Liberator, Flare Mane Stallion
-0xD54BA4;0x00A26900;00 00;リベレイター フレアメイン・スタリオン
+0xD54BA4;0x00A26900;00 00;Liberator, Flare Mane Stallion
 0xD70B50,0xD70B54;0x00A26928;00 00;Lion Mane Stallion
 0xD4C458,0xD4C45C;0x00A26944;00 00;Death Warden Ant Lion
 0xD73F84,0xD73F88,0xD9630C;0x00A26960;00 00 00 00;Dark Metal Chameleon
@@ -7787,13 +7787,13 @@ pointer_offsets;pointer_value;separators;extract
 0xD523A0;0x00A26A0C;00 00;Veteran Strategic Commander
 0xD445D0;0x00A26A2C;00 00;Medical Officer of the Rainbow Elixir
 0xD6FC7C;0x00A26A4C;00 00;Rikudo Stealth Dragon, Gedatsurakan
-0xD6FC80;0x00A26A80;00 00 00 00;リクドウニンリュウ ゲダツラカン
+0xD6FC80;0x00A26A80;00 00 00 00;Rikudo Stealth Dragon, Gedatsurakan
 0xD6F86C;0x00A26AA4;00 00;Rikudo Stealth Dragon, Jorurirakan
-0xD6F870;0x00A26ADC;00 00 00 00;リクドウニンリュウ ジョウルリラカン
+0xD6F870;0x00A26ADC;00 00 00 00;Rikudo Stealth Dragon, Jorurirakan
 0xD70330;0x00A26B04;00 00;Knight of Endurance, Lucan
-0xD70334;0x00A26B38;00 00;ゴウキノキシ ルーカン
+0xD70334;0x00A26B38;00 00;Knight of Endurance, Lucan
 0xD43CA8;0x00A26B50;00 00 00 00;Evil Slaying Swordsman, Haugan
-0xD43CAC;0x00A26B7C;00 00;コウマケンシ ハウガン
+0xD43CAC;0x00A26B7C;00 00;Evil Slaying Swordsman, Haugan
 0xD5DD44,0xD5DD48;0x00A26B94;00 00 00 00;Jumbo the Stungun
 0xD4DF28,0xD4DF2C;0x00A26BB0;00 00 00 00;Top Gun
 0xD5F298;0x00A26BC0;00 00;Spirited Brawler, Kohkin
@@ -8306,7 +8306,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD5BABC;0x00A2BF58;00 00;Star-vader, Ruin Magician
 0xD5BAC0;0x00A2BF8C;00 00;Star-vader, Ruin Magician
 0xD4B654,0xD4B658;0x00A2BFB0;00 00;Rainbow Magician
-0xD50A38,0xD50A3C;0x00A2BFC8;00 00;クラッカー・ミュージシャン
+0xD50A38,0xD50A3C;0x00A2BFC8;00 00;Cracker Musician
 0xD62620;0x00A2BFE4;00 00;@42†Ｇ-ＢＴ０２<|風華天翔|ふうがてんしょう|>†@40†みんな､<|元気|げんき|>になーれ!†@41†モレシャン
 0xD70694;0x00A2C060;00 00;@42†ＭＢ†@40†かゆいところは､ごニャいませんか～?†@41†モレシャン
 0xD60364;0x00A2C0B0;00 00;@42†Ｇ-ＢＴ０１<|時空超越|ストライドジェネレーション|>†@40†どう､<|新|あたら|>しい<|可能性|かのうせい|>が<|見|み|>えてきた?†@41†モレシャン
@@ -9059,7 +9059,7 @@ pointer_offsets;pointer_value;separators;extract
 0xD5962C;0x00A35004;00 00 00 00;Supergiant Lady Gunner
 0xD6471C;0x00A3503C;00 00 00 00;Lady Gunner of the Neutron Star
 0xD59594;0x00A35060;00 00;Supergiant Lady Gunner
-0xD59630;0x00A35084;00 00;ショウワクセイタイノレディガンナー
+0xD59630;0x00A35084;00 00;Supergiant Lady Gunner
 0xD70468;0x00A350A8;00 00;Binary Star Twin Gunner
 0xD7046C;0x00A350D0;00 00 00 00;Binary Star Twin Gunner
 0xD547F8,0xD547FC,0xD69F0C,0xD69F10;0x00A350EC;00 00;Armored Heavy Gunner
@@ -10212,7 +10212,7 @@ pointer_offsets;pointer_value;separators;extract
 0x8D7738,0xDA279C;0x00A4FD94;00 00;Silver Thorn Dragon Queen, Luquier "Яeverse"
 0x8D75E4,0xDA084C,0xDA08FC,0xDA095C,0xDA09D4;0x00A4FDB4;00 00 00 00;Arboros Dragon, Timber
 0x8D75E8,0xDA08EC,0xDA0904,0xDA0964;0x00A4FDD4;00 00;Arboros Dragon, Sephirot
-0x8D755C,0xDA035C,0xDA03FC,0xDA04AC,0xDA04CC,0xDA0584;0x00A4FDF4;00 00;アンバー・ドラゴン “蝕”
+0x8D755C,0xDA035C,0xDA03FC,0xDA04AC,0xDA04CC,0xDA0584;0x00A4FDF4;00 00;Amber Dragon, Eclipse
 0x8D5924,0xDA0054;0x00A4FE10;00 00 00 00;Dark Dragon, Phantom Blaster "Diablo"
 0x8D7550,0xDA02EC,0xDA034C,0xDA04BC,0xDA0544,0xDA0574;0x00A4FE44;00 00;Amber Dragon, Dawn
 0x8D75E0,0xDA0844,0xDA08E4,0xDA08F4,0xDA09CC;0x00A4FE60;00 00;Arboros Dragon, Branch
@@ -10244,7 +10244,7 @@ pointer_offsets;pointer_value;separators;extract
 0x8D764C,0xDA0D9C,0xDA0DB4,0xDA0E2C;0x00A500E8;00 00 00 00;Thundering Ripple, Genovious
 0x8D7640,0xDA0D34,0xDA0D8C,0xDA0E1C,0xDA0E5C;0x00A50100;00 00 00 00;Starting Ripple, Alecs
 0x8D75C0,0xDA07AC,0xDA07B4,0xDA07D4,0xDA07F4;0x00A5011C;00 00;Guardian of Truth, Lox
-0x8D75B8,0xDA078C,0xDA07A4,0xDA07E4,0xDA0804;0x00A50134;00 00;知識の運び手 ロックス
+0x8D75B8,0xDA078C,0xDA07A4,0xDA07E4,0xDA0804;0x00A50134;00 00;Bringer of Knowledge, Lox
 0x8D75BC,0xDA0794,0xDA07BC,0xDA07CC,0xDA07EC,0xDA080C;0x00A5014C;00 00 00 00;Law Official, Lox
 0x8D75B4,0xDA0784,0xDA079C,0xDA07C4,0xDA07FC;0x00A50160;00 00;Schoolyard Prodigy, Lox
 0xDA0064;0x00A50178;00 00;Frontline Revenger, Claudas
@@ -10358,7 +10358,7 @@ pointer_offsets;pointer_value;separators;extract
 0x8D7704,0x8D770C,0xDA105C,0xDA106C,0xDA1114,0xDA1124;0x00A50C00;00 00;Beast Deity, Ethics Buster
 0xDA096C;0x00A50C1C;00 00 00 00;Transport Dragon, Brachioporter
 0xDA00C4,0xDA00F4;0x00A50C38;00 00;Embodiment of Armor, Bahr (V Series Start Deck)
-0x8D75A4,0xDA1E34,0xDA1E54,0xDA1E64,0xDA1EA4;0x00A50C48;00 00 00 00;漆黒の先駆け ヴォーティマー
+0x8D75A4,0xDA1E34,0xDA1E54,0xDA1E64,0xDA1EA4;0x00A50C48;00 00 00 00;Scout of Darkness, Vortimer
 0x8D75A0,0xDA1E2C,0xDA1E4C,0xDA1E7C,0xDA1E9C;0x00A50C68;00 00 00 00;Black Dragon Whelp, Vortimer
 0x8D75A8,0xDA1E3C,0xDA1E6C,0xDA1E84,0xDA1EAC;0x00A50C84;00 00;Black Dragon Knight, Vortimer
 0xDA1EBC,0xDA1ECC,0xDA1ED4,0xDA1EEC,0xDA1EFC;0x00A50CA0;00 00 00 00;デスアーミー
@@ -13764,8 +13764,8 @@ pointer_offsets;pointer_value;separators;extract
 0x34FC0C;0x00B4FD6C;00 00;WARNING!!! 通信ファイトが「引き分け」で正常に終わった†
 0x8D7678;0x00B4FDB0;00 00;Broken Heart Jewel Knight, Ashlei "Яeverse"
 0x8D7740;0x00B4FDD4;00 00 00 00;Ice Prison Hades Emperor, Cocytus "Яeverse"
-0x8D7768;0x00B4FDF8;00 00 00 00;学園の処罰者 レオパルド “Я”
-0x8D7758;0x00B4FE1C;00 00;蒼嵐業竜 メイルストローム “Я”
+0x8D7768;0x00B4FDF8;00 00 00 00;School Punisher, Leo-pald "Яeverse"
+0x8D7758;0x00B4FE1C;00 00;Blue Storm Karma Dragon, Maelstrom "Яeverse"
 0x8D76A8;0x00B4FE40;00 00 00 00;Cleanup Celestial, Ramiel "Яeverse"
 0x8D76C0;0x00B4FE64;00 00 00 00;Dauntless Dominate Dragon "Яeverse"
 0x8D76D8;0x00B4FE90;00 00 00 00;Eradicator, Vowing Saber Dragon "Яeverse"

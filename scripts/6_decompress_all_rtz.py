@@ -50,7 +50,7 @@ def main():
   if target.is_dir():
     # Recherche récursive de tous les .rtz dans l'arborescence
     # (prend en compte la casse .rtz et .RTZ)
-    rtz_files = [f for f in target.rglob("*") if f.suffix.lower() == ".rtz"]
+    rtz_files = [f for f in target.rglob("*") if ( f.suffix.lower() == ".rtz" || f.suffix.lower() == ".rts" ) ]
 
     if not rtz_files:
       print(f"⚠ Aucun fichier .rtz trouvé dans {target} ou ses sous-dossiers")

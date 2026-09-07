@@ -1115,7 +1115,7 @@ ai/009.bin;0xE530;11 9F 48 BE;Shura Stealth Dragon, Daranicongo
 ai/009.bin;0xE530;CF AA 4F C1;Perdition Dragon, Dragonic Neoflame
 ai/009.bin;0xE530;7C 17 CE C1;Ranunculus Flower Maiden, Ahsha
 ai/009.bin;0xE530;15 6E A2 C8;Wisteria Knight
-ai/009.bin;0xE530;35 33 3D CB;蠱毒の抹消者 セイオウボ
+ai/009.bin;0xE530;35 33 3D CB;Worm Toxin Eradicator, Seiobo
 ai/009.bin;0xE530;AB 51 A7 CB;AI(%d) : レシピ (フラグ:%08x)
 ai/009.bin;0xE530;D7 DA C1 D6;AI(%d) : 思考開始 (行動カテゴリ:%d)
 ai/009.bin;0xE530;7C 46 0A D9;Stealth Dragon, Dreadmaster
@@ -2582,7 +2582,7 @@ ai/023.bin;0xE564;DC A5 CF 01;  クインテットウォール : %d/%d枚
 ai/023.bin;0xE564;51 5B 2F 06;Hexagonal Magus
 ai/023.bin;0xE564;DD 9F CC 07;Blue Storm Dragon, Maelstrom
 ai/023.bin;0xE564;8D 9F AA 08;  シールドの要求値 : 
-ai/023.bin;0xE564;01 83 D7 08;超絃理論の愛し子
+ai/023.bin;0xE564;01 83 D7 08;Beloved Child of Superstring Theory
 ai/023.bin;0xE564;76 AE E0 09;Dragonic Overlord "The Яe-birth" (Trigger)
 ai/023.bin;0xE564;02 DC 8B 0D;Mond Blaukluger
 ai/023.bin;0xE564;B1 2D 5D 0E;  対象のパワー : %d(%d)%s
@@ -3592,7 +3592,7 @@ ai/031.bin;0xE806;D7 DA C1 D6;AI(%d) : 思考開始 (行動カテゴリ:%d)
 ai/031.bin;0xE806;7C 46 0A D9;Stealth Dragon, Dreadmaster
 ai/031.bin;0xE806;6B 1D DB DC;Machining Mosquito mkII
 ai/031.bin;0xE806;8A F8 0D DE;Aura Baller
-ai/031.bin;0xE806;15 DA 1B E1;メチャバトラー ケンドール
+ai/031.bin;0xE806;15 DA 1B E1;Extreme Battler, Kendhol
 ai/031.bin;0xE806;69 E8 61 E1;オーバーロード
 ai/031.bin;0xE806;7D 1F 65 E6;Beast Deity, Night Jackal
 ai/031.bin;0xE806;51 49 33 E7;Cannon Ball
@@ -4071,7 +4071,7 @@ ai/035.bin;0xE60F;D7 DA C1 D6;AI(%d) : 思考開始 (行動カテゴリ:%d)
 ai/035.bin;0xE60F;7C 46 0A D9;Stealth Dragon, Dreadmaster
 ai/035.bin;0xE60F;6B 1D DB DC;Machining Mosquito mkII
 ai/035.bin;0xE60F;69 E8 61 E1;オーバーロード
-ai/035.bin;0xE60F;D2 E1 47 E4;ポップコーン・ボーイ
+ai/035.bin;0xE60F;D2 E1 47 E4;Popcorn Boy
 ai/035.bin;0xE60F;7D 1F 65 E6;Beast Deity, Night Jackal
 ai/035.bin;0xE60F;57 CD 2E E8;    
 ai/035.bin;0xE60F;CC 1A C6 E8;AI未設定 : attrib = %s
@@ -5530,7 +5530,7 @@ ai/048.bin;0xEF30;7C 46 0A D9;Stealth Dragon, Dreadmaster
 ai/048.bin;0xEF30;6B 1D DB DC;Machining Mosquito mkII
 ai/048.bin;0xEF30;FD 66 77 DF;Raizer Girl, Kate
 ai/048.bin;0xEF30;F0 4E 4A E0;Transmigrating Evolution, Miraioh
-ai/048.bin;0xEF30;15 DA 1B E1;メチャバトラー ケンドール
+ai/048.bin;0xEF30;15 DA 1B E1;Extreme Battler, Kendhol
 ai/048.bin;0xEF30;69 E8 61 E1;オーバーロード
 ai/048.bin;0xEF30;7D 1F 65 E6;Beast Deity, Night Jackal
 ai/048.bin;0xEF30;57 CD 2E E8;    
@@ -5634,7 +5634,7 @@ ai/049.bin;0x10334;32 32 45 D1;Meteokaiser, Victoplasma
 ai/049.bin;0x10334;D7 DA C1 D6;AI(%d) : 思考開始 (行動カテゴリ:%d)
 ai/049.bin;0x10334;7C 46 0A D9;Stealth Dragon, Dreadmaster
 ai/049.bin;0x10334;6B 1D DB DC;Machining Mosquito mkII
-ai/049.bin;0x10334;15 DA 1B E1;メチャバトラー ケンドール
+ai/049.bin;0x10334;15 DA 1B E1;Extreme Battler, Kendhol
 ai/049.bin;0x10334;69 E8 61 E1;オーバーロード
 ai/049.bin;0x10334;7D 1F 65 E6;Beast Deity, Night Jackal
 ai/049.bin;0x10334;57 CD 2E E8;    
@@ -5739,7 +5739,7 @@ ai/050.bin;0x1034F;32 32 45 D1;Meteokaiser, Victoplasma
 ai/050.bin;0x1034F;D7 DA C1 D6;AI(%d) : 思考開始 (行動カテゴリ:%d)
 ai/050.bin;0x1034F;7C 46 0A D9;Stealth Dragon, Dreadmaster
 ai/050.bin;0x1034F;6B 1D DB DC;Machining Mosquito mkII
-ai/050.bin;0x1034F;15 DA 1B E1;メチャバトラー ケンドール
+ai/050.bin;0x1034F;15 DA 1B E1;Extreme Battler, Kendhol
 ai/050.bin;0x1034F;69 E8 61 E1;オーバーロード
 ai/050.bin;0x1034F;7D 1F 65 E6;Beast Deity, Night Jackal
 ai/050.bin;0x1034F;57 CD 2E E8;    
@@ -6071,7 +6071,7 @@ ai/053.bin;0xF0DB;11 9F 48 BE;Shura Stealth Dragon, Daranicongo
 ai/053.bin;0xF0DB;CF AA 4F C1;Perdition Dragon, Dragonic Neoflame
 ai/053.bin;0xF0DB;7C 17 CE C1;Ranunculus Flower Maiden, Ahsha
 ai/053.bin;0xF0DB;15 6E A2 C8;Wisteria Knight
-ai/053.bin;0xF0DB;35 33 3D CB;蠱毒の抹消者 セイオウボ
+ai/053.bin;0xF0DB;35 33 3D CB;Worm Toxin Eradicator, Seiobo
 ai/053.bin;0xF0DB;AB 51 A7 CB;AI(%d) : レシピ (フラグ:%08x)
 ai/053.bin;0xF0DB;AE 72 79 D3;Eradicator, Blue Gem Carbuncle
 ai/053.bin;0xF0DB;D7 DA C1 D6;AI(%d) : 思考開始 (行動カテゴリ:%d)
@@ -6827,7 +6827,7 @@ ai/060.bin;0xFA70;3A 08 A6 8E;Sunrise Ray Knight, Gurguit
 ai/060.bin;0xFA70;1F 10 24 8F;上
 ai/060.bin;0xFA70;6C E6 93 8F;Pitch Black Sage, Charon
 ai/060.bin;0xFA70;BB E2 E9 90;Immortal, Asura Kaiser
-ai/060.bin;0xFA70;03 3B 3F 92;ピーピング・ラビット
+ai/060.bin;0xFA70;03 3B 3F 92;Peeping Rabbit
 ai/060.bin;0xFA70;A0 2E B1 92;Knight of Morning Shadow, Kimarcus
 ai/060.bin;0xFA70;E1 26 37 94;Demonic Dragon Berserker, Chatura
 ai/060.bin;0xFA70;DE 12 3A 94;Sleimy
@@ -6868,7 +6868,7 @@ ai/060.bin;0xFA70;27 25 50 F1;Bear Down Samurai
 ai/060.bin;0xFA70;FC B0 EB F6;Purification Regalia, Pure Angel
 ai/060.bin;0xFA70;89 20 23 F8;下
 ai/060.bin;0xFA70;DD 4C B3 F8;ターン開始 AI(%d)
-ai/060.bin;0xFA70;B7 08 AD FD;曙光の騎士 ゴルボドゥク
+ai/060.bin;0xFA70;B7 08 AD FD;Dawning Knight, Gorboduc
 ai/061.bin;0xFBB3;DC A5 CF 01;  クインテットウォール : %d/%d枚
 ai/061.bin;0xFBB3;A1 DF 01 02;Flame of Victory
 ai/061.bin;0xFBB3;51 5B 2F 06;Hexagonal Magus
@@ -6975,7 +6975,7 @@ ai/061.bin;0xFBB3;27 25 50 F1;Bear Down Samurai
 ai/061.bin;0xFBB3;FC B0 EB F6;Purification Regalia, Pure Angel
 ai/061.bin;0xFBB3;89 20 23 F8;下
 ai/061.bin;0xFBB3;DD 4C B3 F8;ターン開始 AI(%d)
-ai/061.bin;0xFBB3;B7 08 AD FD;曙光の騎士 ゴルボドゥク
+ai/061.bin;0xFBB3;B7 08 AD FD;Dawning Knight, Gorboduc
 ai/062.bin;0xEF90;DC A5 CF 01;  クインテットウォール : %d/%d枚
 ai/062.bin;0xEF90;51 5B 2F 06;Hexagonal Magus
 ai/062.bin;0xEF90;DD 9F CC 07;Blue Storm Dragon, Maelstrom
@@ -7522,7 +7522,7 @@ ai/067.bin;0xFF9C;DC A5 CF 01;  クインテットウォール : %d/%d枚
 ai/067.bin;0xFF9C;51 5B 2F 06;Hexagonal Magus
 ai/067.bin;0xFF9C;DD 9F CC 07;Blue Storm Dragon, Maelstrom
 ai/067.bin;0xFF9C;8D 9F AA 08;  シールドの要求値 : 
-ai/067.bin;0xFF9C;01 83 D7 08;超絃理論の愛し子
+ai/067.bin;0xFF9C;01 83 D7 08;Beloved Child of Superstring Theory
 ai/067.bin;0xFF9C;76 AE E0 09;Dragonic Overlord "The Яe-birth" (Trigger)
 ai/067.bin;0xFF9C;1B 7B 19 0D;Flowers in Vacuum, Cosmo Wreath
 ai/067.bin;0xFF9C;02 DC 8B 0D;Mond Blaukluger
@@ -8280,7 +8280,7 @@ ai/073.bin;0xF435;11 9F 48 BE;Shura Stealth Dragon, Daranicongo
 ai/073.bin;0xF435;CF AA 4F C1;Perdition Dragon, Dragonic Neoflame
 ai/073.bin;0xF435;7C 17 CE C1;Ranunculus Flower Maiden, Ahsha
 ai/073.bin;0xF435;15 6E A2 C8;Wisteria Knight
-ai/073.bin;0xF435;35 33 3D CB;蠱毒の抹消者 セイオウボ
+ai/073.bin;0xF435;35 33 3D CB;Worm Toxin Eradicator, Seiobo
 ai/073.bin;0xF435;AB 51 A7 CB;AI(%d) : レシピ (フラグ:%08x)
 ai/073.bin;0xF435;AE 72 79 D3;Eradicator, Blue Gem Carbuncle
 ai/073.bin;0xF435;D7 DA C1 D6;AI(%d) : 思考開始 (行動カテゴリ:%d)
@@ -8404,7 +8404,7 @@ ai/074.bin;0x107CE;BF 43 2B F1;  アタッカー : %s
 ai/074.bin;0x107CE;27 25 50 F1;Bear Down Samurai
 ai/074.bin;0x107CE;50 E8 F3 F5;Brawler, Big Bang Knuckle Buster
 ai/074.bin;0x107CE;FC B0 EB F6;Purification Regalia, Pure Angel
-ai/074.bin;0x107CE;82 0E AB F7;真・喧嘩屋 ビックバンナックル・ターボ
+ai/074.bin;0x107CE;82 0E AB F7;True Brawler, Big Bang Knuckle Turbo
 ai/074.bin;0x107CE;89 20 23 F8;下
 ai/074.bin;0x107CE;DD 4C B3 F8;ターン開始 AI(%d)
 ai/075.bin;0xFC74;DC A5 CF 01;  クインテットウォール : %d/%d枚
@@ -8980,7 +8980,7 @@ ai/080.bin;0x10D0C;49 58 50 21;Dimensional Robo, Daijet
 ai/080.bin;0x10D0C;8E BC BB 21;  シールドの目標値 : 
 ai/080.bin;0x10D0C;76 10 32 22;Silence Joker
 ai/080.bin;0x10D0C;50 41 74 23;Hope Child, Turiel
-ai/080.bin;0x10D0C;07 0C D9 24;ダッドリー・ファントム
+ai/080.bin;0x10D0C;07 0C D9 24;Dudley Phantom
 ai/080.bin;0x10D0C;39 5F 97 27;Promising Knight, David
 ai/080.bin;0x10D0C;BE 51 F9 27;Ravenous Dragon, Battlerex
 ai/080.bin;0x10D0C;F7 2E E0 29;～%d
@@ -9273,7 +9273,7 @@ ai/082.bin;0x1009B;A8 8C 78 D4;Asura Kaiser
 ai/082.bin;0x1009B;D7 DA C1 D6;AI(%d) : 思考開始 (行動カテゴリ:%d)
 ai/082.bin;0x1009B;7C 46 0A D9;Stealth Dragon, Dreadmaster
 ai/082.bin;0x1009B;6B 1D DB DC;Machining Mosquito mkII
-ai/082.bin;0x1009B;15 DA 1B E1;メチャバトラー ケンドール
+ai/082.bin;0x1009B;15 DA 1B E1;Extreme Battler, Kendhol
 ai/082.bin;0x1009B;69 E8 61 E1;オーバーロード
 ai/082.bin;0x1009B;7D 1F 65 E6;Beast Deity, Night Jackal
 ai/082.bin;0x1009B;57 CD 2E E8;    
@@ -11670,7 +11670,7 @@ fe/tuto_004.bin;0x1772;DE 05 F9 D8;{$336600}スタンドフェイズ{$}は、タ
 fe/tuto_004.bin;0x1772;C8 7B 5D FF;ドローフェイズはスタンドフェイズの\n<|次|つぎ|>に<|行|おこな|>われるの。
 fe/tuto_005.bin;0x1924;69 FA AC 20;さっそく{$336600}『スモークギア・ドラゴン』で、{$}\n{$336600}ライド{$}してみましょ。
 fe/tuto_005.bin;0x1924;6A 84 4F 22;ライドフェイズの<|説明|せつめい|>はこれで<|終|お|>わりよ。
-fe/tuto_005.bin;0x1924;45 92 FC 23;ヴァンガードサークルにある\n{$336600}『メーザーギア・ドラゴン』{$}の
+fe/tuto_005.bin;0x1924;45 92 FC 23;ヴァンガードサークルにある\n{$336600}『Masergear Dragon』{$}の
 fe/tuto_005.bin;0x1924;A9 FD 21 2E;<|他|ほか|>のカードを{$336600}『ライド』{$}することで\nアップさせることができるわ。
 fe/tuto_005.bin;0x1924;31 37 96 2F;あなたの<|手札|てふだ|>のグレード２のカードは……\n{$336600}『スモークギア・ドラゴン』{$}だね。
 fe/tuto_005.bin;0x1924;9C A2 CB 31;よく<|考|かんが|>えてライドしてね。
@@ -11769,7 +11769,7 @@ fe/tuto_007.bin;0x27DA;75 32 D1 38;{$336600}ダメージチェックは<|無|な
 fe/tuto_007.bin;0x27DA;5B C0 71 40;フィールドにアタックできる\nユニットがいなくなったから、
 fe/tuto_007.bin;0x27DA;BD DA B5 42;めくったカードが、<|下|した|>の<|部分|ぶぶん|>に{$336600}<|黄色|きいろ|>いライン{$}\nの<|入|はい|>った{$336600}『トリガーユニット』{$}だと、
 fe/tuto_007.bin;0x27DA;67 2C A2 45;<|今回|こんかい|>は{$336600}バトルフェイズ{$}の<|説明|せつめい|>をするね。
-fe/tuto_007.bin;0x27DA;33 BD 00 46;<|今回|こんかい|>の<|場合|ばあい|>は『メーザーギア・ドラゴン』の\nパワー@07{$336600}８０００{$}に
+fe/tuto_007.bin;0x27DA;33 BD 00 46;<|今回|こんかい|>の<|場合|ばあい|>は『Masergear Dragon』の\nパワー@07{$336600}８０００{$}に
 fe/tuto_007.bin;0x27DA;5C 11 0E 4C;Steam Battler, Dadasig
 fe/tuto_007.bin;0x27DA;B6 E2 5D 54;まずは、{$336600}ヴァンガードから{$}\nアタックしてみよっか。
 fe/tuto_007.bin;0x27DA;60 13 AD 55;ヴァンガードの<|後|うし|>ろのユニット、\n{$336600}『ブラスウイング・ドラゴン』{$}を、
@@ -11858,7 +11858,7 @@ fe/tuto_008.bin;0x22F2;8F 72 D9 29;ヴァンガードのパワーにプラスさ
 fe/tuto_008.bin;0x22F2;35 35 7D 2D;グレード２までのカードを\n{$336600}<|手札|てふだ|>からコール{$}できるわ。
 fe/tuto_008.bin;0x22F2;27 13 9E 2E;コールすると、\nユニットの{$336600}シールド<|分|ぶん|>の<|数値|すうち|>{$}が、
 fe/tuto_008.bin;0x22F2;5A FB 9B 34;{$336600}Ｙボタンを<|押|お|>してノーガードを{$}<|宣言|せんげん|>してね。
-fe/tuto_008.bin;0x22F2;50 62 36 3E;{$336600}『メーザーギア・ドラゴン』{$}のシールドの<|値|あたい|>が
+fe/tuto_008.bin;0x22F2;50 62 36 3E;{$336600}『Masergear Dragon』{$}のシールドの<|値|あたい|>が
 fe/tuto_008.bin;0x22F2;A4 BA 65 43;あなたのヴァンガードは@07{$336600}１００００{$}だから\n<|私|わたし|>の<|方|ほう|>が<|高|たか|>いよね。
 fe/tuto_008.bin;0x22F2;09 6D B3 44;…したいけど、さっきのトリガーで\nあなたのヴァンガードのほうが
 fe/tuto_008.bin;0x22F2;CD FE 7F 46;<|手札|てふだ|>から{$336600}ガーディアンサークルに\nユニットをコール{$}することができるわ。
@@ -11871,7 +11871,7 @@ fe/tuto_008.bin;0x22F2;4A 2C 82 61;<|今回|こんかい|>は<|私|わたし|>�
 fe/tuto_008.bin;0x22F2;84 B7 D8 63;ドライブチェックでトリガーが<|出|で|>れば、\nこのアタックはヒットするね。
 fe/tuto_008.bin;0x22F2;46 C4 5D 64;<|今|いま|>は{$336600}ユニットを１<|枚|まい|>ずつコール{$}したけど、\n{$336600}まとめてコール{$}することもできるよ。
 fe/tuto_008.bin;0x22F2;DA 78 CB 68;Maiden of Safflower
-fe/tuto_008.bin;0x22F2;C9 33 D5 6A;{$336600}『メーザーギア・ドラゴン』を{$336600}<|選択|せんたく|>{$}して、\n{$336600}Ｙボタン{$}で{$336600}コール{$}して。
+fe/tuto_008.bin;0x22F2;C9 33 D5 6A;{$336600}『Masergear Dragon』を{$336600}<|選択|せんたく|>{$}して、\n{$336600}Ｙボタン{$}で{$336600}コール{$}して。
 fe/tuto_008.bin;0x22F2;82 EF FB 6B;ドライブチェック！
 fe/tuto_008.bin;0x22F2;77 7D 44 6E;Qool Qute Qiwi
 fe/tuto_008.bin;0x22F2;D5 A4 93 70;<|次|つぎ|>は、リアガードであなたの\nヴァンガードをアタックするわ。
@@ -11883,7 +11883,7 @@ fe/tuto_008.bin;0x22F2;43 8A DF 7B;Blossoming Maiden, Cela
 fe/tuto_008.bin;0x22F2;B5 9D 24 7C;@0Bのスキルを<|持|も|>つ\n{$336600}グレード２{$}の{$336600}<|前列|ぜんれつ|>リアガード{$}は、
 fe/tuto_008.bin;0x22F2;66 06 37 82;<|私|わたし|>のユニットはまだ<|残|のこ|>っているから、\nもう<|一度|いちど|>アタックステップよ。
 fe/tuto_008.bin;0x22F2;35 45 D4 88;Ｙボタンで<|終了|しゅうりょう|>してね。
-fe/tuto_008.bin;0x22F2;C9 14 F5 88;<|手札|てふだ|>の{$336600}『メーザーギア・ドラゴン』{$}を{$336600}Ａボタン{$}で\n<|選択|せんたく|>して、{$336600}Ｙボタン{$}でコールして。
+fe/tuto_008.bin;0x22F2;C9 14 F5 88;<|手札|てふだ|>の{$336600}『Masergear Dragon』{$}を{$336600}Ａボタン{$}で\n<|選択|せんたく|>して、{$336600}Ｙボタン{$}でコールして。
 fe/tuto_008.bin;0x22F2;D6 E4 67 8F;リアガードであなたのヴァンガードに\nアタック！
 fe/tuto_008.bin;0x22F2;BD 7D A6 91;Spring-Heralding Maiden, Ozu
 fe/tuto_008.bin;0x22F2;6F EB F7 95;Masergear Dragon
@@ -11905,7 +11905,7 @@ fe/tuto_008.bin;0x22F2;1F 66 4A C1;アタックされたユニットの\n{$33660
 fe/tuto_008.bin;0x22F2;7C 17 CE C1;Ranunculus Flower Maiden, Ahsha
 fe/tuto_008.bin;0x22F2;CE B6 F4 C1;{$336600}@0Bインターセプト{$}も\nしてみよう。
 fe/tuto_008.bin;0x22F2;88 5F FE C3;<|私|わたし|>のリアガードのほうがパワーが<|高|たか|>いから、\nあなたはダメージを１<|受|う|>けるわよ。
-fe/tuto_008.bin;0x22F2;CF 7B C6 C7;<|今回|こんかい|>は{$336600}『メーザーギア・ドラゴン』{$}を\nコールしてみよっか。
+fe/tuto_008.bin;0x22F2;CF 7B C6 C7;<|今回|こんかい|>は{$336600}『Masergear Dragon』{$}を\nコールしてみよっか。
 fe/tuto_008.bin;0x22F2;EF 7E 11 CB;<|次|つぎ|>は、パワーを＋５０００する\nユニットを<|決|き|>めるんだけど、
 fe/tuto_008.bin;0x22F2;CE DB D7 CE;{$336600}アタックされているユニットを{$}\n{$336600}<|守|まも|>る{$}ことができるのよ。
 fe/tuto_008.bin;0x22F2;F4 9D 78 D0;<|今|いま|>のあなたの<|手札|てふだ|>のカードだとシールドが\n<|足|た|>りなくて、ガード<|出来|でき|>ないから……
@@ -12537,3 +12537,352 @@ fight/sys_menu.bin;0x0FEB;0B AF A8 27;ファイナルターンを<|宣言|せん
 fight/sys_menu.bin;0x0FEB;04 B3 E0 7C;ＶＯＩＣＥのＯＮ・ＯＦＦを<|変更|へんこう|>します。
 fight/sys_menu.bin;0x0FEB;E1 CA 5B CA;<|各種項目|かくしゅこうもく|>とＧアシストステップのスキップのＯＮ/ＯＦＦを<|変更|へんこう|>します。
 fight/sys_menu.bin;0x0FEB;70 F2 08 FF;カットインの<|表示|ひょうじ|>・<|非表示|ひひょうじ|>を<|変更|へんこう|>します。
+system/collection.bin;0xA137;EB 88 61 00;クレイエレメンタル
+system/collection.bin;0xA137;F9 C5 27 05;クラン
+system/collection.bin;0xA137;0D 88 D6 0D;ジェネシス
+system/collection.bin;0xA137;91 BF CE 11;オラクルシンクタンク
+system/collection.bin;0xA137;CA 4D CE 12;シールド
+system/collection.bin;0xA137;43 35 37 13;昇順
+system/collection.bin;0xA137;B8 6C A3 14;ダークイレギュラーズ
+system/collection.bin;0xA137;8D 17 EC 14;ディメンジョンポリス
+system/collection.bin;0xA137;AB E8 93 16;たちかぜ
+system/collection.bin;0xA137;61 2C D2 17;クラン別に表示
+system/collection.bin;0xA137;D7 BB 89 22;全て表示
+system/collection.bin;0xA137;C4 49 A1 3A;ギアクロニクル
+system/collection.bin;0xA137;80 AA F4 3E;かげろう
+system/collection.bin;0xA137;06 44 BC 4A;バミューダ△
+system/collection.bin;0xA137;5B A5 02 5A;グレード
+system/collection.bin;0xA137;C6 C7 E5 5E;ぬばたま
+system/collection.bin;0xA137;45 5F 2E 69;メガコロニー
+system/collection.bin;0xA137;20 DD 49 75;むらくも
+system/collection.bin;0xA137;01 3C B6 7B;エンジェルフェザー
+system/collection.bin;0xA137;6F 26 C1 80;レアリティ
+system/collection.bin;0xA137;A9 73 30 83;パック別に表示
+system/collection.bin;0xA137;25 59 05 84;パワー
+system/collection.bin;0xA137;B2 1B FF 87;グレートネイチャー
+system/collection.bin;0xA137;97 BC 2E 98;ロイヤルパラディン
+system/collection.bin;0xA137;42 4E BC B0;降順
+system/collection.bin;0xA137;61 37 B2 B8;トリガー
+system/collection.bin;0xA137;5B 5D 1B CD;ネオネクタール
+system/collection.bin;0xA137;1E 42 BE CF;リンクジョーカー
+system/collection.bin;0xA137;94 B1 6C DF;なるかみ
+system/collection.bin;0xA137;3A E8 3F ED;グランブルー
+system/collection.bin;0xA137;5D 5A A3 ED;なまえ
+system/collection.bin;0xA137;AB 00 CC EE;アクアフォース
+system/collection.bin;0xA137;C1 69 67 EF;ノヴァグラップラー
+system/collection.bin;0xA137;E3 40 8D F1;ペイルムーン
+system/collection.bin;0xA137;3D 41 EB F1;スパイクブラザーズ
+system/collection.bin;0xA137;92 70 63 F6;ゴールドパラディン
+system/collection.bin;0xA137;21 33 A0 FA;シャドウパラディン
+system/commu_main.bin;0x0FC9;07 AC DD 0F;<|通信|つうしん|>ファイトでは<|下記|かき|>の<|点|てん|>にご<|注意下|ちゅういくだ|>さい
+system/custom_clan.bin;0x0DEA;EB 88 61 00;クレイエレメンタル
+system/custom_clan.bin;0x0DEA;F9 C5 27 05;クラン
+system/custom_clan.bin;0x0DEA;0D 88 D6 0D;ジェネシス
+system/custom_clan.bin;0x0DEA;91 BF CE 11;オラクルシンクタンク
+system/custom_clan.bin;0x0DEA;CA 4D CE 12;シールド
+system/custom_clan.bin;0x0DEA;43 35 37 13;昇順
+system/custom_clan.bin;0x0DEA;B8 6C A3 14;ダークイレギュラーズ
+system/custom_clan.bin;0x0DEA;8D 17 EC 14;ディメンジョンポリス
+system/custom_clan.bin;0x0DEA;AB E8 93 16;たちかぜ
+system/custom_clan.bin;0x0DEA;1D 5D B3 22;どのクランでデッキを<|組|く|>みますか？
+system/custom_clan.bin;0x0DEA;C4 49 A1 3A;ギアクロニクル
+system/custom_clan.bin;0x0DEA;80 AA F4 3E;かげろう
+system/custom_clan.bin;0x0DEA;06 44 BC 4A;バミューダ△
+system/custom_clan.bin;0x0DEA;5B A5 02 5A;グレード
+system/custom_clan.bin;0x0DEA;C6 C7 E5 5E;ぬばたま
+system/custom_clan.bin;0x0DEA;45 5F 2E 69;メガコロニー
+system/custom_clan.bin;0x0DEA;20 DD 49 75;むらくも
+system/custom_clan.bin;0x0DEA;01 3C B6 7B;エンジェルフェザー
+system/custom_clan.bin;0x0DEA;6F 26 C1 80;レアリティ
+system/custom_clan.bin;0x0DEA;25 59 05 84;パワー
+system/custom_clan.bin;0x0DEA;B2 1B FF 87;グレートネイチャー
+system/custom_clan.bin;0x0DEA;97 BC 2E 98;ロイヤルパラディン
+system/custom_clan.bin;0x0DEA;42 4E BC B0;降順
+system/custom_clan.bin;0x0DEA;61 37 B2 B8;トリガー
+system/custom_clan.bin;0x0DEA;5B 5D 1B CD;ネオネクタール
+system/custom_clan.bin;0x0DEA;1E 42 BE CF;リンクジョーカー
+system/custom_clan.bin;0x0DEA;94 B1 6C DF;なるかみ
+system/custom_clan.bin;0x0DEA;3A E8 3F ED;グランブルー
+system/custom_clan.bin;0x0DEA;5D 5A A3 ED;なまえ
+system/custom_clan.bin;0x0DEA;AB 00 CC EE;アクアフォース
+system/custom_clan.bin;0x0DEA;C1 69 67 EF;ノヴァグラップラー
+system/custom_clan.bin;0x0DEA;E3 40 8D F1;ペイルムーン
+system/custom_clan.bin;0x0DEA;3D 41 EB F1;スパイクブラザーズ
+system/custom_clan.bin;0x0DEA;92 70 63 F6;ゴールドパラディン
+system/custom_clan.bin;0x0DEA;21 33 A0 FA;シャドウパラディン
+system/custom_recipe.bin;0xAE09;CA 7F 4B C5;ユーザーレシピ
+system/custom_recipe_menu.bin;0x0E81;F9 C5 27 05;クラン
+system/custom_recipe_menu.bin;0x0E81;00 0B 7E 0E;レシピ移動
+system/custom_recipe_menu.bin;0x0E81;CA 4D CE 12;シールド
+system/custom_recipe_menu.bin;0x0E81;43 35 37 13;昇順
+system/custom_recipe_menu.bin;0x0E81;BA 75 02 1A;レシピの確認
+system/custom_recipe_menu.bin;0x0E81;08 1E 18 2F;アイコン変更
+system/custom_recipe_menu.bin;0x0E81;27 2D E0 55;レシピ削除
+system/custom_recipe_menu.bin;0x0E81;9B 74 0D 59;スリーブ変更
+system/custom_recipe_menu.bin;0x0E81;5B A5 02 5A;グレード
+system/custom_recipe_menu.bin;0x0E81;79 8E 48 69;スタンドアップ変更
+system/custom_recipe_menu.bin;0x0E81;6F 26 C1 80;レアリティ
+system/custom_recipe_menu.bin;0x0E81;25 59 05 84;パワー
+system/custom_recipe_menu.bin;0x0E81;D0 BF 8C 94;レシピ名変更
+system/custom_recipe_menu.bin;0x0E81;A0 E8 A3 99;アバター変更
+system/custom_recipe_menu.bin;0x0E81;1C 16 FC 9A;プレイマット変更
+system/custom_recipe_menu.bin;0x0E81;42 4E BC B0;降順
+system/custom_recipe_menu.bin;0x0E81;61 37 B2 B8;トリガー
+system/custom_recipe_menu.bin;0x0E81;5D 5A A3 ED;なまえ
+system/custom_xmenu.bin;0x2FD6;EB 88 61 00;クレイエレメンタル
+system/custom_xmenu.bin;0x2FD6;01 C1 D3 00;<|黒鋼|くろがね|>の<|戦騎|せんき|>
+system/custom_xmenu.bin;0x2FD6;81 36 1C 01;TheDark“RenSuzugamori”
+system/custom_xmenu.bin;0x2FD6;42 11 04 05;<|獣王爆進|じゅうおうばくしん|>
+system/custom_xmenu.bin;0x2FD6;F9 C5 27 05;クラン
+system/custom_xmenu.bin;0x2FD6;76 E6 74 05;デリート
+system/custom_xmenu.bin;0x2FD6;5D 33 B3 08;<|山札|やまふだ|>から<|探|さが|>す
+system/custom_xmenu.bin;0x2FD6;08 E6 9B 0A;<|歌姫|うたひめ|>の<|二重奏|デュエット|>
+system/custom_xmenu.bin;0x2FD6;C2 4F E2 0C;マシニング
+system/custom_xmenu.bin;0x2FD6;0D 88 D6 0D;ジェネシス
+system/custom_xmenu.bin;0x2FD6;6B 8D 5F 0E;パワー-
+system/custom_xmenu.bin;0x2FD6;DD 19 10 0F;<|覇道竜星|はどうりゅうせい|>
+system/custom_xmenu.bin;0x2FD6;D5 71 24 10;<|蒼嵐艦隊|そうらんかんたい|>
+system/custom_xmenu.bin;0x2FD6;91 BF CE 11;オラクルシンクタンク
+system/custom_xmenu.bin;0x2FD6;CA 4D CE 12;シールド
+system/custom_xmenu.bin;0x2FD6;43 35 37 13;昇順
+system/custom_xmenu.bin;0x2FD6;B8 6C A3 14;ダークイレギュラーズ
+system/custom_xmenu.bin;0x2FD6;8D 17 EC 14;ディメンジョンポリス
+system/custom_xmenu.bin;0x2FD6;AD 42 B1 15;<|呪縛|ロック|>
+system/custom_xmenu.bin;0x2FD6;A4 00 7F 16;バトルシスター
+system/custom_xmenu.bin;0x2FD6;ED F7 7F 16;<|覚醒|かくせい|>の<|時空竜|じくうりゅう|>
+system/custom_xmenu.bin;0x2FD6;AB E8 93 16;たちかぜ
+system/custom_xmenu.bin;0x2FD6;5E 3E BA 16;<|次元|じげん|>ロボ
+system/custom_xmenu.bin;0x2FD6;BD 39 5B 17;<|虚影神蝕|きょえいしんしょく|>
+system/custom_xmenu.bin;0x2FD6;96 09 AF 18;<|古代竜|こだいりゅう|>
+system/custom_xmenu.bin;0x2FD6;0E 7D 8E 19;<|先駆|せんく|>
+system/custom_xmenu.bin;0x2FD6;05 11 9C 1A;リセット
+system/custom_xmenu.bin;0x2FD6;71 8D AB 1A;ダメージゾーンに<|置|お|>く
+system/custom_xmenu.bin;0x2FD6;4B 1B 16 1C;ソウルブラスト
+system/custom_xmenu.bin;0x2FD6;76 13 62 1C;<|獣神|じゅうしん|>
+system/custom_xmenu.bin;0x2FD6;0F E5 8A 1C;<|友情|ゆうじょう|>の<|喧嘩屋|ブロウラー|>
+system/custom_xmenu.bin;0x2FD6;79 69 F5 1C;<|風華天翔|ふうがてんしょう|>
+system/custom_xmenu.bin;0x2FD6;59 76 1A 1E;<|解呪|アンロック|>
+system/custom_xmenu.bin;0x2FD6;47 21 FA 1E;<|撃退者|リベンジャー|>
+system/custom_xmenu.bin;0x2FD6;41 C0 9E 21;ファイターズコレクション
+system/custom_xmenu.bin;0x2FD6;80 9E 55 22;<|明星|みょうじょう|>の<|聖剣士|せいけんし|>
+system/custom_xmenu.bin;0x2FD6;C1 C5 0A 23;ハーモニー
+system/custom_xmenu.bin;0x2FD6;30 E4 9D 23;<|宿星|しゅくせい|>の<|救世竜|メサイア|>
+system/custom_xmenu.bin;0x2FD6;D8 3D 53 24;<|解放者|リベレイター|>
+system/custom_xmenu.bin;0x2FD6;44 D6 53 29;<|銃士|じゅうし|>
+system/custom_xmenu.bin;0x2FD6;05 4F D7 2C;<|黄金|おうごん|>の<|機兵|きへい|>
+system/custom_xmenu.bin;0x2FD6;6C A9 2A 2F;<|竜剣双闘|りゅうけんそうとう|>
+system/custom_xmenu.bin;0x2FD6;DE 94 11 30;<|桜花|おうか|>の<|姫巫女|ひめみこ|>
+system/custom_xmenu.bin;0x2FD6;D0 40 DA 31;スタンドできない
+system/custom_xmenu.bin;0x2FD6;CF 79 B2 32;<|盟主|めいしゅ|>
+system/custom_xmenu.bin;0x2FD6;54 26 2B 34;スペリオルライド
+system/custom_xmenu.bin;0x2FD6;F2 BF BF 37;キーワード
+system/custom_xmenu.bin;0x2FD6;1A EC 70 39;<|蒼嵐|そうらん|>
+system/custom_xmenu.bin;0x2FD6;E7 DC B5 39;<|煉獄|れんごく|>
+system/custom_xmenu.bin;0x2FD6;B3 AD 45 3A;ブラスター
+system/custom_xmenu.bin;0x2FD6;C4 49 A1 3A;ギアクロニクル
+system/custom_xmenu.bin;0x2FD6;6D 81 C9 3A;<|退却|たいきゃく|>させる
+system/custom_xmenu.bin;0x2FD6;80 AA F4 3E;かげろう
+system/custom_xmenu.bin;0x2FD6;1C C2 0B 40;名称
+system/custom_xmenu.bin;0x2FD6;47 F3 77 40;<|綺羅|きら|>の<|歌姫|うたひめ|>
+system/custom_xmenu.bin;0x2FD6;9F 81 36 42;<|根絶者|デリーター|>
+system/custom_xmenu.bin;0x2FD6;4A 33 B7 42;<|宣言|せんげん|>
+system/custom_xmenu.bin;0x2FD6;31 D0 EA 42;Gにコールできない
+system/custom_xmenu.bin;0x2FD6;02 E2 5F 45;全てのカードから検索
+system/custom_xmenu.bin;0x2FD6;6E F2 82 46;スペリオルコール
+system/custom_xmenu.bin;0x2FD6;6F AE 1C 48;<|双剣覚醒|そうけんかくせい|>
+system/custom_xmenu.bin;0x2FD6;A4 C2 7A 48;<|希望|きぼう|>の<|探索者|シーカー|>
+system/custom_xmenu.bin;0x2FD6;7C 6C B6 48;ダッドリー
+system/custom_xmenu.bin;0x2FD6;B3 F5 85 4A;並び替え
+system/custom_xmenu.bin;0x2FD6;06 44 BC 4A;バミューダ△
+system/custom_xmenu.bin;0x2FD6;CA 64 3D 4E;<|喧嘩屋|ブロウラー|>
+system/custom_xmenu.bin;0x2FD6;71 31 B4 4E;<|魔侯襲来|まこうしゅうらい|>
+system/custom_xmenu.bin;0x2FD6;99 73 5F 50;グレード+
+system/custom_xmenu.bin;0x2FD6;16 1A B8 50;<|時空超越|ストライドジェネレーション|>
+system/custom_xmenu.bin;0x2FD6;71 E5 16 52;デスアーミー
+system/custom_xmenu.bin;0x2FD6;07 12 7F 52;<|位置|いち|>を<|交換|こうかん|>
+system/custom_xmenu.bin;0x2FD6;DA 86 E9 52;<|封竜|ふうりゅう|>
+system/custom_xmenu.bin;0x2FD6;89 F4 00 54;<|守護天使|セレスティアル|>
+system/custom_xmenu.bin;0x2FD6;39 BF CD 54;PR&etc
+system/custom_xmenu.bin;0x2FD6;4A 49 64 56;<|騎士王降臨|きしおうこうりん|>
+system/custom_xmenu.bin;0x2FD6;91 00 7B 58;<|討神魂撃|とうじんこんげき|>
+system/custom_xmenu.bin;0x2FD6;62 5E 67 59;<|創世|そうせい|>の<|竜神|りゅうじん|>
+system/custom_xmenu.bin;0x2FD6;7B 5E 9E 59;<|騎士王凱旋|きしおうがいせん|>
+system/custom_xmenu.bin;0x2FD6;5B A5 02 5A;グレード
+system/custom_xmenu.bin;0x2FD6;22 C4 82 5B;<|双闘|レギオン|>
+system/custom_xmenu.bin;0x2FD6;E6 2D 87 5D;<|絶禍繚乱|ぜっかりょうらん|>
+system/custom_xmenu.bin;0x2FD6;C6 C7 E5 5E;ぬばたま
+system/custom_xmenu.bin;0x2FD6;E4 B8 2E 60;PR♥ISM
+system/custom_xmenu.bin;0x2FD6;C8 E8 F9 61;<|黒輪縛鎖|こくりんばくさ|>
+system/custom_xmenu.bin;0x2FD6;8F 92 82 62;<|神秘|しんぴ|>の<|預言者|よげんしゃ|>
+system/custom_xmenu.bin;0x2FD6;DD 5A 29 63;<|無幻|むげん|>の<|兵団|へいだん|>
+system/custom_xmenu.bin;0x2FD6;4E D9 B1 67;デッキを空にする
+system/custom_xmenu.bin;0x2FD6;45 5F 2E 69;メガコロニー
+system/custom_xmenu.bin;0x2FD6;0B E4 3A 69;<|神託|しんたく|>の<|戦乙女|いくさおとめ|>
+system/custom_xmenu.bin;0x2FD6;AA 11 A8 6E;検索リセット
+system/custom_xmenu.bin;0x2FD6;AC FF A6 72;<|山札|やまふだ|>に<|戻|もど|>す
+system/custom_xmenu.bin;0x2FD6;31 03 B4 72;<|銀の茨|シルバーソーン|>
+system/custom_xmenu.bin;0x2FD6;C8 01 D0 72;ダメージゾーンを<|表|おもて|>にする
+system/custom_xmenu.bin;0x2FD6;E4 27 F7 73;バインド
+system/custom_xmenu.bin;0x2FD6;20 DD 49 75;むらくも
+system/custom_xmenu.bin;0x2FD6;1A 2E 1C 76;<|極限突破|きょくげんとっぱ|>
+system/custom_xmenu.bin;0x2FD6;B9 C6 47 77;<|海皇|かいおう|>の<|末裔|まつえい|>
+system/custom_xmenu.bin;0x2FD6;EA 42 3E 79;エイゼル
+system/custom_xmenu.bin;0x2FD6;AA 67 43 79;<|煉獄焔舞|れんごくえんぶ|>
+system/custom_xmenu.bin;0x2FD6;66 96 77 79;Я
+system/custom_xmenu.bin;0x2FD6;01 3C B6 7B;エンジェルフェザー
+system/custom_xmenu.bin;0x2FD6;08 19 18 7D;<|手札|てふだ|>に<|戻|もど|>す
+system/custom_xmenu.bin;0x2FD6;4C F0 B0 80;ブラウ
+system/custom_xmenu.bin;0x2FD6;6F 26 C1 80;レアリティ
+system/custom_xmenu.bin;0x2FD6;C3 5E 17 81;リミットブレイク
+system/custom_xmenu.bin;0x2FD6;DC D3 B9 83;Neon Messiah
+system/custom_xmenu.bin;0x2FD6;70 89 FA 83;<|帝国|ていこく|>の<|抹消者|イレイザー|>
+system/custom_xmenu.bin;0x2FD6;25 59 05 84;パワー
+system/custom_xmenu.bin;0x2FD6;52 E3 10 87;<|海神|わだつみ|>の<|蒼騎兵|そうきへい|>
+system/custom_xmenu.bin;0x2FD6;B2 1B FF 87;グレートネイチャー
+system/custom_xmenu.bin;0x2FD6;18 B9 92 88;<|女神|めがみ|>の<|円舞曲|ワルツ|>
+system/custom_xmenu.bin;0x2FD6;5E 69 5B 8A;クリティカル+
+system/custom_xmenu.bin;0x2FD6;F1 4D B3 8B;<|神器|じんぎ|>の<|伝承者|でんしょうしゃ|>
+system/custom_xmenu.bin;0x2FD6;9C 4E 13 8E;<|歌姫|うたひめ|>の<|饗宴|きょうえん|>
+system/custom_xmenu.bin;0x2FD6;F5 8C 81 91;アルフレッド
+system/custom_xmenu.bin;0x2FD6;E7 45 FB 91;<|超越|ストライド|>
+system/custom_xmenu.bin;0x2FD6;2E D4 4B 95;関連カード
+system/custom_xmenu.bin;0x2FD6;D0 9E 74 97;○<|回目|かいめ|>
+system/custom_xmenu.bin;0x2FD6;EC 15 A2 97;<|抹消者|イレイザー|>
+system/custom_xmenu.bin;0x2FD6;97 BC 2E 98;ロイヤルパラディン
+system/custom_xmenu.bin;0x2FD6;D1 10 42 9B;<|凶星|きょうせい|>の<|根絶者|デリーター|>
+system/custom_xmenu.bin;0x2FD6;BD 52 8B 9D;<|銀狼|ぎんろう|>の<|爪撃|そうげき|>
+system/custom_xmenu.bin;0x2FD6;2B 2B 5E A3;<|聖域|せいいき|>の<|解放者| リベレイター|>
+system/custom_xmenu.bin;0x2FD6;0F 84 FC A7;絞り込み
+system/custom_xmenu.bin;0x2FD6;B6 65 7B A9;スタンドする
+system/custom_xmenu.bin;0x2FD6;1D 58 F3 AA;カウンターブラスト
+system/custom_xmenu.bin;0x2FD6;E5 7E 0E AB;イニグマン
+system/custom_xmenu.bin;0x2FD6;64 15 AD AC;<|侵略|しんりゃく|>の<|星輝兵| スターベイダー|>
+system/custom_xmenu.bin;0x2FD6;42 4E BC B0;降順
+system/custom_xmenu.bin;0x2FD6;38 23 F1 B3;アモン
+system/custom_xmenu.bin;0x2FD6;4A 9A 30 B4;<|封竜解放|ふうりゅうかいほう|>
+system/custom_xmenu.bin;0x2FD6;84 B2 51 B4;カードを<|引|ひ|>く
+system/custom_xmenu.bin;0x2FD6;CD DC 46 B5;絞り込み中から検索
+system/custom_xmenu.bin;0x2FD6;61 37 B2 B8;トリガー
+system/custom_xmenu.bin;0x2FD6;A0 FB 76 BA;Dragonic Overlord (Break Ride)
+system/custom_xmenu.bin;0x2FD6;E2 1A 0F BB;<|光輝迅雷|こうきじんらい|>
+system/custom_xmenu.bin;0x2FD6;B7 93 1C BB;ライザー
+system/custom_xmenu.bin;0x2FD6;25 7E 48 BC;<|守護者|センチネル|>
+system/custom_xmenu.bin;0x2FD6;FF 41 74 BC;ブレイクライド
+system/custom_xmenu.bin;0x2FD6;A7 74 E3 BD;<|魔女|まじょ|>
+system/custom_xmenu.bin;0x2FD6;BB 91 E0 BF;<|鋼闘機|メタルボーグ|>
+system/custom_xmenu.bin;0x2FD6;3B 55 C3 C1;コミックスタイルvol.1
+system/custom_xmenu.bin;0x2FD6;31 A6 DB C1;RisetoRoyalty
+system/custom_xmenu.bin;0x2FD6;AD 1A 3C C2;<|決意|けつい|>の<|呪縛竜|じゅばくりゅう|>
+system/custom_xmenu.bin;0x2FD6;40 25 20 C7;<|歌姫|うたひめ|>の<|学園|がくえん|>
+system/custom_xmenu.bin;0x2FD6;EA AA 49 C7;ソウルチャージ/ソウルに<|置|お|>く
+system/custom_xmenu.bin;0x2FD6;5B 5D 1B CD;ネオネクタール
+system/custom_xmenu.bin;0x2FD6;04 B2 DF CD;<|雷竜|らいりゅう|>の<|鳴動|めいどう|>
+system/custom_xmenu.bin;0x2FD6;1E 42 BE CF;リンクジョーカー
+system/custom_xmenu.bin;0x2FD6;72 78 37 D0;<|宇宙|そら|>の<|咆哮|ほうこう|>
+system/custom_xmenu.bin;0x2FD6;19 E8 C0 D2;<|星輝兵|スターベイダー|>
+system/custom_xmenu.bin;0x2FD6;02 F5 F4 D2;<|聖域の光剣士|ブラスターブレード|>
+system/custom_xmenu.bin;0x2FD6;6A DA 20 D3;<|神器|じんぎ|>
+system/custom_xmenu.bin;0x2FD6;73 6E 1E D5;<|宝石騎士|ジュエルナイト|>
+system/custom_xmenu.bin;0x2FD6;AF 5B A9 D6;ジェネレーションブレイク
+system/custom_xmenu.bin;0x2FD6;45 66 E1 D6;<|拘束|こうそく|>
+system/custom_xmenu.bin;0x2FD6;A3 1C 1F D7;シールド+
+system/custom_xmenu.bin;0x2FD6;14 46 31 D9;<|奈落|ならく|>の<|撃退者| リベンジャー|>
+system/custom_xmenu.bin;0x2FD6;46 8B 61 DA;<|先導者|せんどうしゃ|>と<|根絶者|デリーター|>
+system/custom_xmenu.bin;0x2FD6;5A AA 2B DB;<|無限転生|むげんてんせい|>
+system/custom_xmenu.bin;0x2FD6;06 92 CA DB;<|探索者|シーカー|>
+system/custom_xmenu.bin;0x2FD6;A0 F5 86 DD;<|宵闇|よいやみ|>の<|鎮魂曲|レクイエム|>
+system/custom_xmenu.bin;0x2FD6;94 B1 6C DF;なるかみ
+system/custom_xmenu.bin;0x2FD6;69 E8 61 E1;オーバーロード
+system/custom_xmenu.bin;0x2FD6;C8 C0 F4 E3;<|竜騎激突|りゅうきげきとつ|>
+system/custom_xmenu.bin;0x2FD6;5E 28 3C E7;パワー+
+system/custom_xmenu.bin;0x2FD6;CD 0F 36 EA;<|聖裁|せいさい|>の<|青|あお|>き<|炎|ほのお|>
+system/custom_xmenu.bin;0x2FD6;3A E8 3F ED;グランブルー
+system/custom_xmenu.bin;0x2FD6;5D 5A A3 ED;なまえ
+system/custom_xmenu.bin;0x2FD6;AB 00 CC EE;アクアフォース
+system/custom_xmenu.bin;0x2FD6;9F FE 4F EF;<|抵抗|レジスト|>
+system/custom_xmenu.bin;0x2FD6;C1 69 67 EF;ノヴァグラップラー
+system/custom_xmenu.bin;0x2FD6;E3 40 8D F1;ペイルムーン
+system/custom_xmenu.bin;0x2FD6;3D 41 EB F1;スパイクブラザーズ
+system/custom_xmenu.bin;0x2FD6;3C 39 44 F3;パック
+system/custom_xmenu.bin;0x2FD6;DE C3 EB F3;<|銀河|ぎんが|>の<|闘士|とうし|>
+system/custom_xmenu.bin;0x2FD6;54 68 44 F4;<|超次元|ちょうじげん|>の<|勇者|ゆうしゃ|>
+system/custom_xmenu.bin;0x2FD6;92 70 63 F6;ゴールドパラディン
+system/custom_xmenu.bin;0x2FD6;8B F2 68 F8;Duo
+system/custom_xmenu.bin;0x2FD6;21 33 A0 FA;シャドウパラディン
+system/custom_xmenu.bin;0x2FD6;DA 04 35 FC;<|竜魂乱舞|りゅうこんらんぶ|>
+system/custom_xmenu.bin;0x2FD6;2D D7 B0 FD;デッキをもとに戻す
+system/custom_xmenu.bin;0x2FD6;6C 39 F5 FD;<|純真|じゅんしん|>の<|花乙女|はなおとめ|>
+system/custom_xmenu.bin;0x2FD6;76 A1 1E FE;メイガス
+system/custom_xmenu.bin;0x2FD6;3A 46 4B FE;FVを設定
+system/difficulty.bin;0x811D;1A A9 CD C4;<|難易度|なんいど|>はオプションでいつでも<|変更|へんこう|>できます
+system/get_list.bin;0x9209;F9 C5 27 05;クラン
+system/get_list.bin;0x9209;CA 4D CE 12;シールド
+system/get_list.bin;0x9209;43 35 37 13;昇順
+system/get_list.bin;0x9209;5B A5 02 5A;グレード
+system/get_list.bin;0x9209;6F 26 C1 80;レアリティ
+system/get_list.bin;0x9209;25 59 05 84;パワー
+system/get_list.bin;0x9209;42 4E BC B0;降順
+system/get_list.bin;0x9209;61 37 B2 B8;トリガー
+system/get_list.bin;0x9209;FA EE 76 DE;パック<|名|めい|>５６７８９０
+system/get_list.bin;0x9209;5D 5A A3 ED;なまえ
+system/option.bin;0xABDD;C5 CC 1D 1B;ＦＶ<|設定警告文|せっていけいこくぶん|>の<|表示|ひょうじ|>
+system/option.bin;0xABDD;41 98 1B 2A;Gｱｼｽﾄｽﾃｯﾌﾟのｽｷｯﾌﾟ
+system/option.bin;0xABDD;2F 2F 58 31;オートメッセージ<|速度|そくど|>
+system/option.bin;0xABDD;E9 D6 14 39;デッキ<|変更警告文|へんこうけいこくぶん|>の<|表示|ひょうじ|>
+system/option.bin;0xABDD;24 D2 AD 3F;ＳＥ
+system/option.bin;0xABDD;50 50 50 40;<|現在|げんざい|>のデッキを<|自動選択|じどうせんたく|>
+system/option.bin;0xABDD;FC ED 7F 62;メッセージ<|速度|そくど|>
+system/option.bin;0xABDD;FA 31 79 6A;カットイン
+system/option.bin;0xABDD;55 8B 56 6E;エフェクト
+system/option.bin;0xABDD;2B 95 EB 7E;ファイト<|難易度|なんいど|>
+system/option.bin;0xABDD;5F F4 ED 82;カード<|効果|こうか|>の<|確認|かくにん|>
+system/option.bin;0xABDD;91 C0 A9 94;デッキ<|変更制限|へんこうせいげん|>
+system/option.bin;0xABDD;EA 8C 24 D3;スキップ<|確認|かくにん|>の<|表示|ひょうじ|>
+system/option.bin;0xABDD;4A 46 14 D5;ＶＯＩＣＥ
+system/option.bin;0xABDD;AC 72 3F E9;<|各種項目|かくしゅこうもく|>のスキップ
+system/passing_clan.bin;0x8841;CA 4D CE 12;シールド
+system/passing_clan.bin;0x8841;43 35 37 13;昇順
+system/passing_clan.bin;0x8841;5B A5 02 5A;グレード
+system/passing_clan.bin;0x8841;6F 26 C1 80;レアリティ
+system/passing_clan.bin;0x8841;25 59 05 84;パワー
+system/passing_clan.bin;0x8841;42 4E BC B0;降順
+system/passing_clan.bin;0x8841;61 37 B2 B8;トリガー
+system/passing_clan.bin;0x8841;5D 5A A3 ED;なまえ
+system/shop.bin;0xB847;EB 88 61 00;クレイエレメンタル
+system/shop.bin;0xB847;F9 C5 27 05;クラン
+system/shop.bin;0xB847;0D 88 D6 0D;ジェネシス
+system/shop.bin;0xB847;91 BF CE 11;オラクルシンクタンク
+system/shop.bin;0xB847;CA 4D CE 12;シールド
+system/shop.bin;0xB847;43 35 37 13;昇順
+system/shop.bin;0xB847;B8 6C A3 14;ダークイレギュラーズ
+system/shop.bin;0xB847;8D 17 EC 14;ディメンジョンポリス
+system/shop.bin;0xB847;AB E8 93 16;たちかぜ
+system/shop.bin;0xB847;C4 49 A1 3A;ギアクロニクル
+system/shop.bin;0xB847;80 AA F4 3E;かげろう
+system/shop.bin;0xB847;06 44 BC 4A;バミューダ△
+system/shop.bin;0xB847;5B A5 02 5A;グレード
+system/shop.bin;0xB847;C6 C7 E5 5E;ぬばたま
+system/shop.bin;0xB847;45 5F 2E 69;メガコロニー
+system/shop.bin;0xB847;20 DD 49 75;むらくも
+system/shop.bin;0xB847;01 3C B6 7B;エンジェルフェザー
+system/shop.bin;0xB847;6F 26 C1 80;レアリティ
+system/shop.bin;0xB847;25 59 05 84;パワー
+system/shop.bin;0xB847;B2 1B FF 87;グレートネイチャー
+system/shop.bin;0xB847;97 BC 2E 98;ロイヤルパラディン
+system/shop.bin;0xB847;42 4E BC B0;降順
+system/shop.bin;0xB847;61 37 B2 B8;トリガー
+system/shop.bin;0xB847;5B 5D 1B CD;ネオネクタール
+system/shop.bin;0xB847;1E 42 BE CF;リンクジョーカー
+system/shop.bin;0xB847;94 B1 6C DF;なるかみ
+system/shop.bin;0xB847;3A E8 3F ED;グランブルー
+system/shop.bin;0xB847;5D 5A A3 ED;なまえ
+system/shop.bin;0xB847;AB 00 CC EE;アクアフォース
+system/shop.bin;0xB847;C1 69 67 EF;ノヴァグラップラー
+system/shop.bin;0xB847;E3 40 8D F1;ペイルムーン
+system/shop.bin;0xB847;3D 41 EB F1;スパイクブラザーズ
+system/shop.bin;0xB847;92 70 63 F6;ゴールドパラディン
+system/shop.bin;0xB847;21 33 A0 FA;シャドウパラディン
+system/standup.bin;0x8CCD;F1 CC 1A 6D;ｽﾀﾝﾄﾞｱｯﾌﾟ・ｻﾞ・ｳﾞｧﾝｶﾞｰﾄﾞ
+system/standup.bin;0x8CCD;C7 6D 29 98;ｽﾀﾝﾄﾞｱｯﾌﾟ・ﾏｲ・ｳﾞｧﾝｶﾞｰﾄﾞ
+system/standup.bin;0x8CCD;AD 8C 91 BB;ｽﾀﾝﾄﾞｱｯﾌﾟ・ﾙ・ｳﾞｧﾝｶﾞｰﾄﾞ
+system/standup.bin;0x8CCD;D4 D3 6B C3;ｽﾀﾝﾄﾞｱｯﾌﾟ ｳﾞｧﾝｶﾞｰﾄﾞ
