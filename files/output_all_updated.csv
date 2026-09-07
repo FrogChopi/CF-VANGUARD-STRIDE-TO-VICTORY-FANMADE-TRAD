@@ -12868,28 +12868,28 @@ script/EV_G_03_04.bin;0x4E1E;DB 08 D5 EF;いちおう<|紹介|しょうかい|>�
 script/EV_G_03_04.bin;0x4E1E;87 4F 45 F0;そうだ、<|忘|わす|>れないうちにこれを<|渡|わた|>しとくぜ。\nファイターズカード、<|通称|つうしょう|>『ファイカ』だ。
 script/EV_G_03_04.bin;0x4E1E;F0 9F 4A F7;ちなみに、お<|前|まえ|>はまだ<|始|はじ|>めたばっかだから、\nグレードは０、カラーは<|白|しろ|>だ。
 script/EV_G_03_04.bin;0x4E1E;05 86 96 FA;あ、シンさん。お<|疲|つか|>れっす。
-script/EV_G_04.bin;0x543F;FC DF A6 04;「<|俺|おれ|>とファイトしろ」っていう\nクエストを<|出|だ|>すから、そいつを<|受|う|>けてみろ！
-script/EV_G_04.bin;0x543F;BE 0C 06 0D;ヴァンガード<|普及協会|ふきゅうきょうかい|>……<|通称|つうしょう|>ＦＩＶＡは、<|俺|おれ|>たち\nファイターを<|色|いろ|>んな<|形|かたち|>でサポートしてくれる<|組織|そしき|>だ。
-script/EV_G_04.bin;0x543F;31 E6 18 11;グレードが<|上|あ|>がればいろんな<|特典|とくてん|>もあるし、\n<|大会|たいかい|>への<|参加|さんか|><|資格|しかく|>も<|得|え|>られるぞ。
-script/EV_G_04.bin;0x543F;D3 18 FC 25;VPを<|入手|にゅうしゅ|>しました。
-script/EV_G_04.bin;0x543F;6B 6E E4 2D;そうだ、<|忘|わす|>れないうちにこれも<|渡|わた|>しとくぜ。\nファイターズカード、<|通称|つうしょう|>『ファイカ』だ。
-script/EV_G_04.bin;0x543F;92 01 2A 2E;を\n<|入手|にゅうしゅ|>しました。
-script/EV_G_04.bin;0x543F;15 57 66 3A;これでいつでもファイトできるな！
-script/EV_G_04.bin;0x543F;31 74 12 3D;PRカードを<|入手|にゅうしゅ|>しました。
-script/EV_G_04.bin;0x543F;E8 7F 3A 4B;<|一番|いちばん|>の<|目玉|めだま|>はＶＧネットワーク！
-script/EV_G_04.bin;0x543F;CC BA 01 51;あと、これもやるよ。<|使|つか|>ってみてくれ。
-script/EV_G_04.bin;0x543F;C9 82 1E 51;ま、<|説明|せつめい|>しただけじゃわかんねえよな。\n<|試|ため|>しにクエストをやってみるか。
-script/EV_G_04.bin;0x543F;66 C4 4B 64;ん？\n『ヴァンガード<|普及協会|ふきゅうきょうかい|>』って<|何|なに|>かって？
-script/EV_G_04.bin;0x543F;7D 99 69 6E;ここで<|配信|はいしん|>されるクエストをこなせば、\nグレードを<|上|あ|>げられる。
-script/EV_G_04.bin;0x543F;D5 79 FC 6F;アバター
-script/EV_G_04.bin;0x543F;28 AC 4E 78;『ヴァンガード<|普及協会|ふきゅうきょうかい|>』が<|発行|はっこう|>してる、\nファイターの<|証|あかし|>みたいなもんだな。
-script/EV_G_04.bin;0x543F;78 6D B7 8E;<|新|あたら|>しい<|称号|しょうごう|>を<|入手|にゅうしゅ|>しました。
+script/EV_G_04.bin;0x543F;FC DF A6 04;I'm going to give you a quest that says, "Fight Me,"\nso go ahead and accept it!
+script/EV_G_04.bin;0x543F;BE 0C 06 0D;The Vanguard Promotion Association—commonly known as FIVA—is an organization that supports us\nfighters in various ways.
+script/EV_G_04.bin;0x543F;31 E6 18 11;As you move up in rank, you'll get all kinds of perks,|and you'll also qualify to participate in tournaments.
+script/EV_G_04.bin;0x543F;D3 18 FC 25;I got the VP.
+script/EV_G_04.bin;0x543F;6B 6E E4 2D;Oh, right—I'll give you this while I still remember. \nIt's a Fighters card, commonly known as a "Fika."
+script/EV_G_04.bin;0x543F;92 01 2A 2E;I\ngot it.
+script/EV_G_04.bin;0x543F;15 57 66 3A;Now I'm ready to fight anytime!
+script/EV_G_04.bin;0x543F;31 74 12 3D;I received a PR card.
+script/EV_G_04.bin;0x543F;E8 7F 3A 4B;The biggest highlight is the VG Network!
+script/EV_G_04.bin;0x543F;CC BA 01 51;Oh, and I'll do this, too. Give it a try.
+script/EV_G_04.bin;0x543F;C9 82 1E 51;Well, just explaining it probably won't make it clear. \nLet's try doing a quest, shall we?
+script/EV_G_04.bin;0x543F;66 C4 4B 64;Huh?\nWhat is the “Vanguard Promotion Association”?
+script/EV_G_04.bin;0x543F;7D 99 69 6E;If you complete the quests available here, \nyou can raise your grade. 
+script/EV_G_04.bin;0x543F;D5 79 FC 6F;Avatar
+script/EV_G_04.bin;0x543F;28 AC 4E 78;It's published by the "Vanguard Promotion Association,"\nso it's kind of like a fighter's badge.
+script/EV_G_04.bin;0x543F;78 6D B7 8E;I've earned a new title.
 script/EV_G_04.bin;0x543F;54 6C C3 A2;○○
-script/EV_G_04.bin;0x543F;98 DB 3A DC;\nを<|入手|にゅうしゅ|>しました。
-script/EV_G_04.bin;0x543F;79 4B 3F EF;CPを<|入手|にゅうしゅ|>しました。
-script/EV_G_04.bin;0x543F;F0 9F 4A F7;ちなみに、お<|前|まえ|>はまだ<|始|はじ|>めたばっかだから、\nグレードは０、カラーは<|白|しろ|>だ。
-script/EV_G_04.bin;0x543F;EC F5 62 F9;そんじゃ、<|俺|おれ|>からは\nパックを１つプレゼントだ！
-script/EV_G_04.bin;0x543F;AE A0 88 FC;よし、<|決|き|>まりだ！\n<|今|いま|>からこのトライアルデッキはお<|前|まえ|>のものだぜ。
+script/EV_G_04.bin;0x543F;98 DB 3A DC;I got \n.
+script/EV_G_04.bin;0x543F;79 4B 3F EF;I got some CP.
+script/EV_G_04.bin;0x543F;F0 9F 4A F7;By the way, since you've just started,\nyour grade is 0 and your color is white.
+script/EV_G_04.bin;0x543F;EC F5 62 F9;Well then, here’s a little something from me—\na pack as a gift!
+script/EV_G_04.bin;0x543F;AE A0 88 FC;All right, it's settled!\nFrom now on, this trial deck is yours.
 script/EV_G_05.bin;0x5778;AE CD EA 00;いいから！　やってみろって！\n<|絶対|ぜったい|><|楽|たの|>しいから！　やんなきゃ<|損|そん|>だぞ！？
 script/EV_G_05.bin;0x5778;87 36 87 08;<|君|きみ|>は……たしか、<|安城|あんじょう|>さんと<|同|おな|>じクラスの。\n<|新導|しんどう|>クロノくん……だったかな。
 script/EV_G_05.bin;0x5778;9F D8 8D 0D;よし！\nじゃあこの<|二人|ふたり|>のファイトで<|決|き|>まりだな！
