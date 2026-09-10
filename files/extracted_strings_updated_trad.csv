@@ -9990,8 +9990,6 @@ pointer_offsets;pointer_value;separators;extract
 0xD96780;0x00A49380;00 00;Teach me wasabi!
 0xD96690;0x00A49394;00 00;Find the clerk!
 0xD96750;0x00A493C4;00 00;Help prepare for the event!
-0x10512C,0xD96848,0xD9684C;0x00A49400;00 00 00 00;People who want to become our allies†I'm ready!†There's also a test.†Come prepared!
-0xD96768;0x00A494A8;00 00 00 00;Fight, my dear!
 0xD96650,0xD96654;0x00A494C0;00 00;Vangoro asks about Vanguard†Let's challenge the Guard Quiz!†Prepare an extravagant gift†I'm ready!
 0xD96950,0xD96954;0x00A49584;00 00;Help me vent!†Weaklings are not welcome!
 0xD965D8,0xD965DC;0x00A49604;00 00;For submitting an entry for the reward contest†Let's do a quiz together.†Solve it for me!
@@ -11281,7 +11279,7 @@ pointer_offsets;pointer_value;separators;extract
 0xDA3E04;0x00A86714;00 00 00 00;"@0E@03   :This unit can@0C(Boo†when you declare a Standby, the names of your other cards†With ""Liberator"" in play, Vanguard or Ri?†If Aguard is 4 or more, then this battle†During,@0CBoosted unit's†@07+3000｡"
 0xDA485C,0xDAAD54;0x00A86864;00 00;@0E@06       :[@141] This unit†When To attacks, your《オラ†クルシンクタンク》of Vanguard†If you're there, I'll pay the cost.†if this unit is involved in a battle,†@07+3000｡
 0xDA8D5C,0xDA8D64;0x00A86978;00 00;@0E@03   :This unit attacks†When you do, if your opponent has more than two Restriction cards.†then during that battle, this unit's†@07+3000｡
-0xDA8C1C;0x00A86A54;00 00;@0E@06       :このユニットがヴァ†ンガードにアタックした<|時|とき|>､あなたの†<|前列|ぜんれつ|>のカード<|名|めい|>に「<|探索者|シーカー|>」を<|含|ふく|>む､ヴ†ァンガードかリアガードが３<|枚以上|まいいじょう|>†なら､そのバトル<|中|ちゅう|>､このユニットの†@07+3000｡
+0xDA8C1C;0x00A86A54;00 00;"@0E@06       :This unit activates its effect when it attacks.†When you attack with Ngard, your†Front row cards with ""Explorer"" in their names, V†Three or more Vanguard and Rearguard cards†then during that battle, this unit's†@07+3000｡"
 0xDA3894,0xDA43F4,0xDAACE4,0xDAB06C;0x00A86B9C;00 00;@0E@06       :This unit attacks†When you declare an attack, if your hand has four or more cards†then during that battle, this unit's†@07+3000｡
 0xDAA98C,0xDAAACC,0xDAB32C;0x00A86C6C;00 00;@0E@05   :This unit attacks†When you activate this, your opponent's Rearguard Card Count is 2 or less.†then during that battle, this unit's†@07+3000｡
 0xDA77BC;0x00A86D34;00 00 00 00;@0E@03   :This unit attacks†when you activate this, the battle opponent's@07if 8000 or less†then during that battle, this unit's†@07+3000｡
@@ -11442,7 +11440,7 @@ pointer_offsets;pointer_value;separators;extract
 0xDAA8DC;0x00A903F8;00 00;"@0F@03   :Your@00Drive・†If you have ""Cartridge Suppy,""†This unit's@07+3000｡"
 0xDAA974,0xDAAAB4;0x00A90474;00 00;@0E@05   @12Your damage is†Effective with four or more cards):[@15②, your†《シャドウパラディン》of Vanguard†Choose 2 cards and retreat them] This Unit†When To attacks, pay cost to†Good. After paying, draw two cards and then battle.†During this, this unit's@07+3000｡
 0xDA618C;0x00A90620;00 00;@0E@03   :This unit attacks†when you activate this skill《アクアフォース》of†With Vanguard in play, this turn you can activate 3.†As long as it's during a battle on subsequent turns, that battle†During this, this unit's@07+3000｡
-0xDA5EC4,0xDA71FC,0xDACF7C;0x00A90724;00 00 00 00;@0E@05   :このユニットがアタック†した<|時|とき|>､あなたのリアガードが<|相手|あいて|>の†リアガードより<|多|おお|>いなら､そのバトル†<|中|ちゅう|>､このユニットの@07+3000｡
+0xDA5EC4,0xDA71FC,0xDACF7C;0x00A90724;00 00 00 00;@0E@05   :This unit attacks†When you activate this, your Rearguard Card is your opponent's.†If there are more in Vanguard, then that battle†During this, this unit's@07+3000｡
 0xDA68FC;0x00A907FC;00 00 00 00;@0E@06       :This unit attacks†When you declare an attack,@12to hold《ス†パイクブラザーズ》of, Vanguard†If there are Vanguard units, then that battle†During this, this unit's@07+3000｡
 0xDA71CC;0x00A908F0;00 00 00 00;@0E@06       :This unit attacks†When you declare an attack,@12to hold《シ†ャドウパラディン》of, Vanguard†If there are Vanguard units, then that battle†During this, this unit's@07+3000｡
 0xDA6794;0x00A909E4;00 00 00 00;@0E@06       :This unit attacks†When you declare an attack,@12to hold《ロ†イヤルパラディン》of, Vanguard†If there are Vanguard units, then that battle†During this, this unit's@07+3000｡
@@ -11545,7 +11543,7 @@ pointer_offsets;pointer_value;separators;extract
 0xDABD2C;0x00A97208;00 00;@0E@06       @25(Your@02 †There is 1 face-up G Unit in the G Zone.†Above are the effective rules.:This unit's Attack†When K hits Vanguard,†You may choose up to 2 of your units.†During that turn,@07+4000｡
 0xDACB8C;0x00A9737C;00 00;"@0E:[@15This unit gains@00with†When you summon this card, you must pay a cost.†Good. After you pay, it's your turn.《ロイヤ†ルパラディン》Use 1 <HYPERBEAST>†Card selection; for that turn only,@07+4000｡"
 0xDA3EF4,0xDA3F84,0xDA400C,0xDA409C,0xDA41BC,0xDA9F4C,0xDAD6E4,0xDAD744;0x00A974B4;00 00;@0E@03   @25(Your@02GaG†There are one or more face-up G Units in the Zone†While effective):This unit becomes a Vanguard.†do@0CWhen boosted, that battle†In the Ru zone,@0CBoosted unit†of@07+4000｡
-0xDAD6DC;0x00A975EC;00 00 00 00;@0E@03   @25   (あなたの@02 かＧ†ゾーンに<|表|おもて|>のＧユニットが１<|枚以上|まいいじょう|>†で<|有効|ゆうこう|>):このユニットが@0C(ブース†ト)した<|時|とき|>､<|呪縛|ロック|>カードを１<|枚選|まいえら|>び､†<|解呪|アンロック|>してよい｡<|解呪|アンロック|>したら､そのバト†ル<|中|ちゅう|>､@0C(ブースト)されたユニット†の@07+4000｡
+0xDAD6DC;0x00A975EC;00 00 00 00;@0E@03   @25(Your@02GaG†There are one or more face-up G Units in the Zone†While effective):This unit can@0C(Booth)†When you activate this effect, choose 1 Curse Card from your hand.†Cursed item can now be解除。解除后，进行战斗。†In the Ru zone,@0CBoosted unit†of@07+4000｡
 0xDA97AC;0x00A97794;00 00;@0E@03   @25(Your@02GaG†There are one or more face-up G Units in the Zone†While effective):This unit can@0C(Booth)†when it is destroyed@0CBoosted Unit†of the@07If it's 19000 or above, that battle†In the Ru zone,@0CBoosted unit†of@07+4000｡
 0xDA392C,0xDA3954,0xDA3984;0x00A97910;00 00;@0E@05   :This unit attacks†when this unit battles, during that battle†of@07+4000｡
 0xDA556C;0x00A97994;00 00;@0E@06       :From your hand, select one†Choose and discard cards with this unit in attack.†When you activate this effect, you can pay the cost.†then, during that battle, this unit†of@07+4000｡
@@ -13287,7 +13285,7 @@ pointer_offsets;pointer_value;separators;extract
 0xDA908C,0xDAD82C;0x00B40834;00 00 00 00;"@0E:From your hand, select Grade 3 cards†Choose and reveal one card from your hand. This Yu†Knit from hand drawer@00When it appears on the field,†Cost it if you will. Then...†From your deck, name a Grade 3 card.†Use 1 card containing ""Altamir""†Search for up to three cards, show them to your opponent, and add them to your hand.†Shuffle that deck and draw your hand.†Choose one card from your hand and discard it."
 0xDA95EC;0x00B40AC8;00 00 00 00;"@0E:From your hand, select Grade 3 cards†Choose and reveal one card from your hand. This Yu†Knit from hand drawer@00When it appears on the field,†Cost it if you will. Then...†From your deck, name a Grade 3 card.†Use 1 card containing ""Bigberry""†Search for up to three cards, show them to your opponent, and add them to your hand.†Shuffle that deck and draw your hand.†Choose one card from your hand and discard it."
 0xDA4244;0x00B40D5C;00 00;"@0E:Choose one card from your hand and discard it.†This unit from my hand@01with†When this card appears, you may pay its cost. Pay†If it's attacked, your attack decreases.†Choose one Vanguard and battle with it.†During this turn, that unit will not be hit.†Furthermore, in your drop zone†""I see Specter Witch Nevan is in play.""†Draw 1 card from your hand.†Choose... and discard."
-0xDAC424;0x00B40FCC;00 00;@0D@05   @12  (あなたのダメージが†４<|枚以上|まいいじょう|>で<|有効|ゆうこう|>):[@15 ①,あなたの†<|手札|てふだ|>から１<|枚選|まいえら|>び､ダメージゾーンに†<|置|お|>く]あなたのダメージゾーンから<|表|おもて|>†のカードを１<|枚選|まいえら|>び､<|手札|てふだ|>に<|加|くわ|>え､そ†のターン<|中|ちゅう|>､このユニットの@07+5000†し､あなたのダメージゾーンに<|表|おもて|>の†「<|螺旋の守護天使|スパイラル・セレスティアル|> ヘルエム」があるな†ら､そのターン<|中|ちゅう|>､このユニットの@09†+1｡そのターン<|中|ちゅう|>､この<|能力|のうりょく|>は<|使|つか|>えな†くなる｡
+0xDAC424;0x00B40FCC;00 00;"@0D@05   @12Your damage is†Effective with four or more cards):[@15①, your†Choose one card from your hand and send it to the Damage Zone.†Place from your Damage Zone face-up†Choose one of your cards and add it to your hand.†During your turn, this unit's@07+5000†And, your damage zone contains face-up cards.†I see ""Spiral Guardian Angel Helium"" is there.†During that turn, this unit's@09†+1. During this turn, this ability cannot be used.†Grows."
 0xDACA0C;0x00B4127C;00 00;@0D@05   :[@15This unit gains†@22If you are doing so, please provide one card name.†Declare and reveal a card from your deck on top of the field.†If that card is the one declared,†@13Or your damage zone?†Choose up to 2 cards and flip them face-up. Additionally, declare publicly...†The card you drew is@02in there†If you draw a card with the same name as your unit, you can draw two cards.†During this turn, this ability cannot be used.†Grows.
 0xDA7F4C;0x00B414E4;00 00 00 00;"@0E@05   :Your card name contains ""Я""†that include this unit@00When it appears on the field,†Choose one of your opponent's Rearguard cards and bind it.†During that turn, this ability cannot be used.†Grows."
 0xDAC454;0x00B4163C;00 00 00 00;"@0D@05   @12Your damage is†Effective with four or more cards):[@15①, your†Card name contains ""Ancient Dragon"" and is Reager†Choose one Dive and retreat it] Yours†Card name contains ""Ancient Dragon"" and is Reager†Choose up to 2 ""Do"" cards, and during this turn,@07†+5000. This ability can only be used during this turn.†Disappears."
@@ -13579,9 +13577,7 @@ pointer_offsets;pointer_value;separators;extract
 0xDAEE4C;0x00B4BA7C;00 00 00 00;Lock-On Victory!! data†Loading failed
 0xDAEE08;0x00B4BAD0;00 00;Main character setup
 0xDAEE10;0x00B4BADC;00 00;Difficulty Setting
-0xDAEE0C;0x00B4BAE8;00 00;Change Main Character
-0x7074C8;0x00B4BAF4;00 00 00 00;Initializing save data.†Please do not turn off the power.
-0x707490;0x00B4BB70;00 00 FF FF;Initializing will erase your saved data.†Can't revert but really okay with that?
+0xDAEE0C;0x00B4BAE8;00 00 FF FF;Changing Main Character... Initializing Save Data.†Please do not turn off the power. Initialization will erase your saved data.†Can't revert but really okay with that?
 0xDAEEC0;0x00B4BC0C;00 00;No trigger adjustments will be made.†This mode is for those who want to fight seriously.†Let's win the fierce battle by your skill alone!†The difficulty can be changed at any time via options.
 0xDAEEC4;0x00B4BD64;00 00 00 00;Until mid-story, activate your opponent's trigger characters.†Checking makes triggering less likely.†You can play according to actual rules.†This mode is for those who have gotten a little more accustomed.†The difficulty can be changed at any time via options.
 0xDAEEC8;0x00B4BEEC;00 00;You can exchange up to 10 more cards from your hand.†The VPs gained decrease according to the number of exchanges.†Again, perform your opponent's character trigger check.†It becomes harder for triggers to activate.†The difficulty can be changed at any time via options.
@@ -13656,8 +13652,7 @@ pointer_offsets;pointer_value;separators;extract
 0xDB0530;0x00B4CC94;00 00 00 00;Please return this card to the top or bottom of the deck.
 0xDB04D4;0x00B4CCFC;00 00;Please decide the order to place the cards from top to bottom on the deck.
 0xDB04D0;0x00B4CD8C;00 00;Please decide the order to place the bottom of your deck from top to bottom.
-0xDB04D8;0x00B4CE1C;00 00;Choose the name of the declaring card.
-0x655E8C;0x00B4CE78;00 00 00 00;Please select the target to remove from battle.
+0xDB04D8;0x00B4CE1C;00 00 00 00;Choose the card name to declare. Choose the target to remove from battle.
 0xDB04A0,0xDB050C;0x00B4CEEC;00 00 00 00;Please select the target for this effect.
 0xDB047C;0x00B4CF48;00 00;Please select the target for guard.
 0xDB0470;0x00B4CF94;00 00;Please choose your attack target.
@@ -13677,13 +13672,9 @@ pointer_offsets;pointer_value;separators;extract
 0xDB0468;0x00B4D41C;00 00;Choose the unit to attack with
 0xDB046C;0x00B4D45C;00 00;Choose the unit to boost.
 0xDB045C;0x00B4D49C;00 00;Choose a unit to ride from your soul.
-0xDB0458;0x00B4D4E4;00 00 00 00;Please choose the unit to ride.
-0x655E88;0x00B4D524;00 00;Please choose the card to add to your hand.
-0x655E44;0x00B4D580;00 00;Please choose the card to discard.
-0xDB0500;0x00B4D5C4;00 00;Please select a Heart card related to Vanguard.
-0x655E90;0x00B4D628;00 00 00 00;Please choose the Rearguard to place in the Damage Zone.
-0xDB0488;0x00B4D680;00 00 00 00;Please choose the standing Rearguard.
-0x655E40;0x00B4D6C4;00 00;Choose the Rearguard to retreat.
+0xDB0458;0x00B4D4E4;00 00;Choose the unit to ride Choose the card to add from your hand Choose the card to discard
+0xDB0500;0x00B4D5C4;00 00 00 00;Choose a Heart card associated with Vanguard. Choose a Rearguard to place from the Damage Zone.
+0xDB0488;0x00B4D680;00 00;Choose a Stand Phase Vanguard to stand. Choose a Retreat Zone Vanguard to retreat.
 0xDB04BC;0x00B4D718;00 00 00 00;Please choose First Vanguard.
 0xDB04A8;0x00B4D75C;00 00 00 00;Please choose the destination Rearguard Circle.
 0xDB04A4;0x00B4D7B8;00 00 00 00;Please choose the Call Target Rearguard Circle.
@@ -13707,8 +13698,7 @@ pointer_offsets;pointer_value;separators;extract
 0xDB04F4;0x00B4DC44;00 00;Your deck has 0 cards left.
 0xDB0508;0x00B4DC7C;00 00;I cannot perform G Assist.
 0xDB04C0;0x00B4DCA4;00 00;In Vanguard, you cannot choose your clan.
-0x8D702C;0x00B4DCD0;00 00;Do you want to concede and accept defeat?†If you surrender before the 5th turn, you will gain 0 VPs.
-0x5E5F60;0x00B4DD9C;00 00 00 00;The Break Ride ability does not activate.†
+0x8D702C;0x00B4DCD0;00 00 00 00;Do you want to concede and accept defeat?†If you surrender before the 5th turn, you will gain 0 VPs. The Break Ride ability will not activate.†
 0x8D7110;0x00B4DDEC;00 00;Do you want to keep the effect of not being hit?
 0x8D71C4;0x00B4DE50;00 00 00 00;Are you sure you want to select this number of cards?
 0x8D70E0;0x00B4DEC4;00 00;Are you sure you want to select the Guardian card?
@@ -13747,20 +13737,15 @@ pointer_offsets;pointer_value;separators;extract
 0x8D7188;0x00B4E8FC;00 00;Do you declare the final turn?
 0x8D717C;0x00B4E930;00 00;Do you pay the cost to transcend?
 0x8D7194;0x00B4E970;00 00;turns into a non-combat scenario.†It will be accelerated. Should I turn OFF now?
-0x8D7158;0x00B4E9EC;00 00 00 00;Do you call?
-0x6F92DC;0x00B4EA00;00 00;もう<|一度|いちど|>カードを<|交換|こうかん|>しますか？†（ファイト<|後|ご|>の<|入手|にゅうしゅ|>ＶＰが<|合計|ごうけい|>{$4040ff}
+0x8D7158;0x00B4E9EC;00 00;コールしますか？  もう<|一度|いちど|>カードを<|交換|こうかん|>しますか？†（ファイト<|後|ご|>の<|入手|にゅうしゅ|>ＶＰが<|合計|ごうけい|>{$4040ff}
 0xDB1C1C;0x00B4EAA4;00 00;Return to the map.
 0xDB1C28;0x00B4EAC0;00 00 00 00;Return to menu
 0xDB1C20;0x00B4EAE0;00 00;Challenge again
 0xDB1C24;0x00B4EB0C;00 00;Challenge later
-0xDB1C18;0x00B4EB3C;00 00 FF FF;Let's fight again.
-0x6EFD48;0x00B4EB64;00 00;Please choose the call target number.†----------------------------------------†Attack Step†----------------------------------------†  †----------------------------------------†Damage Step†----------------------------------------†  †----------------------------------------†Close Step†----------------------------------------†  †----------------------------------------†Start Step†----------------------------------------†  †----------------------------------------†Guard Step†----------------------------------------† †----------------------------------------†Drive Step†----------------------------------------†  †============================================================†Battle Phase†============================================================† †----------------------------------------†G Assist Step†----------------------------------------† †----------------------------------------†Draw Step†----------------------------------------† †============================================================†Draw Phase†============================================================† †============================================================†End Phase†============================================================† †============================================================†Main Phase†============================================================† †----------------------------------------†Ride Step†----------------------------------------† †----------------------------------------†Stride Step†----------------------------------------† †============================================================†Ride Phase†============================================================† ††********************************************************************************†Turn%2d (Fighter:%d)†********************************************************************************††============================================================†Stand Phase†============================================================†
+0xDB1C18;0x00B4EB3C;00 00;Please choose the call target for another fight using the [th card.†----------------------------------------†Attack Step†----------------------------------------†  †----------------------------------------†Damage Step†----------------------------------------†  †----------------------------------------†Close Step†----------------------------------------†  †----------------------------------------†Start Step†----------------------------------------†  †----------------------------------------†Guard Step†----------------------------------------† †----------------------------------------†Drive Step†----------------------------------------†  †============================================================†Battle Phase†============================================================† †----------------------------------------†G Assist Step†----------------------------------------† †----------------------------------------†Draw Step†----------------------------------------† †============================================================†Draw Phase†============================================================† †============================================================†End Phase†============================================================† †============================================================†Main Phase†============================================================† †----------------------------------------†Ride Step†----------------------------------------† †----------------------------------------†Stride Step†----------------------------------------† †============================================================†Ride Phase†============================================================† ††********************************************************************************†Turn%2d (Fighter:%d)†********************************************************************************††============================================================†Stand Phase†============================================================†
 0xDB28A8;0x00B4FB34;00 00;There is no available fight information.†Do you want to edit the fight information?
 0xDB28AC;0x00B4FBBC;00 00 00 00;Opponent into Fight Information†Registered
-0xDB28B0;0x00B4FC24;00 00;Fight information updated: Your opponent is selecting their choice.†Press B to return.
-0x34FBB0;0x00B4FCD4;00 00;ERROR!!!!!  Communication fight ended normally, but the results are unknown.†
-0x34FDA0;0x00B4FD18;00 00 00 00;Communication fight (Worldfight) disconnected (I did not disconnect myself)†
-0x34FC0C;0x00B4FD6C;00 00;WARNING!!! The communication battle ended in a draw and terminated normally.†
+0xDB28B0;0x00B4FC24;00 00;Fight information updated: Your opponent is selecting their choice.†Press B to return. ERROR!!!!! Although the communication fight ended normally, the results are unknown.†Communication fight (Worldfight) disconnected (I didn't disconnect myself)†WARNING!!! The communication battle ended normally with a draw.†
 0x8D7678;0x00B4FDB0;00 00;"Broken Heart Jewel Knight, Ashlei ""Яeverse"""
 0x8D7740;0x00B4FDD4;00 00 00 00;"Ice Prison Hades Emperor, Cocytus ""Яeverse"""
 0x8D7768;0x00B4FDF8;00 00 00 00;"School Punisher, Leo-pald ""Яeverse"""
