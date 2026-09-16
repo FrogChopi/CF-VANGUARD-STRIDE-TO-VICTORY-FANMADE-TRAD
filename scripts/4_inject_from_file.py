@@ -17,6 +17,12 @@ except OverflowError:
 
 MAX_CHAINES = 13988  # Ajuster si besoin
 
+# Offsets de pointeur à NE PAS repatcher (laissés sur le texte JP d'origine),
+# identifiés par bisection : le record "Gunnergear Dracokid" a 2 pointeurs
+# partageant la même chaîne (0xD46B2C et 0xD46B30) ; un seul suffit pour
+# l'affichage, l'autre semble servir de clé interne (recherche/tri) au jeu.
+# SKIP_POINTER_OFFSETS = {0xD46B2C}
+
 def parse_separators(sep_field: str) -> bytes:
     if sep_field.strip() == "(aucun)":
         return b""
@@ -38,12 +44,17 @@ def main():
             print(f"⚠ Arrêté après {MAX_CHAINES} chaînes.")
             break
 
+        # if idx in EXCLUDE_IDX:
+        #     print(f"⏭ Chaîne #{idx} exclue (imposteur) : {row['extract'][:40]!r}")
+        #     continue
+
         txt = row['extract'].replace('†', '\n')
         utf16_bytes = txt.encode('utf-16le')
         sep_bytes = parse_separators(row['separators'])
-        block = utf16_bytes + sep_bytes
+        length_prefix = (len(utf16_bytes) // 2).to_bytes(4, 'little')
+        block = length_prefix + utf16_bytes + sep_bytes
 
-        new_file_off = cursor
+        new_file_off = cursor + 4  # le pointeur vise les données, juste après l'en-tête de longueur
         new_addr = BASE_ADDR + new_file_off
 
         for off_s in row['pointer_offsets'].split(','):

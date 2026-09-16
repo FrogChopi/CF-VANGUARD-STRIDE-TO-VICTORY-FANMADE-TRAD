@@ -10,9 +10,10 @@ Usage:
     {$xxxxx} / {$} (codes couleur/contrôle)
     %x             (%d, %s, %.3f, %d/%d ...)
     \n
-    †
+    †              (Saut de ligne du jeu)
     ・
     《xxxx》 / 【xxxx】
+    ＊xxxx＊ et *xxxx* (Conservation stricte des astérisques et ajout d'espaces)
     :
     "xxxx"         (guillemets typographiques pleine largeur U+201C/U+201D)
 - Un cache JSON (low_trad_cache.json par défaut) permet de reprendre le traitement
@@ -31,8 +32,13 @@ from pathlib import Path
 OLLAMA_URL = "http://localhost:11434/api/generate"
 DEFAULT_MODEL = "qwen2.5:7b"
 
-JP_RE = re.compile(r"[぀-ヿ㐀-䶿一-鿿豈-﫿]")
+JP_RE = re.compile(r"[぀-ヿ㐀-䶿一-鿿豈-﫿]")
 FURIGANA_RE = re.compile(r"<\|([^|]+)\|[^>]*\|>")
+
+# On utilise r"\n" pour s'assurer que c'est bien le texte littéral "\" + "n" 
+# et JAMAIS un vrai retour à la ligne physique.
+#NEWLINE = r"\n"
+NEWLINE = r"†"
 
 PROTECT_RE = re.compile(
     "|".join(
@@ -43,14 +49,15 @@ PROTECT_RE = re.compile(
             r"《[^》]*》",
             r"【[^】]*】",
             r"“[^”]*”",  # “xxxx”
+            r"＊[^＊]*＊",  # ＊xxxx＊ (japonais)
+            r"\*[^\*]*\*",  # *xxxx* (classique)
             r"\\n",
-            r"†",  # †
+            r"†",  # † (Saut de ligne en jeu)
             r"・",  # ・
             r":",
         ]
     )
 )
-# Même pattern que PROTECT_RE mais avec un groupe capturant, pour re.split.
 SPLIT_RE = re.compile(f"({PROTECT_RE.pattern})")
 
 
@@ -63,16 +70,93 @@ def needs_translation(text: str) -> bool:
 
 
 def split_segments(text: str) -> list[tuple[str, bool]]:
-    """Découpe `text` en segments (chunk, is_protected) en alternance.
-
-    Plutôt que d'envoyer les balises protégées au LLM sous forme de placeholders
-    (peu fiable : le modèle peut en perdre/déplacer certaines, surtout quand il y
-    en a beaucoup dans une même ligne), on les extrait complètement en amont : le
-    LLM ne voit jamais que du texte à traduire, et les balises sont recollées telles
-    quelles après coup, à leur position d'origine.
-    """
     parts = SPLIT_RE.split(text)
     return [(p, i % 2 == 1) for i, p in enumerate(parts) if p != ""]
+
+
+def apply_daggers(text: str, max_len: int = 35) -> str:
+    """
+    Ajoute le NEWLINE tous les `max_len` caractères (35 par défaut).
+    La fonction évite de couper un mot et ne saute pas de ligne si
+    le caractère suivant est une ponctuation (caractère spécial).
+    """
+    pattern = re.compile(f"({PROTECT_RE.pattern})|(.)", re.DOTALL)
+    tokens = []
+    for m in pattern.finditer(text):
+        if m.group(1):
+            tokens.append(('protected', m.group(1)))
+        else:
+            tokens.append(('char', m.group(2)))
+            
+    result = []
+    count = 0
+    i = 0
+    
+    # Liste des ponctuations/caractères spéciaux qui ne doivent jamais se retrouver seuls en début de ligne
+    PUNCTUATION = ".,!?:;)]}”’\"'-"
+
+    while i < len(tokens):
+        ttype, val = tokens[i]
+        
+        if ttype == 'protected':
+            if val == NEWLINE or val == '†':
+                count = 0
+            elif val.startswith('{$') or val.startswith('@'):
+                # Les balises invisibles ne comptent pas dans la longueur de la ligne
+                pass
+            else:
+                count += len(val)
+            result.append(val)
+        else:
+            if val == NEWLINE or val == '†':
+                count = 0
+            else:
+                count += 1
+            result.append(val)
+            
+        if count >= max_len:
+            must_wait = False
+            
+            # Analyser le prochain caractère
+            next_is_char = (i + 1 < len(tokens) and tokens[i+1][0] == 'char')
+            next_val = tokens[i+1][1] if next_is_char else ""
+            
+            if ttype == 'char':
+                if val.isalnum():
+                    # Si alnum, attendre si la suite est alnum OU une ponctuation
+                    if next_is_char and (next_val.isalnum() or next_val in PUNCTUATION):
+                        must_wait = True
+                elif val in PUNCTUATION:
+                    # Si ponctuation, attendre si la suite est encore une ponctuation (ex: "...")
+                    if next_is_char and next_val in PUNCTUATION:
+                        must_wait = True
+            elif ttype == 'protected':
+                # Ne pas couper juste après une balise (ex: 【Nom】) si elle est suivie d'une ponctuation
+                if next_is_char and next_val in PUNCTUATION:
+                    must_wait = True
+                    
+            if not must_wait:
+                # Si le caractère actuel est un espace, on le remplace par le saut
+                if ttype == 'char' and val == ' ':
+                    result.pop()  
+                    result.append(NEWLINE)
+                    count = 0
+                else:
+                    # Si le prochain est un espace, on le saute pour ne pas commencer la ligne par un blanc
+                    if next_is_char and next_val == ' ':
+                        i += 1
+                        
+                    # On s'assure que le prochain n'est pas DÉJÀ un saut de ligne
+                    next_is_newline = False
+                    if i + 1 < len(tokens) and tokens[i+1][1] in (NEWLINE, '†'):
+                        next_is_newline = True
+                        
+                    if not next_is_newline:
+                        result.append(NEWLINE)
+                        count = 0
+        i += 1
+        
+    return "".join(result)
 
 
 SYSTEM_PROMPT = (
@@ -93,11 +177,9 @@ CJK_COUNT_RE = re.compile(r"[぀-ヿ㐀-䶿一-鿿豈-﫿]")
 
 
 def validate_response(response: str, source: str) -> str:
-    """Lève ValueError si la réponse sent l'hallucination (garde-fous)."""
-    if "\n" in response or "\r" in response:
-        raise ValueError("réponse multi-ligne (probable hallucination)")
-
-    stripped = response.strip()
+    # On nettoie directement l'hallucination de sauts de ligne au lieu de crash
+    stripped = response.replace("\r", " ").replace("\n", " ").strip()
+    
     if not stripped:
         raise ValueError("réponse vide")
 
@@ -119,7 +201,7 @@ def call_ollama(
     model: str,
     num_ctx: int = 2048,
     num_predict: int = 128,
-    retries: int = 3,
+    retries: int = 5,
     timeout: int = 120,
 ) -> str:
     body = json.dumps(
@@ -168,7 +250,6 @@ def save_cache(path: Path, cache: dict) -> None:
 def translate_segment(
     chunk: str, model: str, cache: dict, num_ctx: int = 512, num_predict: int = 128
 ) -> str:
-    """Traduit un segment de texte pur (aucune balise protégée à l'intérieur)."""
     if chunk in cache:
         return cache[chunk]
 
@@ -190,6 +271,7 @@ def translate_segment(
 def translate_cell(
     raw_text: str, model: str, cache: dict, num_ctx: int = 512, num_predict: int = 128
 ) -> str:
+
     if raw_text in cache:
         return cache[raw_text]
 
@@ -207,6 +289,25 @@ def translate_cell(
             parts.append(translate_segment(chunk, model, cache, num_ctx, num_predict))
 
     translated = "".join(parts)
+    
+    # -------------------------------------------------------------
+    # ENCADREMENT DES *xxxx* ET ＊xxxx＊ PAR DES ESPACES
+    # S'assure qu'il y a un espace avant et après, sauf s'il y en a déjà
+    # -------------------------------------------------------------
+    translated = re.sub(r"(?<!\s)(＊[^＊]+＊)", r" \1", translated)
+    translated = re.sub(r"(＊[^＊]+＊)(?!\s)", r"\1 ", translated)
+    translated = re.sub(r"(?<!\s)(\*[^\*]+\*)", r" \1", translated)
+    translated = re.sub(r"(\*[^\*]+\*)(?!\s)", r"\1 ", translated)
+    
+    # Nettoyage d'éventuels doubles espaces créés par l'opération
+    translated = re.sub(r" +", " ", translated)
+    
+    # Application du retour à la ligne (word wrap) spécifique au jeu
+    translated = apply_daggers(translated) 
+    
+    # SECURITE ABSOLUE : on purge toute tentative finale de saut de ligne physique pour le CSV
+    translated = translated.replace("\r", "").replace("\n", "")
+    
     cache[raw_text] = translated
     return translated
 
@@ -280,7 +381,7 @@ def main() -> None:
     since_flush = 0
     limit_left = args.limit if args.limit else None
 
-    durations: list[float] = []  # temps des vrais appels LLM (hors cache), pour l'ETA
+    durations: list[float] = [] 
     remaining_to_translate = total_translatable
 
     def eta_str() -> str:
@@ -297,15 +398,21 @@ def main() -> None:
         for i in range(resume_from, len(rows)):
             row = rows[i]
             raw = row.get(args.column, "")
-            if needs_translation(strip_furigana(raw)):
+            
+            # NETTOYAGE ABSOLU DE LA SOURCE AVANT TRADUCTION
+            raw_clean = raw.replace("\r", " ").replace("\n", " ")
+            raw_clean = raw_clean.replace("\\n", " ").replace("†", " ")
+            raw_clean = re.sub(r" +", " ", raw_clean).strip()
+            
+            if needs_translation(strip_furigana(raw_clean)):
                 if limit_left is not None and limit_left <= 0:
                     print(f"   (limite de {args.limit} traduction(s) atteinte, arrêt à la ligne {i})")
                     break
-                was_cached = raw in cache
+                was_cached = raw_clean in cache
                 t0 = time.time()
                 try:
                     row[args.column] = translate_cell(
-                        raw, args.model, cache, num_ctx=args.num_ctx, num_predict=args.num_predict
+                        raw_clean, args.model, cache, num_ctx=args.num_ctx, num_predict=args.num_predict
                     )
                     dt = time.time() - t0
                     translated_count += 1
