@@ -1,0 +1,43 @@
+offset;size_u16;jp;en
+0xca924;25;このミッションに<|挑戦|ちょうせん|>しますか？;Take on this mission?
+0x211418;20;<|関連付|かんれんづ|>けられたハーツ;Linked Hearts
+0x21144c;29;<|同名|どうめい|>のカードとしても<|扱|あつか|>う;Also treated as same name
+0x24c8fc;20;ミッションファイト<|成功|せいこう|>;Mission Success
+0x24e3f8;28;<|対戦相手|たいせんあいて|>が<|抜|ぬ|>けました;Opponent has left
+0x4b911c;24;ヴァンガー<|ド普及協会|ふきゅうきょうかい|>;Vanguard Promo Assoc.
+0x4ecea4;11;<|相手|あいて|>が;Opponent
+0x52fb58;25;<|能力|のうりょく|>が<|無効|むこう|>です;Ability is negated
+0x52fb8c;16;<|効果|こうか|>がありません;No effect
+0x52fbb0;16;コストを<|払|はら|>えません;Cannot pay cost
+0x52fbd4;15;コストが<|足|た|>りません;Not enough cost
+0x52fbf4;29;<|手札|てふだ|>からのコストが<|払|はら|>えません;Cannot pay cost from hand
+0x555e48;30;ライドするユニットを<|選|えら|>んで<|下|くだ|>さい;Select a unit to Ride
+0x555e94;30;バインドするカードを<|選|えら|>んで<|下|くだ|>さい;Select a card to Bind
+0x555ed4;30;コールするユニットを<|選|えら|>んで<|下|くだ|>さい;Select a unit to Call
+0x5e8a1c;22;ガーディアンサークルの<|確認|かくにん|>;Check Guardian Circle
+0x5e8a4c;15;ハーツの<|確認|かくにん|>;Check Heart
+0x5e8a6c;15;ソウルの<|確認|かくにん|>;Check Soul
+0x5e8a8c;19;ドロップゾーンの<|確認|かくにん|>;Check Drop Zone
+0x5e8ab4;19;バインドゾーンの<|確認|かくにん|>;Check Bind Zone
+0x5e8adc;23;<|山札|やまふだ|>の<|確認|かくにん|>;Check Deck
+0x5e8b0c;16;Ｇゾーンの<|確認|かくにん|>;Check G Zone
+0x5e8cdc;27;ゲーム<|外|がい|>のカードの<|確認|かくにん|>;Check cards outside game
+0x5e8d1c;8;<|枚|まい|>;cards
+0x5ec9f4;29;<|枚|まい|>までカードを<|引|ひ|>くことができます;more cards can be drawn
+0x5f92e0;20;{$}<|減少|げんしょう|>します。）;{$} decreases.)
+0x607494;24;セーブデータを<|消去|しょうきょ|>しています;Deleting save data
+0x6074cc;24;セーブデータを<|初期化|しょきか|>しますか？;Initialize save data?
+0x607578;23;セーブデータを<|初期化|しょきか|>しました;Save data initialized
+0x4e5f68;4;グレード;Grd 
+0x4e5f74;2;から;to
+0x4e5f7c;9;にライドしますか？; OK?
+0x115420;8;セーブしています;Saving
+0x4c8864;15;もういちど、やり直して下さい。;Try again.
+0x7d458e;15;ファイターとすれちがいました！;Fighter nearby!
+0x1fe984;3;」が「;'s
+0x4e9758;3;」が「;'s
+0x1fe98c;13;」と♪♪状態でなくなった; wore off♪♪
+0x4e9760;11;」と♪♪状態になった; started♪♪
+0x1fe9a8;16;」が誰とも♪♪状態でなくなった;Effect ended♪♪
+0x7d519c;4;＊苗字＊;*LN*
+0x7d51a6;4;＊名前＊;*FN*

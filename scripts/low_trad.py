@@ -2,7 +2,7 @@
 """Traduit via Ollama (qwen2.5:14b) les chaines encore en japonais après update_csv.py.
 
 Usage:
-    python scripts/low_trad.py <input_csv> <output_csv> [--column extract] [--model qwen2.5:14b]
+    python scripts/low_trad.py <input_csv> <output_csv> [--column extract] [--model qwen2.5:7b]
 
 - Les balises furigana <|kanji|kana|> sont remplacées par la partie kanji avant traduction.
 - Les tokens suivants sont protégés (jamais envoyés au LLM, restaurés tels quels après coup) :
@@ -199,7 +199,7 @@ def validate_response(response: str, source: str) -> str:
 def call_ollama(
     text: str,
     model: str,
-    num_ctx: int = 2048,
+    num_ctx: int = 1024,
     num_predict: int = 128,
     retries: int = 5,
     timeout: int = 120,
@@ -243,8 +243,26 @@ def load_cache(path: Path) -> dict:
 
 
 def save_cache(path: Path, cache: dict) -> None:
-    with path.open("w", encoding="utf-8") as f:
+    # Atomic write: an interrupted process (e.g. background task killed mid-write)
+    # must never leave a truncated/corrupted cache file behind.
+    import os
+    tmp_path = path.with_suffix(path.suffix + ".tmp")
+    with tmp_path.open("w", encoding="utf-8") as f:
         json.dump(cache, f, ensure_ascii=False, indent=0)
+        f.flush()
+        os.fsync(f.fileno())
+
+    # On Windows, the rename can transiently fail (WinError 5) if the file is
+    # briefly locked by AV/indexing. Retry a few times before giving up.
+    last_err = None
+    for attempt in range(5):
+        try:
+            tmp_path.replace(path)
+            return
+        except PermissionError as e:  # noqa: PERF203
+            last_err = e
+            time.sleep(0.3 * (attempt + 1))
+    raise last_err
 
 
 def translate_segment(

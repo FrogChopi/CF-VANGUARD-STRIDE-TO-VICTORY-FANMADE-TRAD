@@ -9,13 +9,19 @@ INPUT_BIN     = Path("full_padded.bin")
 POINTER_CSV   = Path("extracted_strings_updated_trad.csv")
 OUTPUT_BIN    = Path("full_patched.bin")
 
+# Chaînes à taille fixe (pas de pointeur à repatcher, on écrase sur place),
+# ex. les chaînes de dialogue/furigana trouvées avant PATCH_START : leur
+# emplacement est référencé par valeur immédiate/pool littéral, pas par une
+# entrée de rodata_pointers.csv, donc pas de relocalisation possible ici.
+INPLACE_CSV   = Path("furigana_inplace.csv")
+
 # --- On augmente la limite de taille de champ CSV ---
 try:
     csv.field_size_limit(sys.maxsize)
 except OverflowError:
     csv.field_size_limit(2**31 - 1)
 
-MAX_CHAINES = 13988  # Ajuster si besoin
+MAX_CHAINES = 13988  # 100%
 
 # Offsets de pointeur à NE PAS repatcher (laissés sur le texte JP d'origine),
 # identifiés par bisection : le record "Gunnergear Dracokid" a 2 pointeurs
@@ -29,10 +35,55 @@ def parse_separators(sep_field: str) -> bytes:
     parts = sep_field.split()
     return bytes(int(p, 16) for p in parts)
 
+def inject_inplace(data: bytearray):
+    """Réinjecte les chaînes à taille fixe de INPLACE_CSV, en écrasant sur
+    place l'empan exact du texte JP d'origine (rien avant/après n'est
+    touché). Texte traduit complété avec des 0x0000 si plus court, tronqué
+    + averti si plus long. Aucun repatch de pointeur : ces chaînes ne sont
+    pas relocalisables (référencées par pool littéral, pas par un pointeur
+    listé dans rodata_pointers.csv)."""
+    if not INPLACE_CSV.exists():
+        return
+
+    with INPLACE_CSV.open(newline='', encoding='utf-8') as f:
+        reader = csv.DictReader(f, delimiter=';')
+        rows = list(reader)
+
+    applied = 0
+    truncated = 0
+    for row in rows:
+        off = int(row['offset'], 16)
+        total_u16 = int(row['size_u16'])
+        total_bytes = total_u16 * 2
+        en = row['en'].strip()
+        txt = en if en else row['jp']  # pas encore traduit -> on réécrit le JP tel quel
+
+        body_bytes = txt.encode('utf-16le')
+
+        if len(body_bytes) > total_bytes:
+            # tronque au nombre entier de caractères UTF-16 qui rentrent
+            max_chars = total_bytes // 2
+            body_bytes = txt[:max_chars].encode('utf-16le')
+            print(f"⚠ Traduction trop longue @ {row['offset']} ({len(txt.encode('utf-16le'))} > {total_bytes} octets dispo) → tronquée : {txt!r}")
+            truncated += 1
+
+        block = body_bytes + b'\x00' * (total_bytes - len(body_bytes))  # padding
+
+        if off + total_bytes > len(data):
+            print(f"⚠ Offset hors limites, ignoré : {row['offset']}")
+            continue
+
+        data[off:off + total_bytes] = block
+        applied += 1
+
+    print(f"✔ Réinjection en place (taille fixe) : {applied} chaînes patchées, {truncated} tronquées ({INPLACE_CSV}).")
+
 def main():
     data = bytearray(INPUT_BIN.read_bytes())
     orig_len = len(data)
     print(f"⚙ code.bin chargé : {orig_len} octets")
+
+    inject_inplace(data)
 
     with POINTER_CSV.open(newline='', encoding='utf-8') as f:
         reader = csv.DictReader(f, delimiter=';')
