@@ -9,55 +9,54 @@ def compress_to_rtz(path: Path):
   try:
     raw_data = path.read_bytes()
   except Exception as e:
-    print(f"❌ Erreur de lecture sur {path} : {e}")
+    print(f"❌ Read error on {path}: {e}")
     return
 
-  # 1) Calculer la taille d'origine (sur 4 octets, Little-Endian)
+  # 1) Original size (4 bytes, little-endian)
   size_header = struct.pack("<I", len(raw_data))
 
-  # 2) Compresser les données en GZIP (niveau 9 pour un taux optimal)
+  # 2) GZIP compress (level 9 for best ratio)
   try:
     gzip_blob = gzip.compress(raw_data, compresslevel=9)
   except Exception as e:
-    print(f"❌ Erreur GZIP sur {path.name} : {e}")
+    print(f"❌ GZIP error on {path.name}: {e}")
     return
 
-  # 3) Assembler le payload : [taille décompressée] + [flux gzip]
+  # 3) Build the payload: [decompressed size] + [gzip stream]
   rtz_data = size_header + gzip_blob
 
-  # 4) Écrire le fichier .rtz au même emplacement
+  # 4) Write the .rtz next to the .bin
   out = path.with_suffix(".rtz")
   out.write_bytes(rtz_data)
-  print(f"✔ Compressé → {out.name}")
+  print(f"✔ Compressed → {out.name}")
 
 
 def main():
   if len(sys.argv) != 2:
-    print("Usage: python rtz_compress.py <dossier_ou_fichier.bin>")
+    print("Usage: python 9_recompress_all_rtz.py <folder_or_file.bin>")
     sys.exit(1)
 
   target = Path(sys.argv[1])
   if not target.exists():
-    print(f"❌ Introuvable : {target}")
+    print(f"❌ Not found: {target}")
     sys.exit(1)
 
   if target.is_dir():
-    # Recherche récursive de tous les fichiers .bin
+    # Recursively find every .bin
     bin_files = [f for f in target.rglob("*") if f.suffix.lower() == ".bin"]
 
     if not bin_files:
-      print(f"⚠ Aucun fichier .bin trouvé dans {target} ou ses sous-dossiers")
+      print(f"⚠ No .bin file found in {target} or its subfolders")
       return
 
     print(
-        f"🔍 {len(bin_files)} fichier(s) .bin trouvé(s). Début de la"
-        " compression..."
+        f"🔍 {len(bin_files)} .bin file(s) found. Compressing..."
     )
     for f in bin_files:
       compress_to_rtz(f)
   else:
     if target.suffix.lower() != ".bin":
-      print(f"⚠ Le fichier {target.name} n'a pas l'extension .bin")
+      print(f"⚠ {target.name} does not have the .bin extension")
       sys.exit(1)
     compress_to_rtz(target)
 

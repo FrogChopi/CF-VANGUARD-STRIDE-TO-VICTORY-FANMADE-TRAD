@@ -1,23 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Traduit via Ollama (qwen2.5:14b) les chaines encore en japonais après update_csv.py.
+"""Translates strings that are still in Japanese after update_csv.py using Ollama (qwen2.5:14b).
 
 Usage:
     python scripts/low_trad.py <input_csv> <output_csv> [--column extract] [--model qwen2.5:7b]
-
-- Les balises furigana <|kanji|kana|> sont remplacées par la partie kanji avant traduction.
-- Les tokens suivants sont protégés (jamais envoyés au LLM, restaurés tels quels après coup) :
-    @xx            (@0F, @29, @0E, @03 ...)
-    {$xxxxx} / {$} (codes couleur/contrôle)
-    %x             (%d, %s, %.3f, %d/%d ...)
-    \n
-    †              (Saut de ligne du jeu)
-    ・
-    《xxxx》 / 【xxxx】
-    ＊xxxx＊ et *xxxx* (Conservation stricte des astérisques et ajout d'espaces)
-    :
-    "xxxx"         (guillemets typographiques pleine largeur U+201C/U+201D)
-- Un cache JSON (low_trad_cache.json par défaut) permet de reprendre le traitement
-  après interruption et évite de retraduire deux fois la même chaîne.
 """
 
 import argparse
@@ -35,205 +20,278 @@ DEFAULT_MODEL = "qwen2.5:7b"
 JP_RE = re.compile(r"[぀-ヿ㐀-䶿一-鿿豈-﫿]")
 FURIGANA_RE = re.compile(r"<\|([^|]+)\|[^>]*\|>")
 
-# On utilise r"\n" pour s'assurer que c'est bien le texte littéral "\" + "n" 
-# et JAMAIS un vrai retour à la ligne physique.
-#NEWLINE = r"\n"
-NEWLINE = r"†"
+NEWLINE = "†"
+MAX_LINE_LENGTH = 30  # Visual line limit on the card
 
-PROTECT_RE = re.compile(
+# Technical internal tags hidden during LLM translation
+INLINE_RE = re.compile(
     "|".join(
         [
-            r"\{\$[0-9A-Fa-f]*\}",  # {$3040ff}, {$}
-            r"@[0-9A-Fa-f]{2}",  # @0F, @29
-            r"%(?:\d+\$)?[-+0 #]*\d*(?:\.\d+)?[a-zA-Z]",  # %d, %s, %.3f, %x
+            r"\{\$[0-9A-Fa-f]*\}",
+            r"%(?:\d+\$)?[-+0 #]*\d*(?:\.\d+)?[a-zA-Z]",
             r"《[^》]*》",
             r"【[^】]*】",
-            r"“[^”]*”",  # “xxxx”
-            r"＊[^＊]*＊",  # ＊xxxx＊ (japonais)
-            r"\*[^\*]*\*",  # *xxxx* (classique)
-            r"\\n",
-            r"†",  # † (Saut de ligne en jeu)
-            r"・",  # ・
+            r"“[^”]*”",
+            r"＊[^＊]*＊",
+            r"\*[^\*]*\*",
             r":",
         ]
     )
 )
-SPLIT_RE = re.compile(f"({PROTECT_RE.pattern})")
-
 
 def strip_furigana(text: str) -> str:
     return FURIGANA_RE.sub(r"\1", text)
 
+def count_jp_chars(text: str) -> int:
+    """Number of Japanese characters in the text."""
+    return len(JP_RE.findall(text))
 
 def needs_translation(text: str) -> bool:
-    return bool(JP_RE.search(text))
+    """A line needs translating only if it has 3 or more JP characters
+    (skips fully English lines and very short names)."""
+    return count_jp_chars(text) >= 3
 
-
-def split_segments(text: str) -> list[tuple[str, bool]]:
-    parts = SPLIT_RE.split(text)
-    return [(p, i % 2 == 1) for i, p in enumerate(parts) if p != ""]
-
-
-def apply_daggers(text: str, max_len: int = 35) -> str:
+def visible_len(s: str) -> int:
+    """Calculates the in-game display width:
+    - {$...} = 0 chars (invisible)
+    - @xx = 1 char
+    - Regular chars & spaces = 1 char each
     """
-    Ajoute le NEWLINE tous les `max_len` caractères (35 par défaut).
-    La fonction évite de couper un mot et ne saute pas de ligne si
-    le caractère suivant est une ponctuation (caractère spécial).
-    """
-    pattern = re.compile(f"({PROTECT_RE.pattern})|(.)", re.DOTALL)
-    tokens = []
-    for m in pattern.finditer(text):
-        if m.group(1):
-            tokens.append(('protected', m.group(1)))
-        else:
-            tokens.append(('char', m.group(2)))
-            
-    result = []
-    count = 0
-    i = 0
+    s_clean = re.sub(r"\{\$[0-9A-Fa-f]*\}", "", s)
+    s_clean = re.sub(r"@[0-9A-Fa-f]{2}", "X", s_clean)
+    return len(s_clean)
+
+def line_needs_processing(raw: str) -> bool:
+    return needs_translation(strip_furigana(raw))
+
+# ---------------------------------------------------------------------------
+# CHECKERS / SANITIZE
+# ---------------------------------------------------------------------------
+FURIGANA_FULL_RE = re.compile(r"<\|[^|<>]+\|[^|<>]*\|>")
+STRAY_AT_RE = re.compile(r"@(?![0-9A-Fa-f]{2})")
+TRAIL_RE = re.compile(r'(?:\s*[†"])+((?:\{\$[0-9A-Fa-f]*\})*)$')
+
+def _strip_stray_pipes(text: str) -> str:
+    out, last = [], 0
+    for m in FURIGANA_FULL_RE.finditer(text):
+        out.append(text[last:m.start()].replace("|", ""))
+        out.append(m.group())
+        last = m.end()
+    out.append(text[last:].replace("|", ""))
+    return "".join(out)
+
+def find_issues(text: str) -> list[str]:
+    issues = []
+    m = TRAIL_RE.search(text)
+    if m and "†" in m.group(0): issues.append("† at end of line")
+    if _strip_stray_pipes(text) != text: issues.append("'|' outside furigana tag")
+    if '""' in text: issues.append('"" present')
+    if ';"' in text: issues.append(';" present')
+    if text.endswith('"'): issues.append('" at end of cell')
+    if STRAY_AT_RE.search(text): issues.append("isolated @ / incomplete @xx")
+    return issues
+
+def sanitize_translation(text: str) -> str:
+    text = _strip_stray_pipes(text)
+    text = STRAY_AT_RE.sub("", text)
     
-    # Liste des ponctuations/caractères spéciaux qui ne doivent jamais se retrouver seuls en début de ligne
-    PUNCTUATION = ".,!?:;)]}”’\"'-"
+    # 1. Collapse "" (or more) into a single "
+    text = re.sub(r'"{2,}', '"', text)
+    
+    # 2. Remove " after a ;
+    text = text.replace(';"', ';')
+    
+    # 3. Remove an orphan " at the end of the cell (odd number of quotes);
+    #    a quoted name ("… "Abyss"") keeps its closing quote
+    if text.count('"') % 2:
+        text = re.sub(r'"$', '', text)
+    
+    return TRAIL_RE.sub(r"\1", text)
 
-    while i < len(tokens):
-        ttype, val = tokens[i]
-        
-        if ttype == 'protected':
-            if val == NEWLINE or val == '†':
-                count = 0
-            elif val.startswith('{$') or val.startswith('@'):
-                # Les balises invisibles ne comptent pas dans la longueur de la ligne
-                pass
-            else:
-                count += len(val)
-            result.append(val)
-        else:
-            if val == NEWLINE or val == '†':
-                count = 0
-            else:
-                count += 1
-            result.append(val)
-            
-        if count >= max_len:
-            must_wait = False
-            
-            # Analyser le prochain caractère
-            next_is_char = (i + 1 < len(tokens) and tokens[i+1][0] == 'char')
-            next_val = tokens[i+1][1] if next_is_char else ""
-            
-            if ttype == 'char':
-                if val.isalnum():
-                    # Si alnum, attendre si la suite est alnum OU une ponctuation
-                    if next_is_char and (next_val.isalnum() or next_val in PUNCTUATION):
-                        must_wait = True
-                elif val in PUNCTUATION:
-                    # Si ponctuation, attendre si la suite est encore une ponctuation (ex: "...")
-                    if next_is_char and next_val in PUNCTUATION:
-                        must_wait = True
-            elif ttype == 'protected':
-                # Ne pas couper juste après une balise (ex: 【Nom】) si elle est suivie d'une ponctuation
-                if next_is_char and next_val in PUNCTUATION:
-                    must_wait = True
-                    
-            if not must_wait:
-                # Si le caractère actuel est un espace, on le remplace par le saut
-                if ttype == 'char' and val == ' ':
-                    result.pop()  
-                    result.append(NEWLINE)
-                    count = 0
-                else:
-                    # Si le prochain est un espace, on le saute pour ne pas commencer la ligne par un blanc
-                    if next_is_char and next_val == ' ':
-                        i += 1
-                        
-                    # On s'assure que le prochain n'est pas DÉJÀ un saut de ligne
-                    next_is_newline = False
-                    if i + 1 < len(tokens) and tokens[i+1][1] in (NEWLINE, '†'):
-                        next_is_newline = True
-                        
-                    if not next_is_newline:
-                        result.append(NEWLINE)
-                        count = 0
-        i += 1
-        
-    return "".join(result)
+def apply_daggers(text: str, max_len: int = MAX_LINE_LENGTH) -> str:
+    """Inserts NEWLINE (†) so that no line exceeds max_len (30) visible characters."""
+    if not text:
+        return text
 
+    lines = text.split(NEWLINE)
+    wrapped_lines = []
+
+    for line in lines:
+        line = line.strip()
+        if not line:
+            wrapped_lines.append("")
+            continue
+
+        token_pattern = re.compile(
+            r"(\{\$[0-9A-Fa-f]*\}|@[0-9A-Fa-f]{2}|\s+|[^\s\{\@]+|[@\{])"
+        )
+        tokens = token_pattern.findall(line)
+        tokens = [t for t in tokens if t]
+
+        current_chunk = []
+        current_len = 0
+
+        for token in tokens:
+            t_len = visible_len(token)
+
+            if token.isspace():
+                if current_len >= max_len:
+                    wrapped_lines.append("".join(current_chunk).rstrip())
+                    current_chunk = []
+                    current_len = 0
+                elif current_chunk:
+                    current_chunk.append(" ")
+                    current_len += 1
+                continue
+
+            # Handle overly long single tokens by splitting character by character
+            if t_len > max_len and not token.startswith("{$") and not re.match(r"^@[0-9A-Fa-f]{2}$", token):
+                if current_chunk:
+                    wrapped_lines.append("".join(current_chunk).rstrip())
+                    current_chunk = []
+                    current_len = 0
+                
+                for char in token:
+                    c_len = visible_len(char)
+                    if current_len + c_len > max_len and current_len > 0:
+                        wrapped_lines.append("".join(current_chunk).rstrip())
+                        current_chunk = []
+                        current_len = 0
+                    current_chunk.append(char)
+                    current_len += c_len
+                continue
+
+            if current_len + t_len > max_len and current_len > 0:
+                wrapped_lines.append("".join(current_chunk).rstrip())
+                current_chunk = [token]
+                current_len = t_len
+            else:
+                current_chunk.append(token)
+                current_len += t_len
+
+        if current_chunk:
+            wrapped_lines.append("".join(current_chunk).rstrip())
+
+    return NEWLINE.join(wrapped_lines)
 
 SYSTEM_PROMPT = (
     "You are a professional Japanese-to-English translator working on a trading card "
     "game (Cardfight!! Vanguard). Translate the user's text naturally into English, "
     "keeping the tone appropriate for game dialogue/UI.\n"
     "Strict rules:\n"
-    "- Do not add explanations, notes, quotes around the answer, or restate the "
-    "source text.\n"
-    "- Never invent unrelated content, names, or stories. If a segment is unclear, "
-    "translate it as literally as possible instead of guessing or expanding.\n"
+    "- Do not add explanations, notes, quotes around the answer, or restate the source text.\n"
+    "- Never invent unrelated content. If a segment is unclear, translate it as literally as possible.\n"
     "- The output MUST be a single line: no line breaks under any circumstance.\n"
+    "- The text may contain placeholders like <0>, <1> and formatting tags like @40, @41. You MUST preserve them exactly in their correct contextual positions in the translated text.\n"
     "- Output ONLY the translated text."
 )
 
-
 CJK_COUNT_RE = re.compile(r"[぀-ヿ㐀-䶿一-鿿豈-﫿]")
 
-
 def validate_response(response: str, source: str) -> str:
-    # On nettoie directement l'hallucination de sauts de ligne au lieu de crash
     stripped = response.replace("\r", " ").replace("\n", " ").strip()
-    
-    if not stripped:
-        raise ValueError("réponse vide")
+    if not stripped: raise ValueError("empty response")
 
     max_len = max(200, len(source) * 6)
     if len(stripped) > max_len:
-        raise ValueError(
-            f"réponse anormalement longue ({len(stripped)} car. pour une source de {len(source)})"
-        )
+        raise ValueError(f"abnormally long response ({len(stripped)} chars)")
 
     cjk_count = len(CJK_COUNT_RE.findall(stripped))
     if cjk_count > max(3, len(stripped) * 0.3):
-        raise ValueError(f"trop de caractères CJK dans la sortie ({cjk_count})")
+        raise ValueError(f"too many CJK characters in output ({cjk_count})")
 
     return stripped
 
+def call_ollama(text: str, model: str, num_ctx: int = 1024, num_predict: int = 128, retries: int = 5) -> str:
+    body = json.dumps({
+        "model": model,
+        "system": SYSTEM_PROMPT,
+        "prompt": text,
+        "stream": False,
+        "options": {"temperature": 0.2, "num_ctx": num_ctx, "num_predict": num_predict},
+    }).encode("utf-8")
 
-def call_ollama(
-    text: str,
-    model: str,
-    num_ctx: int = 1024,
-    num_predict: int = 128,
-    retries: int = 5,
-    timeout: int = 120,
-) -> str:
-    body = json.dumps(
-        {
-            "model": model,
-            "system": SYSTEM_PROMPT,
-            "prompt": text,
-            "stream": False,
-            "options": {
-                "temperature": 0.2,
-                "num_ctx": num_ctx,
-                "num_predict": num_predict,
-            },
-        }
-    ).encode("utf-8")
-
-    req = urllib.request.Request(
-        OLLAMA_URL, data=body, headers={"Content-Type": "application/json"}
-    )
+    req = urllib.request.Request(OLLAMA_URL, data=body, headers={"Content-Type": "application/json"})
     last_err = None
     for attempt in range(1, retries + 1):
         try:
-            with urllib.request.urlopen(req, timeout=timeout) as resp:
+            with urllib.request.urlopen(req, timeout=120) as resp:
                 data = json.loads(resp.read().decode("utf-8"))
-                raw_response = data["response"]
-            return validate_response(raw_response, text)
+            return validate_response(data["response"], text)
         except Exception as e:  # noqa: BLE001
             last_err = e
-            print(f"  ⚠ Ollama erreur (tentative {attempt}/{retries}) : {e}")
+            print(f"  ⚠ Ollama error (attempt {attempt}/{retries}): {e}")
             time.sleep(2)
-    raise RuntimeError(f"Ollama injoignable/invalide : {last_err}")
+    raise RuntimeError(f"Ollama unreachable/invalid: {last_err}")
 
+def translate_segment(chunk: str, model: str, cache: dict, num_ctx: int = 512, num_predict: int = 128) -> str:
+    if chunk in cache: return cache[chunk]
+    if not needs_translation(chunk):
+        cache[chunk] = chunk
+        return chunk
+
+    dynamic_predict = max(num_predict, len(chunk) * 4 + 40)
+    translated = call_ollama(chunk, model, num_ctx=max(num_ctx, dynamic_predict + 256), num_predict=dynamic_predict)
+    cache[chunk] = translated
+    return translated
+
+def translate_cell(raw_text: str, model: str, cache: dict, num_ctx: int = 512, num_predict: int = 128) -> str:
+    kanji_text = strip_furigana(raw_text)
+    cleaned_text = kanji_text.replace("†", " ").replace("\\n", " ")
+    cleaned_text = cleaned_text.replace("\n", " ").replace("\r", " ")
+    cleaned_text = re.sub(r" +", " ", cleaned_text).strip()
+
+    # ==========================================
+    # PIPELINE 1: TRANSLATION
+    # ==========================================
+    if needs_translation(cleaned_text):
+        tags = []
+        def repl(m):
+            tags.append(m.group(0))
+            return f"<{len(tags)-1}>"
+            
+        placeholder_text = INLINE_RE.sub(repl, cleaned_text)
+        
+        # The cache is handled HERE, at the LLM level only
+        translated = translate_segment(placeholder_text, model, cache, num_ctx, num_predict)
+            
+        def restore(m):
+            idx = int(m.group(1))
+            if 0 <= idx < len(tags):
+                return tags[idx]
+            return m.group(0)
+            
+        translated = re.sub(r"<\s*(\d+)\s*>", restore, translated)
+    else:
+        translated = cleaned_text
+
+    # ==========================================
+    # PIPELINE 2: TAG HANDLING
+    # ==========================================
+    translated = re.sub(r"(?<!\s)(@[0-9A-Fa-f]{2})", r" \1", translated)
+    translated = re.sub(r"(@[0-9A-Fa-f]{2})(?!\s)", r"\1 ", translated)
+    translated = translated.strip()
+    
+    # Tags @40 to @44 are surrounded by TWO daggers (NEWLINE)
+    translated = re.sub(r"\s*(@(?:40|41|42|43|44))\s*", NEWLINE + r"\1" + NEWLINE, translated)
+    
+    translated = re.sub(r"(?<!\s)(＊[^＊]+＊)", r" \1", translated)
+    translated = re.sub(r"(＊[^＊]+＊)(?!\s)", r"\1 ", translated)
+    translated = re.sub(r"(?<!\s)(\*[^\*]+\*)", r" \1", translated)
+    translated = re.sub(r"(\*[^\*]+\*)(?!\s)", r"\1 ", translated)
+    
+    translated = re.sub(r" +", " ", translated).strip()
+    
+    # ==========================================
+    # PIPELINE 3: LINE BREAK INSERTION
+    # ==========================================
+    translated = sanitize_translation(translated)
+    translated = apply_daggers(translated, max_len=MAX_LINE_LENGTH)
+
+    translated = translated.replace("\r", "").replace("\n", "")
+    translated = sanitize_translation(translated)
+    
+    return translated
 
 def load_cache(path: Path) -> dict:
     if path.exists():
@@ -241,10 +299,7 @@ def load_cache(path: Path) -> dict:
             return json.load(f)
     return {}
 
-
 def save_cache(path: Path, cache: dict) -> None:
-    # Atomic write: an interrupted process (e.g. background task killed mid-write)
-    # must never leave a truncated/corrupted cache file behind.
     import os
     tmp_path = path.with_suffix(path.suffix + ".tmp")
     with tmp_path.open("w", encoding="utf-8") as f:
@@ -252,8 +307,6 @@ def save_cache(path: Path, cache: dict) -> None:
         f.flush()
         os.fsync(f.fileno())
 
-    # On Windows, the rename can transiently fail (WinError 5) if the file is
-    # briefly locked by AV/indexing. Retry a few times before giving up.
     last_err = None
     for attempt in range(5):
         try:
@@ -264,72 +317,6 @@ def save_cache(path: Path, cache: dict) -> None:
             time.sleep(0.3 * (attempt + 1))
     raise last_err
 
-
-def translate_segment(
-    chunk: str, model: str, cache: dict, num_ctx: int = 512, num_predict: int = 128
-) -> str:
-    if chunk in cache:
-        return cache[chunk]
-
-    if not needs_translation(chunk):
-        cache[chunk] = chunk
-        return chunk
-
-    dynamic_predict = max(num_predict, len(chunk) * 4 + 40)
-    translated = call_ollama(
-        chunk,
-        model,
-        num_ctx=max(num_ctx, dynamic_predict + 256),
-        num_predict=dynamic_predict,
-    )
-    cache[chunk] = translated
-    return translated
-
-
-def translate_cell(
-    raw_text: str, model: str, cache: dict, num_ctx: int = 512, num_predict: int = 128
-) -> str:
-
-    if raw_text in cache:
-        return cache[raw_text]
-
-    kanji_text = strip_furigana(raw_text)
-
-    if not needs_translation(kanji_text):
-        cache[raw_text] = kanji_text
-        return kanji_text
-
-    parts = []
-    for chunk, is_protected in split_segments(kanji_text):
-        if is_protected:
-            parts.append(chunk)
-        else:
-            parts.append(translate_segment(chunk, model, cache, num_ctx, num_predict))
-
-    translated = "".join(parts)
-    
-    # -------------------------------------------------------------
-    # ENCADREMENT DES *xxxx* ET ＊xxxx＊ PAR DES ESPACES
-    # S'assure qu'il y a un espace avant et après, sauf s'il y en a déjà
-    # -------------------------------------------------------------
-    translated = re.sub(r"(?<!\s)(＊[^＊]+＊)", r" \1", translated)
-    translated = re.sub(r"(＊[^＊]+＊)(?!\s)", r"\1 ", translated)
-    translated = re.sub(r"(?<!\s)(\*[^\*]+\*)", r" \1", translated)
-    translated = re.sub(r"(\*[^\*]+\*)(?!\s)", r"\1 ", translated)
-    
-    # Nettoyage d'éventuels doubles espaces créés par l'opération
-    translated = re.sub(r" +", " ", translated)
-    
-    # Application du retour à la ligne (word wrap) spécifique au jeu
-    translated = apply_daggers(translated) 
-    
-    # SECURITE ABSOLUE : on purge toute tentative finale de saut de ligne physique pour le CSV
-    translated = translated.replace("\r", "").replace("\n", "")
-    
-    cache[raw_text] = translated
-    return translated
-
-
 def check_ollama_reachable(model: str) -> None:
     try:
         req = urllib.request.Request("http://localhost:11434/api/tags")
@@ -337,28 +324,58 @@ def check_ollama_reachable(model: str) -> None:
             data = json.loads(resp.read().decode("utf-8"))
         names = [m.get("name", "") for m in data.get("models", [])]
         if not any(model in n for n in names):
-            print(f"⚠ Le modèle '{model}' n'apparaît pas dans `ollama list` ({names}).")
-            print("  Lance `ollama pull " + model + "` si besoin.")
+            print(f"⚠ Model '{model}' does not appear in 'ollama list' ({names}).")
+            print("  Run `ollama pull " + model + "` if necessary.")
     except Exception as e:  # noqa: BLE001
-        print(f"❌ Impossible de joindre Ollama sur localhost:11434 ({e}).")
-        print("  Lance `ollama serve` avant de relancer ce script.")
+        print(f"❌ Cannot reach Ollama on localhost:11434 ({e}).")
+        print("  Run `ollama serve` before restarting this script.")
         sys.exit(1)
 
+def sanitize_csv(input_csv: str, output_csv: str, column: str, dry_run: bool) -> None:
+    # Read/write with the csv module: CSV quoting ("…""Abyss""…" field)
+    # is never seen as text to clean.
+    with open(input_csv, "r", encoding="utf-8-sig", newline="") as f:
+        rows = list(csv.reader(f, delimiter=";"))
+    header = rows[0]
+    idx = header.index(column)
+
+    stats: dict[str, list[int]] = {}
+    changed = 0
+    for n, row in enumerate(rows[1:], start=2):
+        if len(row) <= idx:
+            continue
+        for issue in find_issues(row[idx]):
+            stats.setdefault(issue, []).append(n)
+        new = sanitize_translation(row[idx])
+        if new != row[idx]:
+            row[idx] = new
+            changed += 1
+
+    for issue, nums in stats.items():
+        print(f"  {issue} : {len(nums)} line(s), e.g. {nums[:8]}")
+    print(f"{changed} line(s) {'to modify' if dry_run else 'modified'}.")
+    if not dry_run:
+        with open(output_csv, "w", encoding="utf-8", newline="") as f:
+            csv.writer(f, delimiter=";", lineterminator="\n").writerows(rows)
+        print(f"File saved to: {output_csv}")
 
 def main() -> None:
-    parser = argparse.ArgumentParser(
-        description="Traduit via Ollama les chaînes encore en japonais après update_csv.py."
-    )
+    parser = argparse.ArgumentParser(description="Translates strings that are still in Japanese after update_csv.py using Ollama.")
     parser.add_argument("input_csv")
     parser.add_argument("output_csv")
-    parser.add_argument("--column", default="extract", help="Colonne à traduire (défaut: extract)")
-    parser.add_argument("--model", default=DEFAULT_MODEL, help=f"Modèle Ollama (défaut: {DEFAULT_MODEL})")
-    parser.add_argument("--cache", default="low_trad_cache.json", help="Fichier de cache JSON")
-    parser.add_argument("--limit", type=int, default=0, help="Ne traiter que N lignes (0 = toutes), pour tester")
-    parser.add_argument("--num-ctx", type=int, default=512, help="Taille du contexte Ollama (défaut: 512)")
-    parser.add_argument("--num-predict", type=int, default=128, help="Tokens max en sortie (défaut: 128)")
-    parser.add_argument("--dry-run", action="store_true", help="Compte les lignes à traduire sans appeler Ollama")
+    parser.add_argument("--column", default="extract", help="Column to translate (default: extract)")
+    parser.add_argument("--model", default=DEFAULT_MODEL, help=f"Ollama model (default: {DEFAULT_MODEL})")
+    parser.add_argument("--cache", default="low_trad_cache.json", help="JSON cache file")
+    parser.add_argument("--limit", type=int, default=0, help="Only process N lines (0 = all)")
+    parser.add_argument("--num-ctx", type=int, default=512, help="Ollama context size (default: 512)")
+    parser.add_argument("--num-predict", type=int, default=128, help="Max output tokens (default: 128)")
+    parser.add_argument("--dry-run", action="store_true", help="Count lines without calling Ollama")
+    parser.add_argument("--sanitize", action="store_true", help="Only apply checkers")
     args = parser.parse_args()
+
+    if args.sanitize:
+        sanitize_csv(args.input_csv, args.output_csv, args.column, args.dry_run)
+        return
 
     if not args.dry_run:
         check_ollama_reachable(args.model)
@@ -372,9 +389,9 @@ def main() -> None:
         rows = list(reader)
 
     total_translatable = sum(
-        1 for row in rows if needs_translation(strip_furigana(row.get(args.column, "")))
+        1 for row in rows if line_needs_processing(row.get(args.column, ""))
     )
-    print(f"🔍 {total_translatable} ligne(s) à traduire sur {len(rows)} au total.")
+    print(f"🔍 {total_translatable} line(s) to process (Translate & Format) out of {len(rows)} total.")
 
     if args.dry_run:
         return
@@ -385,8 +402,8 @@ def main() -> None:
     if output_path.exists() and output_path.stat().st_size > 0:
         with output_path.open("r", encoding="utf-8", newline="") as f:
             existing_rows = list(csv.reader(f, delimiter=";"))
-        resume_from = max(0, len(existing_rows) - 1)  # -1 pour le header
-        print(f"↻ Reprise à la ligne {resume_from}/{len(rows)} (fichier de sortie existant).")
+        resume_from = max(0, len(existing_rows) - 1)
+        print(f"↻ Resuming at line {resume_from}/{len(rows)} (existing output file).")
         out_f = output_path.open("a", encoding="utf-8", newline="")
     else:
         out_f = output_path.open("w", encoding="utf-8", newline="")
@@ -394,58 +411,51 @@ def main() -> None:
         out_f.flush()
     writer = csv.writer(out_f, delimiter=";")
 
-    translated_count = 0
+    processed_count = 0
     failed = 0
     since_flush = 0
     limit_left = args.limit if args.limit else None
-
     durations: list[float] = [] 
     remaining_to_translate = total_translatable
 
     def eta_str() -> str:
-        if not durations:
-            return "ETA inconnue"
+        if not durations: return "ETA unknown"
         avg = sum(durations[-20:]) / len(durations[-20:])
         remaining = max(0, remaining_to_translate)
         eta_s = avg * remaining
         m, s = divmod(int(eta_s), 60)
         h, m = divmod(m, 60)
-        return f"~{avg:.1f}s/trad, ETA {h}h{m:02d}m{s:02d}s ({remaining} restantes)"
+        return f"~{avg:.1f}s/trans, ETA {h}h{m:02d}m{s:02d}s ({remaining} remaining)"
 
     try:
         for i in range(resume_from, len(rows)):
             row = rows[i]
             raw = row.get(args.column, "")
             
-            # NETTOYAGE ABSOLU DE LA SOURCE AVANT TRADUCTION
-            raw_clean = raw.replace("\r", " ").replace("\n", " ")
-            raw_clean = raw_clean.replace("\\n", " ").replace("†", " ")
-            raw_clean = re.sub(r" +", " ", raw_clean).strip()
-            
-            if needs_translation(strip_furigana(raw_clean)):
+            if line_needs_processing(raw):
                 if limit_left is not None and limit_left <= 0:
-                    print(f"   (limite de {args.limit} traduction(s) atteinte, arrêt à la ligne {i})")
+                    print(f"   (limit of {args.limit} reached, stopping at line {i})")
                     break
-                was_cached = raw_clean in cache
+                
+                # The cache covers the LLM step inside translate_cell
+                was_cached = not needs_translation(strip_furigana(raw)) or raw in cache
                 t0 = time.time()
                 try:
-                    row[args.column] = translate_cell(
-                        raw_clean, args.model, cache, num_ctx=args.num_ctx, num_predict=args.num_predict
-                    )
+                    row[args.column] = translate_cell(raw, args.model, cache, args.num_ctx, args.num_predict)
                     dt = time.time() - t0
-                    translated_count += 1
+                    processed_count += 1
                     remaining_to_translate -= 1
-                    if limit_left is not None:
-                        limit_left -= 1
-                    if was_cached:
-                        print(f"  [cache] ligne {i} : instantané")
+                    if limit_left is not None: limit_left -= 1
+                    
+                    if was_cached: 
+                        print(f"  [cache/reformat] line {i}: instant")
                     else:
                         durations.append(dt)
-                        print(f"  [{dt:.2f}s] ligne {i} → {eta_str()}")
+                        print(f"  [{dt:.2f}s] line {i} → {eta_str()}")
                 except Exception as e:  # noqa: BLE001
                     failed += 1
                     remaining_to_translate -= 1
-                    print(f"❌ Échec ligne {i} ({time.time() - t0:.2f}s) : {e}")
+                    print(f"❌ Failed line {i} ({time.time() - t0:.2f}s): {e}")
 
             writer.writerow([row.get(c, "") for c in fieldnames])
             since_flush += 1
@@ -453,16 +463,14 @@ def main() -> None:
             if since_flush >= BATCH:
                 out_f.flush()
                 save_cache(cache_path, cache)
-                print(f"… ligne {i + 1}/{len(rows)} ({translated_count} traduites, {failed} échecs)")
+                print(f"… line {i + 1}/{len(rows)} ({processed_count} processed, {failed} failed)")
                 since_flush = 0
     finally:
         out_f.flush()
         out_f.close()
         save_cache(cache_path, cache)
 
-    print(f"✔ Terminé : {translated_count} chaîne(s) traduite(s), {failed} échec(s).")
-    print(f"Fichier sauvegardé dans : {args.output_csv}")
-
+    print(f"✔ Done: {processed_count} string(s) processed, {failed} failure(s).")
 
 if __name__ == "__main__":
     main()

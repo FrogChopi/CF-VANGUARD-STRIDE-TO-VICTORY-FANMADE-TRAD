@@ -1,0 +1,14 @@
+keyword_jp;keyword_en;note
+探索者;Seeker;exact (デスシーカー renommée Deathseeker)
+守護天使;Celestial;exact (魔黒天女 renommée Black Heavenly Maiden)
+封竜;Seal Dragon;exact (マキシマムシール renommée Maximumseal)
+ヴァーミリオン;Vermillion;exact (獣神 ヴァーミリオン・バード renommée Vermillion Bird)
+レオパルド;Leo-pald;exact (ヴェアレオパルド renommée Wer-Leo-pald)
+ビーストテイマー;Beast Tamer;exact (銀の茨の獣使い renommées Beast Handler)
+ブラウ;Blau;exact
+ライザー;aizer;chaîne interne (seulement la table des mots-clés) : couvre Raizer et -raizer
+魔女;Witch;écart accepté : les ウィッチ/Witching comptent aussi
+グレイ;Grey;écart accepté : correspondances JP accidentelles (Grace, Grave, Greion...)
+アシュラ;Asura;écart accepté : ZerSchlangen ne contient アシュラ que par accident
+ビッグバンナックル;Big Bang Knuckle;écart accepté : Turbo écrit ビック en JP
+コーラル;Coral;écart accepté : "of the Corals" compte aussi

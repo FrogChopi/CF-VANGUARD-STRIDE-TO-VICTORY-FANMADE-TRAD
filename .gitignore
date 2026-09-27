@@ -1,0 +1,13 @@
+# Ignore everything, then whitelist what belongs in the repo
+/*
+
+!/.gitignore
+!/files/
+!/image_xcf/
+!/scripts/
+!/WALKTHROUGH.md
+!/README.md
+!/docker-compose.yaml
+!/LICENSE
+
+__pycache__/
